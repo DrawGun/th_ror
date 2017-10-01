@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  database: th_ror_development
+  host: localhost
+  port: 5432
+  encoding: utf8
+  pool: 5
+  timeout: 5000
+  username: postgres
+  password:
+
+test:
+  username: ubuntu
+  database: th_ror_test
+  adapter: postgresql
