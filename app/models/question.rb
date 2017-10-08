@@ -1,5 +1,5 @@
 class Question < ApplicationRecord
-  validates :title, :body, presence: true
+  has_many :answers, inverse_of: :question, dependent: :destroy
 
-  has_many :answers, inverse_of: :question
+  validates :title, :body, presence: true
 end
