@@ -17,6 +17,11 @@ RSpec.describe AnswersController, type: :controller do
         post :create, params: answer_options
         expect(response).to redirect_to question_path(question)
       end
+
+      it 'saved answer belongs_to question' do
+        post :create, params: answer_options
+        expect(assigns(:answer).question).to eq question
+      end
     end
 
     context 'with invalid attributes' do
