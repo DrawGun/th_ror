@@ -5,9 +5,9 @@ RSpec.describe AnswersController, type: :controller do
 
   describe 'POST #create' do
     context 'with valid attributes' do
-      let!(:answer_options) { {answer: attributes_for(:answer, question_id: question.id), question_id: question.id} }
+      let!(:answer_options) { {answer: attributes_for(:answer), question_id: question.id} }
 
-      it 'saves the new question in the database' do
+      it 'saves the new answer in the database' do
         expect {
           post(:create, params: answer_options)
         }.to change(Answer, :count).by(1)
@@ -26,7 +26,7 @@ RSpec.describe AnswersController, type: :controller do
 
     context 'with invalid attributes' do
       let!(:invalid_answer_options) do
-        {answer: attributes_for(:invalid_answer, question_id: question.id), question_id: question.id}
+        {answer: attributes_for(:invalid_answer), question_id: question.id}
       end
 
       it 'does not save the question' do
