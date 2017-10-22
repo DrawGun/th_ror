@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Question, type: :model do
+describe Question do
   it { should have_many(:answers).inverse_of(:question).dependent(:destroy) }
 
   it { should validate_presence_of(:title) }

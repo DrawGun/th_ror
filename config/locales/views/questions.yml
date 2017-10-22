@@ -1,0 +1,7 @@
+en:
+  questions:
+    confirmations:
+      confirmed: "Your question successfully created."
+    ask_button: "Ask question"
+    new:
+      submit: "Create"

@@ -56,4 +56,7 @@ RSpec.configure do |config|
   # config.filter_gems_from_backtrace("gem name")
 
   config.include FactoryGirl::Syntax::Methods
+  config.include Devise::TestHelpers, type: :controller
+  config.extend ControllerHelper, type: :controller
+  config.include AcceptanceHelper, type: :feature
 end

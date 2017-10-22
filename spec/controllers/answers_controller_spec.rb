@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe AnswersController, type: :controller do
+describe AnswersController do
   let(:question) { create(:question) }
 
   describe 'POST #create' do

@@ -2,7 +2,7 @@ class AnswersController < ApplicationController
   before_action :set_question, only: :create
 
   def create
-    @answer = Answer.new(answer_params)
+    @answer = @question.answers.new(answer_params)
 
     if @answer.save
       flash[:notice] = 'Your answer successfully created.'
