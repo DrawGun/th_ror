@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-feature 'Create Question', %q{
+feature 'Delete Question', %q{
   In order to get answer from community
   As an authenticated user
-  I want to be able to ask question
+  I want to be able to delete question
 } do
 
   given(:user) { create(:user) }

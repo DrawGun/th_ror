@@ -85,6 +85,7 @@ describe QuestionsController, :aggregate_failures do
 
   describe 'PATCH #update' do
     sign_in_user
+    let!(:question) { create(:question, title: 'MyString', body: 'MyText') }
 
     context 'valid attributes' do
       it 'assings the requested question to @question' do

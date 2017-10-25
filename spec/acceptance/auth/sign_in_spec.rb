@@ -16,10 +16,7 @@ feature 'User sign in', %q{
   end
 
   scenario 'Non-registered user try to sign in' do
-    visit new_user_session_path
-    fill_in 'Email', with: 'wrongtest@example.com'
-    fill_in 'Password', with: '123456789'
-    click_on I18n.t('.devise.sessions.new.submit')
+    sign_in
 
     expect(page).to have_content I18n.t('.devise.failure.invalid', authentication_keys: "Email")
     expect(current_path).to eq new_user_session_path

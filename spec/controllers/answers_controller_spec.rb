@@ -4,6 +4,8 @@ describe AnswersController do
   let(:question) { create(:question) }
 
   describe 'POST #create' do
+    sign_in_user
+
     context 'with valid attributes' do
       let!(:answer_options) { {answer: attributes_for(:answer), question_id: question.id} }
 

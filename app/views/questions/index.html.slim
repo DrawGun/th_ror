@@ -1,2 +1,10 @@
-p
-  = link_to I18n.t('.questions.ask_button'), new_question_path
+.questions
+  .links
+    p
+      = link_to I18n.t('.questions.ask_button'), new_question_path
+
+  ul.list-unstyled
+    - @questions.each do |question|
+
+      li
+        = link_to question.title, question_path(question)
