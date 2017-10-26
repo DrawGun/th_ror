@@ -55,7 +55,7 @@ en:
         submit: "Log in"
         title: "Log in"
       destroy:
-        submit: "Log in"
+        submit: "Log out"
         title: "Log out"
     unlocks:
       send_instructions: "You will receive an email with instructions for how to unlock your account in a few minutes."

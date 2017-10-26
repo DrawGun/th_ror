@@ -1,6 +1,10 @@
 en:
   answers:
+    confirmations:
+      confirmed: "Your answer successfully created."
+      deleted: "Your answer successfully deleted."
     title: "Answers"
+    delete_answer_button: "Delete answer"
     new:
       title: "Create answer"
       submit: "Create"

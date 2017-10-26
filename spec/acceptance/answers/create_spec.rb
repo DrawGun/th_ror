@@ -18,7 +18,7 @@ feature 'Create Question answers', %q{
       click_on I18n.t('.answers.new.submit')
     end
 
-    expect(page).to have_content 'Your answer successfully created.'
+    expect(page).to have_content I18n.t('.answers.confirmations.confirmed')
   end
 
   scenario 'Non-authenticated can not create answer for question' do

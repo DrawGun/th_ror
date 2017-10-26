@@ -20,7 +20,7 @@ class QuestionsController < ApplicationController
     @question = Question.new(question_params)
 
     if @question.save
-      flash[:notice] = 'Your question successfully created.'
+      flash[:notice] = I18n.t('.questions.confirmations.confirmed')
       redirect_to @question
     else
       render :new
@@ -37,6 +37,7 @@ class QuestionsController < ApplicationController
 
   def destroy
     @question.destroy
+    flash[:notice] = I18n.t('.questions.confirmations.deleted')
     redirect_to questions_path
   end
 

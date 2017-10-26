@@ -5,13 +5,21 @@
   .question-body
     = @question.body
 
+  = link_to I18n.t('.questions.delete_question_button'),  question_path(@question), method: :delete
+
   .answers
     h2
       = I18n.t('.answers.title')
 
     - @question.answers.each do |answer|
-      .answer
-        = answer.body
+      div id="answer#{answer.id}"
+        ul.list-inline
+          li
+            = answer.body
+
+          li
+            = link_to I18n.t('.answers.delete_answer_button'), question_answer_path(@question, answer), method: :delete
+
 
   #create_answer
     h2
