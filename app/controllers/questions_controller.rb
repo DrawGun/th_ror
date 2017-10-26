@@ -21,9 +21,10 @@ class QuestionsController < ApplicationController
     @question = Question.new(question_params.merge(user: current_user))
 
     if @question.save
-      flash[:notice] = I18n.t('.questions.confirmations.confirmed')
+      flash[:notice] = I18n.t('.questions.confirmations.created')
       redirect_to @question
     else
+      flash[:alert] = I18n.t('.questions.failure.created')
       render :new
     end
   end

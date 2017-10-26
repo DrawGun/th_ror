@@ -10,7 +10,7 @@ feature 'Delete answer', %q{
   given!(:question) { create(:question, user: user) }
   given!(:answer1) { create(:answer, question: question, user: user) }
 
-  scenario 'Authenticated user creates question' do
+  scenario 'Authenticated user can delete his own answer' do
     sign_in(user)
 
     visit question_path(question)
@@ -20,9 +20,20 @@ feature 'Delete answer', %q{
     end
 
     expect(page).to have_content I18n.t('.answers.confirmations.deleted')
+    expect(page).to_not have_content answer1.body
   end
 
-  scenario 'Non-authenticated user ties to create question' do
+  scenario 'Authenticated user can`t delete others` answers' do
+    anoter_user = create(:user)
+    sign_in(anoter_user)
+
+    visit question_path(question)
+
+    expect(page).to have_content answer1.body
+    expect(page).to_not have_content I18n.t('.answers.delete_answer_button')
+  end
+
+  scenario 'Non-authenticated user can`t delete any answers' do
     visit question_path(question)
     expect(page).to_not have_content I18n.t('.answers.delete_answer_button')
   end

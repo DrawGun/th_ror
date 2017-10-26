@@ -25,6 +25,11 @@ describe AnswersController do
         post :create, params: answer_options
         expect(assigns(:answer).question).to eq question
       end
+
+      it 'saved answer belongs_to signed user' do
+        post :create, params: answer_options
+        expect(assigns(:answer).user).to eq @user
+      end
     end
 
     context 'with invalid attributes' do
@@ -44,7 +49,7 @@ describe AnswersController do
   end
 
   describe 'DELETE #destroy' do
-    context 'as authtorized user' do
+    context 'as authtorized owner' do
       sign_in_user
       let!(:answer) { create(:answer, question: question, user: @user) }
 
@@ -58,10 +63,19 @@ describe AnswersController do
       end
     end
 
+    context 'as authtorized user' do
+      sign_in_user
+      let!(:answer) { create(:answer, question: question, user: user) }
+
+      it 'can`t deletes answer' do
+        expect { delete :destroy, params: {id: answer, question_id: question} }.to_not change(Answer, :count)
+      end
+    end
+
     context 'as non-authtorized user' do
       let!(:answer) { create(:answer, question: question, user: user) }
 
-      it 'deletes answer' do
+      it 'can`t deletes answer' do
         expect { delete :destroy, params: {id: answer, question_id: question} }.to_not change(Answer, :count)
       end
     end

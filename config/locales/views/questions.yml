@@ -1,9 +1,10 @@
 en:
   questions:
     confirmations:
-      confirmed: "Your question successfully created."
+      created: "Your question successfully created."
       deleted: "Your question successfully deleted."
     failure:
+      created: "Question created error."
       deleted: "Question deleted error."
     ask_button: "Ask question"
     delete_question_button: "Delete question"

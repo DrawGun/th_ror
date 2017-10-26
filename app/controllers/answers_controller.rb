@@ -7,10 +7,10 @@ class AnswersController < ApplicationController
     @answer = @question.answers.new(answer_params.merge(user: current_user, question: @question))
 
     if @answer.save
-      flash[:notice] = I18n.t('.answers.confirmations.confirmed')
+      flash[:notice] = I18n.t('.answers.confirmations.created')
       redirect_to question_path(@question)
     else
-      flash[:notice] = 'Your answer faild created. Try again.'
+      flash[:notice] = I18n.t('.answers.failure.created')
       render 'questions/show'
     end
   end

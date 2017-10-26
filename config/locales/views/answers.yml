@@ -1,9 +1,10 @@
 en:
   answers:
     confirmations:
-      confirmed: "Your answer successfully created."
+      created: "Your answer successfully created."
       deleted: "Your answer successfully deleted."
     failure:
+      created: "Your answer faild created. Try again."
       deleted: "Answer deleted error."
     title: "Answers"
     delete_answer_button: "Delete answer"

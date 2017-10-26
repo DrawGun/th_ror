@@ -70,6 +70,11 @@ describe QuestionsController, :aggregate_failures do
         post :create, params: {question: attributes_for(:question)}
         expect(response).to redirect_to question_path(assigns(:question))
       end
+
+      it 'saved question belongs_to signed user' do
+        post :create, params: {question: attributes_for(:question)}
+        expect(assigns(:question).user).to eq @user
+      end
     end
 
     context 'with invalid attributes' do
@@ -123,17 +128,34 @@ describe QuestionsController, :aggregate_failures do
   end
 
   describe 'DELETE #destroy' do
-    sign_in_user
+    context 'as authtorized owner' do
+      sign_in_user
+      let!(:question) { create(:question, user: @user) }
 
-    let!(:question) { create(:question, user: @user) }
+      it 'deletes question' do
+        expect { delete :destroy, params: {id: question} }.to change(Question, :count).by(-1)
+      end
 
-    it 'deletes question' do
-      expect { delete :destroy, params: {id: question} }.to change(Question, :count).by(-1)
+      it 'redirect to index view' do
+        delete :destroy, params: {id: question}
+        expect(response).to redirect_to questions_path
+      end
     end
 
-    it 'redirect to index view' do
-      delete :destroy, params: {id: question}
-      expect(response).to redirect_to questions_path
+    context 'as authtorized user' do
+      sign_in_user
+      let(:another_user) { create(:user) }
+      let(:another_question) { create(:question, user: another_user) }
+
+      it 'can`t deletes answer' do
+        expect { delete :destroy, params: {id: another_question} }.to_not change(Answer, :count)
+      end
+    end
+
+    context 'as non-authtorized user' do
+      it 'can`t deletes answer' do
+        expect { delete :destroy, params: {id: question} }.to_not change(Answer, :count)
+      end
     end
   end
 end
