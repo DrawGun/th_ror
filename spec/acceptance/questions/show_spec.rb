@@ -6,10 +6,9 @@ feature 'Show question', %q{
 } do
 
   given(:user) { create(:user) }
-  given!(:question) { create(:question) }
-  given!(:answer1) { create(:answer, question: question) }
-  given!(:answer2) { create(:answer, question: question) }
-
+  given!(:question) { create(:question, user: user) }
+  given!(:answer1) { create(:answer, question: question, user: user) }
+  given!(:answer2) { create(:answer, question: question, user: user) }
 
   scenario 'Authenticated user can see question and answers' do
     sign_in(user)

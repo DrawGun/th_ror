@@ -7,6 +7,7 @@ class QuestionsController < ApplicationController
   end
 
   def show
+    @answer = @question.answers.new
   end
 
   def new
@@ -17,7 +18,7 @@ class QuestionsController < ApplicationController
   end
 
   def create
-    @question = Question.new(question_params)
+    @question = Question.new(question_params.merge(user: current_user))
 
     if @question.save
       flash[:notice] = I18n.t('.questions.confirmations.confirmed')
@@ -36,8 +37,13 @@ class QuestionsController < ApplicationController
   end
 
   def destroy
-    @question.destroy
-    flash[:notice] = I18n.t('.questions.confirmations.deleted')
+    if current_user == @question.user
+      @question.destroy
+      flash[:notice] = I18n.t('.questions.confirmations.deleted')
+    else
+      flash[:notice] = I18n.t('.questions.failure.deleted')
+    end
+
     redirect_to questions_path
   end
 

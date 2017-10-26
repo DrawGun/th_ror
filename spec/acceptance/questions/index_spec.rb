@@ -6,9 +6,9 @@ feature 'Index questions', %q{
 } do
 
   given(:user) { create(:user) }
-  given!(:question1) { create(:question) }
-  given!(:question2) { create(:question) }
-  given!(:question3) { create(:question) }
+  given!(:question1) { create(:question, user: user) }
+  given!(:question2) { create(:question, user: user) }
+  given!(:question3) { create(:question, user: user) }
 
   scenario 'Authenticated user can see questions' do
     sign_in(user)

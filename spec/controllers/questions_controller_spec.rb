@@ -1,10 +1,11 @@
 require 'rails_helper'
 
 describe QuestionsController, :aggregate_failures do
-  let(:question) { create(:question) }
+  let(:user) { create(:user) }
+  let(:question) { create(:question, user: user) }
 
   describe 'GET #index' do
-    let(:questions) { create_list(:question, 2) }
+    let(:questions) { create_list(:question, 2, user: user) }
 
     before { get :index }
 
@@ -85,7 +86,7 @@ describe QuestionsController, :aggregate_failures do
 
   describe 'PATCH #update' do
     sign_in_user
-    let!(:question) { create(:question, title: 'MyString', body: 'MyText') }
+    let!(:question) { create(:question, title: 'MyString', body: 'MyText', user: @user) }
 
     context 'valid attributes' do
       it 'assings the requested question to @question' do
@@ -124,7 +125,7 @@ describe QuestionsController, :aggregate_failures do
   describe 'DELETE #destroy' do
     sign_in_user
 
-    before { question }
+    let!(:question) { create(:question, user: @user) }
 
     it 'deletes question' do
       expect { delete :destroy, params: {id: question} }.to change(Question, :count).by(-1)

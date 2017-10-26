@@ -3,6 +3,8 @@ en:
     confirmations:
       confirmed: "Your answer successfully created."
       deleted: "Your answer successfully deleted."
+    failure:
+      deleted: "Answer deleted error."
     title: "Answers"
     delete_answer_button: "Delete answer"
     new:

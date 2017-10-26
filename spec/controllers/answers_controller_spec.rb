@@ -1,7 +1,8 @@
 require 'rails_helper'
 
 describe AnswersController do
-  let(:question) { create(:question) }
+  let(:user) { create(:user) }
+  let(:question) { create(:question, user: user) }
 
   describe 'POST #create' do
     sign_in_user
@@ -35,18 +36,17 @@ describe AnswersController do
         expect { post(:create, params: invalid_answer_options) }.to_not change(Answer, :count)
       end
 
-      it 're-renders new view' do
+      it 'renders question view' do
         post(:create, params: invalid_answer_options)
-        expect(response).to redirect_to question_path(question)
+        expect(response).to render_template "questions/show"
       end
     end
   end
 
   describe 'DELETE #destroy' do
-    let!(:answer) { create(:answer, question: question) }
-
     context 'as authtorized user' do
       sign_in_user
+      let!(:answer) { create(:answer, question: question, user: @user) }
 
       it 'deletes answer' do
         expect { delete :destroy, params: {id: answer, question_id: question} }.to change(Answer, :count).by(-1)
@@ -59,6 +59,8 @@ describe AnswersController do
     end
 
     context 'as non-authtorized user' do
+      let!(:answer) { create(:answer, question: question, user: user) }
+
       it 'deletes answer' do
         expect { delete :destroy, params: {id: answer, question_id: question} }.to_not change(Answer, :count)
       end
