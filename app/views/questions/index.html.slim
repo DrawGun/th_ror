@@ -1,10 +1,9 @@
 .questions
-  .links
-    p
-      = link_to I18n.t('.questions.ask_button'), new_question_path
+  .links.
+    .actions.mt-2
+      = link_to I18n.t('.questions.ask_button'), new_question_path, class: 'btn btn-primary'
 
-  ul.list-unstyled
-    - @questions.each do |question|
 
-      li
-        = link_to question.title, question_path(question)
+    .list-group.mt-2
+      - @questions.each do |question|
+        = link_to question.title, question_path(question), class: 'list-group-item list-group-item-action'

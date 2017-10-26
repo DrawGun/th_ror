@@ -15,7 +15,7 @@ feature 'Delete answer', %q{
 
     visit question_path(question)
 
-    within("div#answer#{answer1.id}") do
+    within("li#answer#{answer1.id}") do
       click_on I18n.t('.answers.delete_answer_button')
     end
 

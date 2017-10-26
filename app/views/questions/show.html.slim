@@ -1,32 +1,43 @@
-.question
-  h1
-    = @question.title
+.question.mt-1
+  .card
+    h2.card-header
+      = @question.title
+    .card-body
 
-  .question-body
-    = @question.body
+      .question-body.card-text
+        = @question.body
 
-  = link_to I18n.t('.questions.delete_question_button'),  question_path(@question), method: :delete
+    .card-footer.text-muted
+      .float-right
+        = link_to I18n.t('.questions.delete_question_button'),  question_path(@question), method: :delete, class: 'btn btn-danger'
 
-  .answers
-    h2
-      = I18n.t('.answers.title')
+  - if @question.answers.any?
+    .answers.card.mt-1
+      h3.card-header
+        = I18n.t('.answers.title')
 
-    - @question.answers.each do |answer|
-      div id="answer#{answer.id}"
-        ul.list-inline
-          li
-            = answer.body
+      .card-body
 
-          li
-            = link_to I18n.t('.answers.delete_answer_button'), question_answer_path(@question, answer), method: :delete
+        - @question.answers.each do |answer|
+          ul.list-group.list-group-flush.list-unstyled
+            li.list-group-item id="answer#{answer.id}"
+              ul.list-inline
+                li.list-inline-item
+                  = answer.body
+
+                li.list-inline-item.float-right
+                  = link_to I18n.t('.answers.delete_answer_button'), question_answer_path(@question, answer), method: :delete, class: 'btn btn-danger btn-sm'
 
 
-  #create_answer
-    h2
+  #create_answer.card.mt-1
+    h3.card-header
       = I18n.t('.answers.new.title')
 
-    = form_for :answer, url: question_answers_path(@question) do |f|
-      = f.label :body
-      = f.text_area :body
+    .card-body
 
-      = f.submit I18n.t('.answers.new.submit')
+      = form_for :answer, url: question_answers_path(@question) do |f|
+        .form-group
+          = f.label :body
+          = f.text_area :body, class: 'form-control'
+
+        = f.submit I18n.t('.answers.new.submit'), class: 'btn btn-primary float-right'
