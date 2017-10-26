@@ -41,4 +41,27 @@ describe AnswersController do
       end
     end
   end
+
+  describe 'DELETE #destroy' do
+    let!(:answer) { create(:answer, question: question) }
+
+    context 'as authtorized user' do
+      sign_in_user
+
+      it 'deletes answer' do
+        expect { delete :destroy, params: {id: answer, question_id: question} }.to change(Answer, :count).by(-1)
+      end
+
+      it 'redirect to index question view' do
+        delete :destroy, params: {id: answer, question_id: question}
+        expect(response).to redirect_to question_path(question)
+      end
+    end
+
+    context 'as non-authtorized user' do
+      it 'deletes answer' do
+        expect { delete :destroy, params: {id: answer, question_id: question} }.to_not change(Answer, :count)
+      end
+    end
+  end
 end
