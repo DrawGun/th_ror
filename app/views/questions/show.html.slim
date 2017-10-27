@@ -8,7 +8,7 @@
         = @question.body
 
     .card-footer.text-muted
-      - if @question.user == current_user
+      - if current_user && current_user.author_of?(@question.user_id)
         .float-right
           = link_to I18n.t('.questions.delete_question_button'),  question_path(@question), method: :delete, class: 'btn btn-danger'
 
@@ -20,14 +20,14 @@
       .card-body
         ul.list-group.list-group-flush.list-unstyled
           - @question.answers.each do |answer|
-            - if answer.id.present?
+            - if answer.persisted?
 
               li.list-group-item id="answer#{answer.id}"
                 ul.list-inline
                   li.list-inline-item
                     = answer.body
 
-                  - if answer.user == current_user
+                  - if current_user && current_user.author_of?(answer.user_id)
                     li.list-inline-item.float-right
                       = link_to I18n.t('.answers.delete_answer_button'), question_answer_path(@question, answer), method: :delete, class: 'btn btn-danger btn-sm'
 
@@ -38,10 +38,11 @@
 
       .card-body
 
-        = form_for @answer, url: question_answers_path(@question) do |f|
-          - @answer.errors.full_messages.each do |msg|
-            p
-              = msg
+        = form_for [@question, @answer] do |f|
+          - if @answer.errors.any?
+            - @answer.errors.full_messages.each do |msg|
+              p
+                = msg
 
           .form-group
             = f.label :body

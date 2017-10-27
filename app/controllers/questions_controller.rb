@@ -18,7 +18,7 @@ class QuestionsController < ApplicationController
   end
 
   def create
-    @question = Question.new(question_params.merge(user: current_user))
+    @question = current_user.questions.new(question_params)
 
     if @question.save
       flash[:notice] = I18n.t('.questions.confirmations.created')
@@ -38,7 +38,7 @@ class QuestionsController < ApplicationController
   end
 
   def destroy
-    if current_user == @question.user
+    if current_user.author_of?(@question.user_id)
       @question.destroy
       flash[:notice] = I18n.t('.questions.confirmations.deleted')
     else

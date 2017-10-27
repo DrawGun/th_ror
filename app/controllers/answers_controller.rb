@@ -4,7 +4,7 @@ class AnswersController < ApplicationController
   before_action :set_answer, only: :destroy
 
   def create
-    @answer = @question.answers.new(answer_params.merge(user: current_user, question: @question))
+    @answer = @question.answers.new(answer_params.merge(user: current_user))
 
     if @answer.save
       flash[:notice] = I18n.t('.answers.confirmations.created')
@@ -16,7 +16,7 @@ class AnswersController < ApplicationController
   end
 
   def destroy
-    if current_user == @answer.user
+    if current_user.author_of?(@answer.user_id)
       @answer.destroy
       flash[:notice] = I18n.t('.answers.confirmations.deleted')
     else
