@@ -1,0 +1,51 @@
+.question.mt-1
+  .card
+    h2.card-header
+      = @question.title
+    .card-body
+
+      .question-body.card-text
+        = @question.body
+
+    .card-footer.text-muted
+      - if current_user && current_user.author_of?(@question)
+        .float-right
+          = link_to I18n.t('.questions.delete_question_button'),  question_path(@question), method: :delete, class: 'btn btn-danger'
+
+  - if @question.answers.present?
+    .answers.card.mt-1
+      h3.card-header
+        = I18n.t('.answers.title')
+
+      .card-body
+        ul.list-group.list-group-flush.list-unstyled
+          - @question.answers.each do |answer|
+            - if answer.persisted?
+
+              li.list-group-item id="answer#{answer.id}"
+                ul.list-inline
+                  li.list-inline-item
+                    = answer.body
+
+                  - if current_user && current_user.author_of?(answer)
+                    li.list-inline-item.float-right
+                      = link_to I18n.t('.answers.delete_answer_button'), question_answer_path(@question, answer), method: :delete, class: 'btn btn-danger btn-sm'
+
+  - if current_user
+    #create_answer.card.mt-1
+      h3.card-header
+        = I18n.t('.answers.new.title')
+
+      .card-body
+
+        = form_for [@question, @answer] do |f|
+          - if @answer.errors.any?
+            - @answer.errors.full_messages.each do |msg|
+              p
+                = msg
+
+          .form-group
+            = f.label :body
+            = f.text_area :body, class: 'form-control'
+
+          = f.submit I18n.t('.answers.new.submit'), class: 'btn btn-primary float-right'

@@ -1,4 +1,5 @@
 class QuestionsController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
   before_action :set_question, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -6,6 +7,7 @@ class QuestionsController < ApplicationController
   end
 
   def show
+    @answer = @question.answers.new
   end
 
   def new
@@ -16,12 +18,13 @@ class QuestionsController < ApplicationController
   end
 
   def create
-    @question = Question.new(question_params)
+    @question = current_user.questions.new(question_params)
 
     if @question.save
-      flash[:notice] = 'Your question successfully created.'
+      flash[:notice] = I18n.t('.questions.confirmations.created')
       redirect_to @question
     else
+      flash[:alert] = I18n.t('.questions.failure.created')
       render :new
     end
   end
@@ -35,7 +38,13 @@ class QuestionsController < ApplicationController
   end
 
   def destroy
-    @question.destroy
+    if current_user.author_of?(@question)
+      @question.destroy
+      flash[:notice] = I18n.t('.questions.confirmations.deleted')
+    else
+      flash[:notice] = I18n.t('.questions.failure.deleted')
+    end
+
     redirect_to questions_path
   end
 

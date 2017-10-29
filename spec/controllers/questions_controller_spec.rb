@@ -1,10 +1,11 @@
 require 'rails_helper'
 
-RSpec.describe QuestionsController, type: :controller, aggregate_failures: true do
-  let(:question) { create(:question) }
+describe QuestionsController, :aggregate_failures do
+  let(:user) { create(:user) }
+  let(:question) { create(:question, user: user) }
 
   describe 'GET #index' do
-    let(:questions) { create_list(:question, 2) }
+    let(:questions) { create_list(:question, 2, user: user) }
 
     before { get :index }
 
@@ -30,6 +31,8 @@ RSpec.describe QuestionsController, type: :controller, aggregate_failures: true 
   end
 
   describe 'GET #new' do
+    sign_in_user
+
     before { get :new }
 
     it 'assigns anew Question to @question' do
@@ -42,6 +45,8 @@ RSpec.describe QuestionsController, type: :controller, aggregate_failures: true 
   end
 
   describe 'GET #edit' do
+    sign_in_user
+
     before { get :edit, params: {id: question} }
 
     it 'assigns the requested question to @question' do
@@ -54,6 +59,8 @@ RSpec.describe QuestionsController, type: :controller, aggregate_failures: true 
   end
 
   describe 'POST #create' do
+    sign_in_user
+
     context 'with valid attributes' do
       it 'saves the new question in the database' do
         expect { post(:create, params: {question: attributes_for(:question)}) }.to change(Question, :count).by(1)
@@ -62,6 +69,11 @@ RSpec.describe QuestionsController, type: :controller, aggregate_failures: true 
       it 'redirects to show view' do
         post :create, params: {question: attributes_for(:question)}
         expect(response).to redirect_to question_path(assigns(:question))
+      end
+
+      it 'saved question belongs_to signed user' do
+        post :create, params: {question: attributes_for(:question)}
+        expect(assigns(:question).user).to eq @user
       end
     end
 
@@ -78,6 +90,9 @@ RSpec.describe QuestionsController, type: :controller, aggregate_failures: true 
   end
 
   describe 'PATCH #update' do
+    sign_in_user
+    let!(:question) { create(:question, title: 'MyString', body: 'MyText', user: @user) }
+
     context 'valid attributes' do
       it 'assings the requested question to @question' do
         patch :update, params: {id: question, question: attributes_for(:question)}
@@ -113,15 +128,34 @@ RSpec.describe QuestionsController, type: :controller, aggregate_failures: true 
   end
 
   describe 'DELETE #destroy' do
-    before { question }
+    context 'as authtorized owner' do
+      sign_in_user
+      let!(:question) { create(:question, user: @user) }
 
-    it 'deletes question' do
-      expect { delete :destroy, params: {id: question} }.to change(Question, :count).by(-1)
+      it 'deletes question' do
+        expect { delete :destroy, params: {id: question} }.to change(Question, :count).by(-1)
+      end
+
+      it 'redirect to index view' do
+        delete :destroy, params: {id: question}
+        expect(response).to redirect_to questions_path
+      end
     end
 
-    it 'redirect to index view' do
-      delete :destroy, params: {id: question}
-      expect(response).to redirect_to questions_path
+    context 'as authtorized user' do
+      sign_in_user
+      let(:another_user) { create(:user) }
+      let(:another_question) { create(:question, user: another_user) }
+
+      it 'can`t deletes answer' do
+        expect { delete :destroy, params: {id: another_question} }.to_not change(Answer, :count)
+      end
+    end
+
+    context 'as non-authtorized user' do
+      it 'can`t deletes answer' do
+        expect { delete :destroy, params: {id: question} }.to_not change(Answer, :count)
+      end
     end
   end
 end

@@ -1,0 +1,13 @@
+nav.navbar.navbar-light.bg-light
+  = link_to 'ThRor', root_path, class: 'navbar-brand'
+
+  ul.nav.justify-content-end
+    - if current_user
+      li.nav-item
+        = navbar_link(I18n.t('.devise.sessions.destroy.submit'), destroy_user_session_path, :delete)
+    - else
+      li.nav-item
+        = navbar_link(I18n.t('.devise.registrations.new.submit'), new_user_registration_path)
+      li.nav-item
+        = navbar_link(I18n.t('.devise.sessions.new.submit'), new_user_session_path)
+

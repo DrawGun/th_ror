@@ -1,0 +1,15 @@
+= form_for @question do |f|
+  - if @question.errors.any?
+    - @question.errors.full_messages.each do |msg|
+        p
+          = msg
+
+  .form-group
+    = f.label :title
+    = f.text_field :title, class: 'form-control'
+
+  .form-group
+    = f.label :body
+    = f.text_area :body, class: 'form-control'
+
+  = f.submit I18n.t('.questions.new.submit')
