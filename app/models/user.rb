@@ -7,7 +7,7 @@ class User < ApplicationRecord
   has_many :questions, inverse_of: :user, dependent: :destroy
   has_many :answers, inverse_of: :user, dependent: :destroy
 
-  def author_of?(user_id)
-    id == user_id
+  def author_of?(object)
+    id == object&.user_id
   end
 end

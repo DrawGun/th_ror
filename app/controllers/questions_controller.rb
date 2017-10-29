@@ -38,7 +38,7 @@ class QuestionsController < ApplicationController
   end
 
   def destroy
-    if current_user.author_of?(@question.user_id)
+    if current_user.author_of?(@question)
       @question.destroy
       flash[:notice] = I18n.t('.questions.confirmations.deleted')
     else

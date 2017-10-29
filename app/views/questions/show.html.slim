@@ -8,7 +8,7 @@
         = @question.body
 
     .card-footer.text-muted
-      - if current_user && current_user.author_of?(@question.user_id)
+      - if current_user && current_user.author_of?(@question)
         .float-right
           = link_to I18n.t('.questions.delete_question_button'),  question_path(@question), method: :delete, class: 'btn btn-danger'
 
@@ -27,7 +27,7 @@
                   li.list-inline-item
                     = answer.body
 
-                  - if current_user && current_user.author_of?(answer.user_id)
+                  - if current_user && current_user.author_of?(answer)
                     li.list-inline-item.float-right
                       = link_to I18n.t('.answers.delete_answer_button'), question_answer_path(@question, answer), method: :delete, class: 'btn btn-danger btn-sm'
 
