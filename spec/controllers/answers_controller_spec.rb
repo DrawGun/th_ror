@@ -8,7 +8,7 @@ describe AnswersController do
     sign_in_user
 
     context 'with valid attributes' do
-      let!(:answer_options) { {answer: attributes_for(:answer), question_id: question.id} }
+      let!(:answer_options) { {answer: attributes_for(:answer), question_id: question.id, format: :js} }
 
       it 'saves the new answer in the database' do
         expect {
@@ -18,12 +18,16 @@ describe AnswersController do
 
       it 'redirects to show view' do
         post :create, params: answer_options
-        expect(response).to redirect_to question_path(question)
+        expect(response).to render_template :create
       end
 
       it 'saved answer belongs_to question' do
         post :create, params: answer_options
         expect(assigns(:answer).question).to eq question
+      end
+
+      it 'saved answer belongs_to question v2' do
+        expect { post :create, params: answer_options }.to change(question.answers, :count).by(1)
       end
 
       it 'saved answer belongs_to signed user' do
