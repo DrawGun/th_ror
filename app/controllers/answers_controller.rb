@@ -8,7 +8,6 @@ class AnswersController < ApplicationController
 
     if @answer.save
       flash[:notice] = I18n.t('.answers.confirmations.created')
-      redirect_to question_path(@question)
     else
       flash[:notice] = I18n.t('.answers.failure.created')
       render 'questions/show'

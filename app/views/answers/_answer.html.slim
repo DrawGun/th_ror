@@ -1,0 +1,9 @@
+- if answer.persisted?
+    li.list-group-item id="answer#{answer.id}"
+      ul.list-inline
+        li.list-inline-item
+          = answer.body
+
+        - if current_user && current_user.author_of?(answer)
+          li.list-inline-item.float-right
+            = link_to I18n.t('.answers.delete_answer_button'), question_answer_path(@question, answer), method: :delete, class: 'btn btn-danger btn-sm'
