@@ -9,8 +9,7 @@ class AnswersController < ApplicationController
     if @answer.save
       flash[:notice] = I18n.t('.answers.confirmations.created')
     else
-      flash[:notice] = I18n.t('.answers.failure.created')
-      render 'questions/show'
+      flash[:alert] = I18n.t('.answers.failure.created')
     end
   end
 
@@ -19,7 +18,7 @@ class AnswersController < ApplicationController
       @answer.destroy
       flash[:notice] = I18n.t('.answers.confirmations.deleted')
     else
-      flash[:notice] = I18n.t('.answers.failure.deleted')
+      flash[:alert] = I18n.t('.answers.failure.deleted')
     end
 
     redirect_to question_path(@question)

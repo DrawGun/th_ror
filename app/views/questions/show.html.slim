@@ -29,10 +29,11 @@
       .card-body
 
         = form_for [@question, @answer], remote: true do |f|
-          - if @answer.errors.any?
-            - @answer.errors.full_messages.each do |msg|
-              p
-                = msg
+          .answer-errors
+            - if @answer.errors.any?
+              - @answer.errors.full_messages.each do |msg|
+                p
+                  = msg
 
           .form-group
             = f.label :body

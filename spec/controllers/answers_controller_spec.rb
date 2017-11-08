@@ -38,7 +38,7 @@ describe AnswersController do
 
     context 'with invalid attributes' do
       let!(:invalid_answer_options) do
-        {answer: attributes_for(:invalid_answer), question_id: question.id}
+        {answer: attributes_for(:invalid_answer), question_id: question.id, format: :js}
       end
 
       it 'does not save the question' do
@@ -47,7 +47,7 @@ describe AnswersController do
 
       it 'renders question view' do
         post(:create, params: invalid_answer_options)
-        expect(response).to render_template "questions/show"
+        expect(response).to render_template :create
       end
     end
   end

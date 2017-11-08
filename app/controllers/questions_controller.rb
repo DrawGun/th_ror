@@ -42,7 +42,7 @@ class QuestionsController < ApplicationController
       @question.destroy
       flash[:notice] = I18n.t('.questions.confirmations.deleted')
     else
-      flash[:notice] = I18n.t('.questions.failure.deleted')
+      flash[:alert] = I18n.t('.questions.failure.deleted')
     end
 
     redirect_to questions_path
