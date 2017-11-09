@@ -2,7 +2,7 @@ require_relative '../acceptance_helper'
 
 feature 'Create Question answers', %q{
   In order to get answer from community
-  As an authenticated user
+  As site user
   I want to be able to create answer for question
 } do
 

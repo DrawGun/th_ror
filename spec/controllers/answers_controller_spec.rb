@@ -52,6 +52,54 @@ describe AnswersController do
     end
   end
 
+  describe 'PATCH #update' do
+    context 'as authtorized owner' do
+      sign_in_user
+      let!(:answer) { create(:answer, question: question, user: @user) }
+      let(:new_answer_body) { 'New text' }
+
+      context 'with valid attributes' do
+        let!(:answer_options) { {id: answer.id, answer: {body: new_answer_body}, question_id: question.id, format: :js} }
+
+        before do
+          patch :update, params: answer_options, format: :js
+        end
+
+        it 'updates answer attributes' do
+          answer.reload
+          expect(answer.body).to eq new_answer_body
+        end
+
+        it 'assings the requested answer to @answer' do
+          expect(assigns(:answer)).to eq answer
+        end
+
+        it 'assings the question' do
+          expect(assigns(:question)).to eq question
+        end
+
+        it 'render update template' do
+          expect(response).to render_template :update
+        end
+      end
+
+      context 'try to update other answer' do
+        let(:another_user) { create(:user) }
+        let(:another_answer) { create(:answer, question: question, user: another_user) }
+        let!(:answer_options) { {id: another_answer.id, answer: {body: new_answer_body}, question_id: question.id, format: :js} }
+
+        before do
+          patch :update, params: answer_options, format: :js
+        end
+
+        it 'but can`t do this' do
+          answer.reload
+          expect(answer.body).to_not eq new_answer_body
+        end
+      end
+    end
+  end
+
   describe 'DELETE #destroy' do
     context 'as authtorized owner' do
       sign_in_user

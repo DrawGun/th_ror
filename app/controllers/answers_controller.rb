@@ -1,7 +1,7 @@
 class AnswersController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
-  before_action :set_question, only: [:create, :destroy]
-  before_action :set_answer, only: :destroy
+  before_action :set_question, only: [:create, :destroy, :update]
+  before_action :set_answer, only: [:destroy, :update]
 
   def create
     @answer = @question.answers.new(answer_params.merge(user: current_user))
@@ -10,6 +10,14 @@ class AnswersController < ApplicationController
       flash[:notice] = I18n.t('.answers.confirmations.created')
     else
       flash[:alert] = I18n.t('.answers.failure.created')
+    end
+  end
+
+  def update
+    if current_user.author_of?(@answer) && @answer.update(answer_params)
+      flash[:notice] = I18n.t('.answers.confirmations.updated')
+    else
+      flash[:alert] = I18n.t('.answers.failure.updated')
     end
   end
 
