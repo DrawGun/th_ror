@@ -14,7 +14,7 @@ feature 'Delete Question', %q{
 
     visit question_path(question)
 
-    click_on I18n.t('.questions.delete_question_button')
+    click_on I18n.t('.questions.delete.button')
     expect(page).to have_content I18n.t('.questions.confirmations.deleted')
     expect(page).to_not have_content question.body
     expect(page).to_not have_content question.title
@@ -28,11 +28,11 @@ feature 'Delete Question', %q{
 
     expect(page).to have_content question.body
     expect(page).to have_content question.title
-    expect(page).to_not have_content I18n.t('.questions.delete_question_button')
+    expect(page).to_not have_content I18n.t('.questions.delete.button')
   end
 
   scenario 'Non-authenticated user can`t delete any questions' do
     visit question_path(question)
-    expect(page).to_not have_content I18n.t('.questions.delete_question_button')
+    expect(page).to_not have_content I18n.t('.questions.delete.button')
   end
 end

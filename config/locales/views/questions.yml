@@ -2,11 +2,17 @@ en:
   questions:
     confirmations:
       created: "Your question successfully created."
+      updated: "Your question successfully updated."
       deleted: "Your question successfully deleted."
     failure:
       created: "Question created error."
+      updated: "Your question faild updated. Try again."
       deleted: "Question deleted error."
     ask_button: "Ask question"
-    delete_question_button: "Delete question"
     new:
       submit: "Create"
+    edit:
+      submit: "Edit question"
+      button: "Edit"
+    delete:
+      button: "Delete question"

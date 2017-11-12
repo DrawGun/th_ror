@@ -1,12 +1,12 @@
 - if answer.persisted?
     li.list-group-item id="answer#{answer.id}"
       ul.list-inline
-        li.list-inline-item
+        li.list-inline-item.answer-body
           = answer.body
 
         - if current_user && current_user.author_of?(answer)
           li.list-inline-item.edit-answer-form
-            = form_for [@question, answer], remote: true, html: { id: "edit-answer-#{answer.id}", class: 'edit_answer form-inline ml-3 hidden' } do |f|
+            = form_for [@question, answer], remote: true, html: { id: "edit-answer-#{answer.id}", class: 'edit_answer form-inline d-none' } do |f|
               .form-group
                 = f.text_area :body, class: 'form-control'
               = f.submit I18n.t('.answers.edit.submit'), class: 'ml-3'

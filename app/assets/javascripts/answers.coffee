@@ -7,4 +7,5 @@ $ ->
 
     $(this).hide()
     answer_id = $(this).data('answerId')
-    $('form#edit-answer-' + answer_id).removeClass('hidden')
+    $('form#edit-answer-' + answer_id).removeClass('d-none')
+    $('#answer' + answer_id + ' .answer-body').addClass('d-none')

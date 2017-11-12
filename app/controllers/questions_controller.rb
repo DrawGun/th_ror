@@ -30,10 +30,10 @@ class QuestionsController < ApplicationController
   end
 
   def update
-    if @question.update(question_params)
-      redirect_to @question
+    if current_user.author_of?(@question) && @question.update(question_params)
+      flash[:notice] = I18n.t('.questions.confirmations.updated')
     else
-      render :edit
+      flash[:alert] = I18n.t('.questions.failure.updated')
     end
   end
 
