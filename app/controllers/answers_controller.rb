@@ -1,6 +1,6 @@
 class AnswersController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
-  before_action :set_question, only: [:create, :destroy, :update]
+  before_action :set_question, only: [:create, :destroy, :update, :mark_as_best]
   before_action :set_answer, only: [:destroy, :update]
 
   def create
@@ -28,8 +28,15 @@ class AnswersController < ApplicationController
     else
       flash[:alert] = I18n.t('.answers.failure.deleted')
     end
+  end
 
-    redirect_to question_path(@question)
+  def mark_as_best
+    @answer = Answer.find(params[:answer_id])
+    if current_user.author_of?(@answer) && @question.update(best_answer_id: @answer.id)
+      flash[:notice] = I18n.t('.answers.confirmations.mark_as_best')
+    else
+      flash[:alert] = I18n.t('.answers.failure.mark_as_best')
+    end
   end
 
   private

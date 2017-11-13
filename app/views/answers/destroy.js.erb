@@ -1,0 +1,5 @@
+<% if notice || alert %>
+  $("#alerts").html('<%= j render "layouts/notice" %>')
+<% end %>
+
+$('#answer<%= @answer.id %>').remove();

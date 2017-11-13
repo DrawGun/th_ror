@@ -52,6 +52,59 @@ describe AnswersController do
     end
   end
 
+  describe 'POST #mark_as_best' do
+    context 'as authtorized user' do
+      sign_in_user
+      let(:answer) { create(:answer, question: question, user: @user) }
+      let(:options) { {answer_id: answer.id, question_id: question.id} }
+
+      it 'set best answer to question' do
+        post :mark_as_best, params: options
+        expect(question.reload.best_answer).to eq answer
+      end
+
+      it 'set another best answer to question' do
+        answer2 = create(:answer, question: question, user: @user)
+        question.update(best_answer_id: answer2.id)
+        expect(question.reload.best_answer).to eq answer2
+
+        post :mark_as_best, params: options
+        expect(question.reload.best_answer).to eq answer
+      end
+
+      it 'can`t set if not owner of question' do
+        user2 = create(:user)
+        question2 = create(:question, user: user2)
+        answer2 = create(:answer, question: question2, user: user2)
+        options = {answer_id: answer2.id, question_id: question2.id}
+
+        post :mark_as_best, params: options
+        expect(question.reload.best_answer).to eq nil
+      end
+    end
+
+    context 'as non-authtorized user' do
+      let(:user) { create(:user) }
+      let(:answer) { create(:answer, question: question, user: user) }
+      let(:options) { {answer_id: answer.id, question_id: question.id} }
+
+      it 'can`t set best answer' do
+        expect(question.best_answer).to eq nil
+        post :mark_as_best, params: options
+        expect(question.reload.best_answer).to eq nil
+      end
+
+      it 'can`t set another best answer to question' do
+        answer2 = create(:answer, question: question, user: user)
+        question.update(best_answer_id: answer2.id)
+        expect(question.reload.best_answer).to eq answer2
+
+        post :mark_as_best, params: options
+        expect(question.reload.best_answer).to eq answer2
+      end
+    end
+  end
+
   describe 'PATCH #update' do
     context 'as authtorized owner' do
       sign_in_user
@@ -106,12 +159,12 @@ describe AnswersController do
       let!(:answer) { create(:answer, question: question, user: @user) }
 
       it 'deletes answer' do
-        expect { delete :destroy, params: {id: answer, question_id: question} }.to change(Answer, :count).by(-1)
+        expect { delete :destroy, params: {id: answer, question_id: question, format: :js} }.to change(Answer, :count).by(-1)
       end
 
       it 'redirect to index question view' do
-        delete :destroy, params: {id: answer, question_id: question}
-        expect(response).to redirect_to question_path(question)
+        delete :destroy, params: {id: answer, question_id: question, format: :js}
+        expect(response).to render_template :destroy
       end
     end
 
@@ -120,7 +173,7 @@ describe AnswersController do
       let!(:answer) { create(:answer, question: question, user: user) }
 
       it 'can`t deletes answer' do
-        expect { delete :destroy, params: {id: answer, question_id: question} }.to_not change(Answer, :count)
+        expect { delete :destroy, params: {id: answer, question_id: question, format: :js} }.to_not change(Answer, :count)
       end
     end
 
@@ -128,7 +181,7 @@ describe AnswersController do
       let!(:answer) { create(:answer, question: question, user: user) }
 
       it 'can`t deletes answer' do
-        expect { delete :destroy, params: {id: answer, question_id: question} }.to_not change(Answer, :count)
+        expect { delete :destroy, params: {id: answer, question_id: question, format: :js} }.to_not change(Answer, :count)
       end
     end
   end

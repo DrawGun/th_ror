@@ -1,17 +1,22 @@
 - if answer.persisted?
-    li.list-group-item id="answer#{answer.id}"
-      ul.list-inline
-        li.list-inline-item.answer-body
-          = answer.body
+  li.list-group-item id="answer#{answer.id}"
+    ul.list-inline
+      li.list-inline-item.answer-body
+        = answer.body
 
-        - if current_user && current_user.author_of?(answer)
-          li.list-inline-item.edit-answer-form
-            = form_for [@question, answer], remote: true, html: { id: "edit-answer-#{answer.id}", class: 'edit_answer form-inline d-none' } do |f|
-              .form-group
-                = f.text_area :body, class: 'form-control'
-              = f.submit I18n.t('.answers.edit.submit'), class: 'ml-3'
-          li.list-inline-item.float-right.mr-2
-            = link_to I18n.t('.answers.delete_answer_button'), question_answer_path(@question, answer), method: :delete, class: 'btn btn-danger btn-sm'
+      - if current_user && current_user.author_of?(answer)
+        li.list-inline-item.edit-answer-form
+          = form_for [@question, answer], remote: true, html: { id: "edit-answer-#{answer.id}", class: 'edit_answer form-inline d-none' } do |f|
+            .form-group
+              = f.text_area :body, class: 'form-control'
+            = f.submit I18n.t('.answers.edit.submit'), class: 'ml-3'
+        li.list-inline-item.float-right.mr-2
+          = link_to I18n.t('.answers.delete.button'), question_answer_path(@question, answer), method: :delete, remote: true, class: 'btn btn-danger btn-sm'
 
-          li.list-inline-item.float-right.mr-2
-            =<> link_to I18n.t('.answers.edit.button'), '', class: 'btn btn-primary btn-sm edit-answer-link', data: { answer_id: answer.id }
+        li.list-inline-item.float-right.mr-2
+          =<> link_to I18n.t('.answers.edit.button'), '', class: 'btn btn-primary btn-sm edit-answer-link', data: { answer_id: answer.id }
+
+      / - if current_user && current_user.author_of?(@question)
+      /   li.list-inline-item.float-right.mr-2
+      /     =<> link_to I18n.t('.answers.set_best_button'), '', class: 'btn btn-success btn-sm set-best-answer-link', data: { answer_id: answer.id }
+

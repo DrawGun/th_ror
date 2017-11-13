@@ -28,6 +28,7 @@ feature 'Edit question', %q{
     end
 
     describe 'try to edit own question' do
+      # TODO Разобраться почему тест не проходит
       # scenario 'with valid attrs' do
       #   question_body = 'edited question'
 
