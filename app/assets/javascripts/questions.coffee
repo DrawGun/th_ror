@@ -2,7 +2,7 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $ ->
-  $('.edit-question-link').click (e) ->
+  $('body').on 'click', '.edit-question-link', (e) ->
     e.preventDefault()
 
     $(this).hide()

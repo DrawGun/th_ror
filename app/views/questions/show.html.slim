@@ -9,7 +9,7 @@
 
       .card-body
         ul.list-group.list-group-flush.list-unstyled.answers-list
-          = render @question.answers
+          = render partial: 'answers_list'
 
   - if current_user
     #create_answer.card.mt-1
@@ -27,6 +27,6 @@
 
           .form-group
             = f.label :body
-            = f.text_area :body, class: 'form-control'
+            = f.text_area :body, class: 'form-control', id: 'new_answer_body'
 
           = f.submit I18n.t('.answers.new.submit'), class: 'btn btn-primary float-right'

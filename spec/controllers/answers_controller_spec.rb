@@ -56,7 +56,7 @@ describe AnswersController do
     context 'as authtorized user' do
       sign_in_user
       let(:answer) { create(:answer, question: question, user: @user) }
-      let(:options) { {answer_id: answer.id, question_id: question.id} }
+      let(:options) { {answer_id: answer.id, question_id: question.id, format: :js} }
 
       it 'set best answer to question' do
         post :mark_as_best, params: options
@@ -76,7 +76,7 @@ describe AnswersController do
         user2 = create(:user)
         question2 = create(:question, user: user2)
         answer2 = create(:answer, question: question2, user: user2)
-        options = {answer_id: answer2.id, question_id: question2.id}
+        options = {answer_id: answer2.id, question_id: question2.id, format: :js}
 
         post :mark_as_best, params: options
         expect(question.reload.best_answer).to eq nil

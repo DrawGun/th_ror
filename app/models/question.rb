@@ -4,4 +4,8 @@ class Question < ApplicationRecord
   belongs_to :user, inverse_of: :questions
 
   validates :title, :body, presence: true
+
+  def best_answer?(answer)
+    best_answer_id == answer&.id
+  end
 end

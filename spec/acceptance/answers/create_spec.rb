@@ -15,7 +15,7 @@ feature 'Create Question answers', %q{
     visit question_path(question)
 
     within('#create_answer') do
-      fill_in 'Body', with:example_title
+      fill_in 'new_answer_body', with:example_title
       click_on I18n.t('.answers.new.submit')
     end
 

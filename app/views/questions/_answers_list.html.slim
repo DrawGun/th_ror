@@ -1,0 +1,4 @@
+= render @question.best_answer if @question.best_answer.present?
+
+- @question.answers.each do |answer|
+  = render answer if answer != @question.best_answer

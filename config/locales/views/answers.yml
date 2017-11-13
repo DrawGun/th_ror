@@ -20,4 +20,7 @@ en:
     delete:
       button: "Delete answer"
     set_best_button: "Mark as best"
+    set_best:
+      title: "Best"
+      success: "Answer sets as best."
 

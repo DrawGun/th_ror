@@ -1,5 +1,5 @@
 <% if notice || alert %>
-  $("#alerts").append('<%= j render "layouts/notice" %>')
+  $("#alerts").html('<%= j render "layouts/notice" %>')
 <% end %>
 
 <% if @answer.errors.present? %>
@@ -8,5 +8,5 @@
   <% end %>
 <% else %>
   $(".answers-list").append('<%= j render @answer %>')
-  $('#answer_body').val('')
+  $('#new_answer_body').val('')
 <% end %>
