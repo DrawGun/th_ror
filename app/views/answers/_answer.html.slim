@@ -1,9 +1,9 @@
 - if answer.persisted?
-  - answer_class = @question.best_answer?(answer) ? 'best_answer list-group-item answer' : 'list-group-item'
+  - answer_class = answer.best? ? 'best_answer list-group-item answer' : 'list-group-item'
   li id="answer#{answer.id}" class="#{answer_class}"
     ul.list-inline
       li.list-inline-item.answer-body
-        - if @question.best_answer?(answer)
+        - if answer.best?
           span.badge.badge-primary.mr-2
             =<> I18n.t('.answers.set_best.title')
 

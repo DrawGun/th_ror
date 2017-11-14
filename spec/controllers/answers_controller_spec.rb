@@ -60,16 +60,15 @@ describe AnswersController do
 
       it 'set best answer to question' do
         post :mark_as_best, params: options
-        expect(question.reload.best_answer).to eq answer
+        expect(answer.reload.best).to eq true
       end
 
       it 'set another best answer to question' do
-        answer2 = create(:answer, question: question, user: @user)
-        question.update(best_answer_id: answer2.id)
-        expect(question.reload.best_answer).to eq answer2
+        answer2 = create(:answer, question: question, user: @user, best: true)
 
         post :mark_as_best, params: options
-        expect(question.reload.best_answer).to eq answer
+        expect(answer.reload.best).to eq true
+        expect(answer2.reload.best).to eq false
       end
 
       it 'can`t set if not owner of question' do
@@ -79,7 +78,7 @@ describe AnswersController do
         options = {answer_id: answer2.id, question_id: question2.id, format: :js}
 
         post :mark_as_best, params: options
-        expect(question.reload.best_answer).to eq nil
+        expect(answer2.best).to eq false
       end
     end
 
@@ -89,18 +88,16 @@ describe AnswersController do
       let(:options) { {answer_id: answer.id, question_id: question.id} }
 
       it 'can`t set best answer' do
-        expect(question.best_answer).to eq nil
         post :mark_as_best, params: options
-        expect(question.reload.best_answer).to eq nil
+        expect(answer.best).to eq false
       end
 
       it 'can`t set another best answer to question' do
-        answer2 = create(:answer, question: question, user: user)
-        question.update(best_answer_id: answer2.id)
-        expect(question.reload.best_answer).to eq answer2
+        answer2 = create(:answer, question: question, user: user, best: true)
 
         post :mark_as_best, params: options
-        expect(question.reload.best_answer).to eq answer2
+        expect(answer.reload.best).to eq false
+        expect(answer2.reload.best).to eq true
       end
     end
   end
