@@ -28,20 +28,18 @@ feature 'Edit question', %q{
     end
 
     describe 'try to edit own question' do
-      # TODO Разобраться почему тест не проходит
-      # scenario 'with valid attrs' do
-      #   question_body = 'edited question'
+      scenario 'with valid attrs' do
+        question_body = 'edited question'
 
-      #   within "#question" do
-      #     click_on I18n.t('.questions.edit.button')
-      #     fill_in 'question_body', with: question_body
-      #     click_on I18n.t('.questions.edit.submit')
-      #     # save_and_open_page
-      #     expect(page).to_not have_content question.body
-      #     expect(page).to have_content question_body
-      #     expect(page).to_not have_selector 'textarea'
-      #   end
-      # end
+        within "#question-info" do
+          click_on I18n.t('.questions.edit.button')
+          fill_in 'question_body', with: question_body
+          click_on I18n.t('.questions.edit.submit')
+          expect(page).to_not have_content question.body
+          expect(page).to have_content question_body
+          expect(page).to_not have_selector 'textarea'
+        end
+      end
 
       scenario 'with non-valid attrs' do
         within "#question" do
