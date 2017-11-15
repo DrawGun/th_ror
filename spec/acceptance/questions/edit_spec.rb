@@ -28,7 +28,7 @@ feature 'Edit question', %q{
     end
 
     describe 'try to edit own question' do
-      scenario 'with valid attrs' do
+      scenario 'with valid attrs', :aggregate_failures do
         question_body = 'edited question'
 
         within "#question-info" do
