@@ -9,7 +9,7 @@ class Answer < ApplicationRecord
   def set_best
     transaction do
       self.question.answers.best.where.not(id: id).update_all(best: false)
-      self.update(best: true)
+      self.update!(best: true)
     end
   end
 end
