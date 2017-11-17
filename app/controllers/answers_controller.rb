@@ -32,7 +32,7 @@ class AnswersController < ApplicationController
 
   def mark_as_best
     @answer = Answer.find(params[:answer_id])
-    if current_user.author_of?(@answer) && @answer.update(best: true)
+    if current_user.author_of?(@answer) && @answer.set_best
       flash[:notice] = I18n.t('.answers.confirmations.mark_as_best')
     else
       flash[:alert] = I18n.t('.answers.failure.mark_as_best')
