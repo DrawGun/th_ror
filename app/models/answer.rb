@@ -4,13 +4,13 @@ class Answer < ApplicationRecord
 
   validates :body, presence: true
 
-  before_save :reset_best, if: 'best_changed? && best'
+  after_commit :reset_best, if: -> (answer) { answer.previous_changes.include?(:best) }
 
   scope :best, -> { where(best: true) }
 
   private
 
   def reset_best
-    question.answers.best.update_all(best: false)
+    question.answers.best.where.not(id: id).update_all(best: false)
   end
 end
