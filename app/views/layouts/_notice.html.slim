@@ -1,9 +1,15 @@
-- if notice.present? || alert.present?
-.alerts
-  - if notice.present?
-    .alert.alert-info role="alert"
-      = notice
+- if notice.present?
+  .alert.alert-info role="alert"
+    = notice
+    button.close type="button" data-dismiss="alert" aria-label="Close"
+      span aria-hidden="true"
+        | &times;
 
-  - if alert.present?
-    .alert.alert-danger role="alert"
-      = alert
+- if alert.present?
+  .alert.alert-danger role="alert"
+    = alert
+    button.close type="button" data-dismiss="alert" aria-label="Close"
+      span aria-hidden="true"
+        | &times;
+
+- flash.clear

@@ -9,7 +9,9 @@ html
 
   body
     = render 'layouts/header'
-    = render 'layouts/notice'
+
+    #alerts.alerts
+      = render 'layouts/notice'
 
     .container
       = yield

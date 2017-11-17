@@ -1,2 +1,12 @@
-$(".answers-list").append('<%= j render @answer %>')
-$('#answer_body').val('')
+<% if notice || alert %>
+  $("#alerts").html('<%= j render "layouts/notice" %>')
+<% end %>
+
+<% if @answer.errors.present? %>
+  <% @answer.errors.full_messages.each do |message| %>
+    $(".answer-errors").append('<p><%= j message %></p>')
+  <% end %>
+<% else %>
+  $(".answers-list").append('<%= j render @answer %>')
+  $('#new_answer_body').val('')
+<% end %>

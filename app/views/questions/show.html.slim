@@ -1,16 +1,6 @@
-.question.mt-1
-  .card
-    h2.card-header
-      = @question.title
-    .card-body
-
-      .question-body.card-text
-        = @question.body
-
-    .card-footer.text-muted
-      - if current_user && current_user.author_of?(@question)
-        .float-right
-          = link_to I18n.t('.questions.delete_question_button'),  question_path(@question), method: :delete, class: 'btn btn-danger'
+#question.question.mt-1
+  #question-info
+    = render @question
 
   - if @question.answers.present?
     .answers.card.mt-1
@@ -19,7 +9,7 @@
 
       .card-body
         ul.list-group.list-group-flush.list-unstyled.answers-list
-          = render @question.answers
+          = render partial: 'answers_list'
 
   - if current_user
     #create_answer.card.mt-1
@@ -29,13 +19,14 @@
       .card-body
 
         = form_for [@question, @answer], remote: true do |f|
-          - if @answer.errors.any?
-            - @answer.errors.full_messages.each do |msg|
-              p
-                = msg
+          .answer-errors
+            - if @answer.errors.any?
+              - @answer.errors.full_messages.each do |msg|
+                p
+                  = msg
 
           .form-group
             = f.label :body
-            = f.text_area :body, class: 'form-control'
+            = f.text_area :body, class: 'form-control', id: 'new_answer_body'
 
           = f.submit I18n.t('.answers.new.submit'), class: 'btn btn-primary float-right'

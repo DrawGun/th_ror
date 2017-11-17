@@ -1,7 +1,7 @@
 class AnswersController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
-  before_action :set_question, only: [:create, :destroy]
-  before_action :set_answer, only: :destroy
+  before_action :set_question, only: [:create, :destroy, :update, :mark_as_best]
+  before_action :set_answer, only: [:destroy, :update]
 
   def create
     @answer = @question.answers.new(answer_params.merge(user: current_user))
@@ -9,8 +9,15 @@ class AnswersController < ApplicationController
     if @answer.save
       flash[:notice] = I18n.t('.answers.confirmations.created')
     else
-      flash[:notice] = I18n.t('.answers.failure.created')
-      render 'questions/show'
+      flash[:alert] = I18n.t('.answers.failure.created')
+    end
+  end
+
+  def update
+    if current_user.author_of?(@answer) && @answer.update(answer_params)
+      flash[:notice] = I18n.t('.answers.confirmations.updated')
+    else
+      flash[:alert] = I18n.t('.answers.failure.updated')
     end
   end
 
@@ -19,10 +26,17 @@ class AnswersController < ApplicationController
       @answer.destroy
       flash[:notice] = I18n.t('.answers.confirmations.deleted')
     else
-      flash[:notice] = I18n.t('.answers.failure.deleted')
+      flash[:alert] = I18n.t('.answers.failure.deleted')
     end
+  end
 
-    redirect_to question_path(@question)
+  def mark_as_best
+    @answer = Answer.find(params[:answer_id])
+    if current_user.author_of?(@answer) && @answer.set_best
+      flash[:notice] = I18n.t('.answers.confirmations.mark_as_best')
+    else
+      flash[:alert] = I18n.t('.answers.failure.mark_as_best')
+    end
   end
 
   private

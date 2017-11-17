@@ -38,7 +38,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
   gem 'factory_girl_rails'
-
+  gem 'capybara-webkit'
   gem 'pry-byebug'
   gem 'pry-rails'
 end
@@ -57,7 +57,6 @@ group :test do
   gem 'rails-controller-testing'
   gem 'capybara'
   gem 'launchy'
-  gem 'selenium-webdriver'
   gem 'database_cleaner'
   gem 'geckodriver-helper'
 end

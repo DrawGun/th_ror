@@ -1,0 +1,18 @@
+<% if notice || alert %>
+  $("#alerts").html('<%= j render "layouts/notice" %>')
+<% end %>
+
+<% if @answer.errors.present? %>
+  <% @answer.errors.full_messages.each do |message| %>
+    $(".answer-errors").append('<p><%= j message %></p>')
+  <% end %>
+<% else %>
+  $('#answer<%= @answer.id %>').replaceWith('<%= j render @answer %>');
+  $('.edit-answer-link').click(function(e) {
+      e.preventDefault();
+      $(this).hide();
+      answer_id = $(this).data('answerId');
+      $('form#edit-answer-' + answer_id).removeClass('d-none');
+      $('#answer' + answer_id + ' .answer-body').addClass('d-none');
+  });
+<% end %>

@@ -1,0 +1,5 @@
+<% if notice || alert %>
+  $("#alerts").html('<%= j render "layouts/notice" %>')
+<% end %>
+
+$(".answers-list").html('<%= j render "questions/answers_list" %>')

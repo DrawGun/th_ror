@@ -1,8 +1,8 @@
-require 'rails_helper'
+require_relative '../acceptance_helper'
 
 feature 'Create Question answers', %q{
   In order to get answer from community
-  As an authenticated user
+  As site user
   I want to be able to create answer for question
 } do
 
@@ -15,12 +15,12 @@ feature 'Create Question answers', %q{
     visit question_path(question)
 
     within('#create_answer') do
-      fill_in 'Body', with:example_title
+      fill_in 'new_answer_body', with:example_title
       click_on I18n.t('.answers.new.submit')
     end
 
     expect(page).to have_content example_title
-    # expect(page).to have_content I18n.t('.answers.confirmations.created')
+    expect(page).to have_content I18n.t('.answers.confirmations.created')
   end
 
   scenario 'Non-authenticated can not create answer for question' do
@@ -28,7 +28,7 @@ feature 'Create Question answers', %q{
     expect(page).to_not have_content I18n.t('.answers.new.submit')
   end
 
-  scenario 'User can see validation errors, if answer invalid' do
+  scenario 'User can see validation errors, if answer invalid', js: true  do
     sign_in(user)
     visit question_path(question)
     within('#create_answer') do

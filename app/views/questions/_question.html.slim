@@ -1,0 +1,19 @@
+.card
+  h2.card-header
+    = @question.title
+  .card-body
+
+    .question-body.card-text
+      = @question.body
+
+    .edit-question
+      = form_for @question, remote: true, html: { id: "edit-question", class: 'edit_question form-inline d-none' } do |f|
+        .form-group
+          = f.text_area :body, class: 'form-control'
+        = f.submit I18n.t('.questions.edit.submit'), class: 'ml-3'
+
+  .card-footer.text-muted
+    - if current_user && current_user.author_of?(@question)
+      .float-right
+        = link_to I18n.t('.questions.edit.button'), '', class: 'btn btn-primary edit-question-link mr-2', data: { question_id: @question.id }
+        = link_to I18n.t('.questions.delete.button'),  question_path(@question), method: :delete, class: 'btn btn-danger'

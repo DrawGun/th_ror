@@ -30,10 +30,10 @@ class QuestionsController < ApplicationController
   end
 
   def update
-    if @question.update(question_params)
-      redirect_to @question
+    if current_user.author_of?(@question) && @question.update(question_params)
+      flash[:notice] = I18n.t('.questions.confirmations.updated')
     else
-      render :edit
+      flash[:alert] = I18n.t('.questions.failure.updated')
     end
   end
 
@@ -42,7 +42,7 @@ class QuestionsController < ApplicationController
       @question.destroy
       flash[:notice] = I18n.t('.questions.confirmations.deleted')
     else
-      flash[:notice] = I18n.t('.questions.failure.deleted')
+      flash[:alert] = I18n.t('.questions.failure.deleted')
     end
 
     redirect_to questions_path

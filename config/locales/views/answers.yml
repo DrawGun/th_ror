@@ -2,12 +2,25 @@ en:
   answers:
     confirmations:
       created: "Your answer successfully created."
+      updated: "Your answer successfully updated."
       deleted: "Your answer successfully deleted."
+      mark_as_best: "Your answer successfully mark_as_best answer."
     failure:
       created: "Your answer faild created. Try again."
+      updated: "Your answer faild updated. Try again."
       deleted: "Answer deleted error."
+      mark_as_best: "Your answer faild mark_as_best answer."
     title: "Answers"
-    delete_answer_button: "Delete answer"
     new:
       title: "Create answer"
       submit: "Create"
+    edit:
+      button: "Edit"
+      submit: "Edit answer"
+    delete:
+      button: "Delete answer"
+    set_best_button: "Mark as best"
+    set_best:
+      title: "Best"
+      success: "Answer sets as best."
+
