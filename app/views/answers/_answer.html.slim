@@ -9,6 +9,15 @@
 
         = answer.body
 
+        - if answer.attachments.any?
+          h6.mt-4
+            = I18n.t('.questions.attachments')
+          hr
+          ul.list-unstyled
+            - answer.attachments.each do |attachment|
+              li
+                = link_to attachment.file.identifier, attachment.file.url, target: '_blank'
+
       - if current_user && current_user.author_of?(answer)
         li.list-inline-item.edit-answer-form
           = form_for [@question, answer], remote: true, html: { id: "edit-answer-#{answer.id}", class: 'edit_answer form-inline d-none' } do |f|

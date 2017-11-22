@@ -12,6 +12,15 @@
           = f.text_area :body, class: 'form-control'
         = f.submit I18n.t('.questions.edit.submit'), class: 'ml-3'
 
+    h6.mt-4
+      = I18n.t('.questions.attachments')
+
+    hr
+    ul.list-unstyled
+      - @question.attachments.each do |attachment|
+        li
+          = link_to attachment.file.identifier, attachment.file.url, target: '_blank'
+
   .card-footer.text-muted
     - if current_user && current_user.author_of?(@question)
       .float-right

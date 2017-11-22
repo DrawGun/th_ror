@@ -12,4 +12,12 @@
     = f.label :body
     = f.text_area :body, class: 'form-control'
 
+  h5
+    = I18n.t('.questions.attachments')
+  hr
+  = f.fields_for :attachments do |a|
+    .form-group
+      = a.label :file
+      = a.file_field :file
+
   = f.submit I18n.t('.questions.new.submit')

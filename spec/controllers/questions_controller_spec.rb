@@ -28,6 +28,10 @@ describe QuestionsController, :aggregate_failures do
     it 'renders show view' do
       expect(response).to render_template :show
     end
+
+    it 'assigns new answer for question' do
+      expect(assigns(:answer)).to be_a_new(Answer)
+    end
   end
 
   describe 'GET #new' do
@@ -37,6 +41,10 @@ describe QuestionsController, :aggregate_failures do
 
     it 'assigns anew Question to @question' do
       expect(assigns(:question)).to be_a_new(Question)
+    end
+
+    it 'builds new attachment for question' do
+      expect(assigns(:question).attachments.first).to be_a_new(Attachment)
     end
 
     it 'renders new view' do

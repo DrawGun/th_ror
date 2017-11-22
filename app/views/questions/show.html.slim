@@ -29,4 +29,12 @@
             = f.label :body
             = f.text_area :body, class: 'form-control', id: 'new_answer_body'
 
+          h5
+            = I18n.t('.answers.attachments')
+          hr
+          = f.fields_for :attachments do |a|
+            .form-group
+              = a.label :file
+              = a.file_field :file
+
           = f.submit I18n.t('.answers.new.submit'), class: 'btn btn-primary float-right'

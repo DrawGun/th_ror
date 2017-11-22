@@ -1,5 +1,6 @@
 en:
   questions:
+    attachments: Attachments
     confirmations:
       created: "Your question successfully created."
       updated: "Your question successfully updated."
@@ -16,3 +17,4 @@ en:
       button: "Edit"
     delete:
       button: "Delete question"
+
