@@ -17,7 +17,8 @@ feature 'Add files to answer', %q{
   scenario 'User adds file to answer', js: true do
     within('#create_answer') do
       fill_in 'new_answer_body', with: 'My answer'
-      attach_file 'File', "#{Rails.root}/spec/spec_helper.rb"
+      click_on 'Add Attachment'
+      find('input[type="file"]').set(Rails.root.join('spec', 'spec_helper.rb'))
       click_on I18n.t('.answers.new.submit')
     end
 

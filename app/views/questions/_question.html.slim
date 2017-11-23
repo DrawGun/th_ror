@@ -6,20 +6,30 @@
     .question-body.card-text
       = @question.body
 
+      h6.mt-4
+        = I18n.t('.attachments.title')
+
+      hr
+      ul.list-unstyled
+        - @question.attachments.each do |attachment|
+          li
+            = link_to attachment.file.identifier, attachment.file.url, target: '_blank'
+
     .edit-question
-      = form_for @question, remote: true, html: { id: "edit-question", class: 'edit_question form-inline d-none' } do |f|
+      = form_for @question, remote: true, html: { id: "edit-question", class: 'edit_question d-none' } do |f|
         .form-group
           = f.text_area :body, class: 'form-control'
+        h5
+          = I18n.t('.attachments.title')
+        hr
+        = f.fields_for :attachments do |attachment|
+          = render 'attachment_fields', f: attachment
+
+        .links
+          = link_to_add_association I18n.t('.attachments.add'), f, :attachments
         = f.submit I18n.t('.questions.edit.submit'), class: 'ml-3'
 
-    h6.mt-4
-      = I18n.t('.questions.attachments')
 
-    hr
-    ul.list-unstyled
-      - @question.attachments.each do |attachment|
-        li
-          = link_to attachment.file.identifier, attachment.file.url, target: '_blank'
 
   .card-footer.text-muted
     - if current_user && current_user.author_of?(@question)

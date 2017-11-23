@@ -13,11 +13,12 @@
     = f.text_area :body, class: 'form-control'
 
   h5
-    = I18n.t('.questions.attachments')
+    = I18n.t('.attachments.title')
   hr
-  = f.fields_for :attachments do |a|
-    .form-group
-      = a.label :file
-      = a.file_field :file
+  = f.fields_for :attachments do |attachment|
+    = render 'attachment_fields', f: attachment
+
+  .links
+    = link_to_add_association I18n.t('.attachments.add'), f, :attachments
 
   = f.submit I18n.t('.questions.new.submit')

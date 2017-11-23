@@ -5,7 +5,7 @@ class Answer < ApplicationRecord
 
   validates :body, presence: true
 
-  accepts_nested_attributes_for :attachments
+  accepts_nested_attributes_for :attachments, allow_destroy: true
 
   scope :best, -> { where(best: true) }
 

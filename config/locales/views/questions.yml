@@ -1,6 +1,9 @@
 en:
   questions:
-    attachments: Attachments
+    attachments:
+      title: Attachments
+      add: Add Attachment
+      remove: Remove Attachment
     confirmations:
       created: "Your question successfully created."
       updated: "Your question successfully updated."
