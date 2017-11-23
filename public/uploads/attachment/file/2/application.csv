@@ -1,0 +1,762 @@
+key,en,ru,uk,pl,th
+area.unit,m2,м2,м2,m2,ตรม.
+area.million,km2,км2,км2,km2,ตร.กม.
+people.one,person,человек,людина,człowiek,
+people.other,people,человека,людини,ludzie,คน
+date_placeholder.mask,dd/mm/yyyy,dd.mm.yyyy,dd.mm.yyyy,dd/mm/yyyy,ดด/วว/ปปปป
+date_placeholder.local,dd/mm/yyyy,дд.мм.гггг,дд.мм.рррр,dd/mm/rrrr,ดด/วว/ปปปป
+timeago.inPast,expired,время вышло,час минув,czas upłynął,หมดอายุ
+timeago.prefixAgo,"","","","",""
+timeago.prefixFromNow,"","","","",""
+timeago.suffixAgo,"","","","",""
+timeago.suffixFromNow,"","","","",""
+timeago.seconds,less than a minute,меньше минуты,менше хвилини,mniej niż minutę,ไม่ถึงนาที
+timeago.minute,about a minute,минута,хвилина,minutę,หนึ่งนาที
+timeago.minutes,%d minutes,"%d минута,%d минуты,%d минут","%d хвилина,%d хвилини,%d хвилин","%d minuty,%d minut,%d minut",%d นาที
+timeago.hour,about an hour,час,година,godzinę,หนึ่งชั่วโมง
+timeago.hours,about %d hours,"%d час,%d часа,%d часов","%d година,%d години,%d годин","%d godziny,%d godzin,%d godzin",%d ชั่วโมง
+timeago.day,a day,день,день,dzień,หนึ่งวัน
+timeago.days,%d days,"%d день,%d дня,%d дней","%d день,%d дні,%d днів","%d dni,%d dni,%d dni",%d วัน
+error_handlers.payment_error,"Sorry, there was an error while trying to process your payment","К сожалению, оплата не удалась.",Оплата не вдалася,Płatność nie powiodła się,ขออภัยด้วยค่ะ การชำระเงินของท่านล้มเหลว หรือเกิดข้อผิดพลาดขึ้นในขั้นตอนชำระเงิน
+error_handlers.ticketing_error,"Sorry, we were not able to issue you a ticket. Please expect the funds paid to be refunded to your card within 5 days",Не удалось выписать билет. Денежные средства будут возвращены на карту в течении 5 дней,Не вдалось виписати квиток. Кошти будуть повернуті на карту протягом 5 днів,Operacja wypisania biletu nie powiodła się. Kwota zostanie zwrócona na kartę w ciągu 5 dni,ขออภัยในความไม่สะดวกค่ะ ระบบไม่สามารถออกตั๋วให้ท่านได้ ระบบจะคืนเงินกลับไปที่บัตรของท่านภายใน 5 วัน
+error_handlers.auth_code_rate_limit_error,Too many auth code requests,Вы слишком много раз запросили код,У вас забагато спроб отримати код,Zbyt wiele razy poprosiłeś o kod,
+sms.with_billing_code,%{code} ticket payment code %{direction} at %{domain}. You need to pay till %{pay_till},%{code} - код оплаты билетов %{direction} на %{domain}. Необходимо оплатить до %{pay_till},%{code} - код оплати квитків %{direction} на %{domain}. Необхідно сплатити до %{pay_till},%{code} - kod płatności za bilety %{direction} na %{domain}. Należy dokonać płatności do dnia %{pay_till},%{code} รหัสยืนยันการชำระตั๋ว%{direction} ที่ %{domain} กรุณาชำระเงินก่อน %{pay_till}
+sms.auth_code,%{code} - verification code for Busfor,%{code} - код для Busfor,%{code} - код для Busfor,%{code} - kod dla Busfor,%{code} - รหัสยืนยันสำหรับ Busfor
+sms.success_sell,Tickets for order %{order_ref} have been issued. You can download your tickets at %{domain} in My tickets section. Have a nice trip!,Билеты для заказа %{order_ref} выписаны. Вы можете скачать их на %{domain} в разделе Мои билеты. Приятной поездки!,Квитки для замовлення %{order_ref} виписані. Ви можете завантажити їх на %{domain} в розділі Мої квитки. Вдалої поїздки!,Bilety na zamówienie %{order_ref} są gotowe. Pobierz je na %{domain} w zakładce Moje bilety. Życzymy przyjemnej podróży!,รายการจองตั๋ว %{order_ref} ได้รับการยืนยันแล้ว คุณสามารถดาวน์โหลดตั๋วได้ที่ %{domain} ในหน้าตั๋วของฉัน ขอบคุณที่ใช้บริการกับทิกเก็ตส์ค่ะ
+etc.in,in,в,о,w ciągu,ใน
+etc.company_name,Busfor,Busfor,,,
+etc.team_name,%{company_name} team,Команда %{company_name},Команда %{company_name},%{company_name} zespół,%{company_name} team
+etc.back,Go back,Вернуться назад,Назад,Wstecz,กลับหน้าเดิม
+etc.phone_input_country,gb,ru,ua,pl,
+etc.read_more,Read more,Подробнее,Детальніше,Więcej szczegółów,อ่านเพิ่มเติม
+etc.more,More,Еще,Ще,Kolejne,เพิ่มเติม
+etc.hrs,hrs,ч.,год.,godz.,ชม.
+etc.mts,min,м.,хв.,min.,นาที
+etc.today,today,сегодня,сьогодні,dziś,วันนี้
+etc.tomorrow,tomorrow,завтра,завтра,jutro,พรุ่งนี้
+etc.from,from,от,від,z,จาก
+etc.passengers.one,%{count} passenger,%{count} пассажир,%{count} пасажир,%{count} pasażer,ผู้โดยสาร %{count} ท่าน
+etc.passengers.few,%{count} passengers,%{count} пассажира,%{count} пасажира,%{count} pasażerów,ผู้โดยสาร %{count} ท่าน
+etc.passengers.many,%{count} passengers,%{count} пассажиров,%{count} пасажирів,%{count} pasażerów,ผู้โดยสาร %{count} ท่าน
+etc.passengers.other,%{count} passengers,%{count} пассажира,%{count} пасажира,%{count} pasażerów,ผู้โดยสาร %{count} ท่าน
+etc.contact_us,Call us:,Звоните нам:,Телефонуйте нам:,Zadzwoń do nas:,โทร :
+etc.not_found,not found,не найден,не знайдено,nie odnależono,ไม่พบการค้นหา
+etc.hide,hide,скрыть,приховати,ukryć,ซ่อน
+etc.show,show,показать,показати,rozwiń,แสดง
+etc.expired,time is over,время вышло,час вичерпано,czas upłynął,หมดเวลาแล้ว
+etc.roll.down,expand,развернуть,розгорнути,rozwinąć,เลื่อนลง
+etc.roll.up,collapse,свернуть,згорнути,zwinąć,เลื่อนขึ้น
+etc.tickets_count.one,%{count} ticket,%{count} билет,%{count} квиток,%{count} bilet,ตั๋ว %{count} ใบ
+etc.tickets_count.few,%{count} tickets,%{count} билета,%{count} квитка,%{count} biletu,ตั๋ว %{count} ใบ
+etc.tickets_count.many,%{count} tickets,%{count} билетов,%{count} квитків,%{count} biletów,ตั๋ว %{count} ใบ
+etc.tickets_count.other,%{count} tickets,%{count} билета,%{count} квитка,%{count} biletu,ตั๋ว %{count} ใบ
+etc.places.one,%{count} place,%{count} место,%{count} місце,,
+etc.places.other,%{count} places,%{count} места,%{count} місця,,
+etc.document_type.passport,passport,паспорт,паспорт,paszport,หนังสือเดินทาง
+etc.document_type.military_card,military ID,военный билет,військовий квиток,książeczka wojskowa,บัตรประจำตัวทหาร
+etc.document_type.foreign_document,ID card,иностранный документ,іноземний документ,dowód osobisty,เอกสารต่างประเทศ
+etc.document_type.foreign_passport,international passport,заграничный паспорт,закордонний паспорт,paszport zagraniczny,หนังสือเดินทางสากล
+etc.document_type.seaman_passport,seaman's book,паспорт моряка,паспорт моряка,dokument tożsamości marynarza,หนังสือคนประจำเรือ
+etc.document_type.birth_certificate,birth certificate,свидетельство о рождении,свідоцтво про народження,świadectwo urodzenia,สูติบัตร
+etc.gender.male,male,мужской,чоловічий,męska,ชาย
+etc.gender.female,female,женский,жіночий,żeńska,หญิง
+etc.phone_number,Phone number,Номер телефона,Номер телефона,Numer telefonu,เบอร์โทรศัพท์มือถือ
+etc.anchors.buy,purchase,покупка,покупка,zakup,ซื้อ
+etc.anchors.book,booking,бронирование,бронювання,rezerwacja,จอง
+etc.anchors.return,money back,возврат,повернення,zwrot,คืนเงิน
+etc.general_error,"An error ocurred, please try again later","Произошла ошибка, попробуйте позже","Сталась помилка, спробуйте пізніше","Wystąpił błąd, prosimy spróbować później",เกิดข้อผิดพลาดขึ้น กรุณาลองใหม่อีกครั้ง
+etc.bus,Bus,Автобус,Автобус,Autobus,รถโดยสาร
+etc.close,close,Закрыть,закрити,Zamknij,ใกล้
+etc.send,Send,Отправить,Надіслати,Wyślij wiadomość,
+etc.carrier,carrier ,перевозчик ,перевізник ,przewoźnik ,พาหะ 
+etc.direction_description,Bus ticket %{direction} from %{price_from}.,Билет на автобус %{direction} от %{price_from}.,Квиток на автобус %{direction} від %{price_from}.,Bilet autobusowy %{direction} od %{price_from}.,
+disable_with.search,Searching for seats....,Ищем места…,Шукаємо місця...,Trwa wyszukiwanie miejsc...,กำลังค้นห้าที่นั่ง...
+disable_with.seats,Booking...,Резервируем…,Резервуємо...,Trwa rezerwacja...,กำลังทำการจอง...
+disable_with.preorder,Confirming tickets...,Оформляем билеты…,Оформлюємо квитки...,Trwa wypisywanie biletów...,กำลังยืนยันคำสั่งซื้อ....
+disable_with.send_sms,Sending code...,Отправляем код…,Надсилаємо код...,Trwa wysyłanie kodu...,ส่งรหัสยืนยันคำสั่งซื้อ....
+disable_with.pay_with_card,Please wait...,Подождите…,Зачекайте...,Proszimy czekać...,กรุณารอสักครู่....
+disable_with.sending,Sending data…,Отправляем данные…,Відпрявляємо дані…,Dane przesyłki…,กำลังส่งข้อมูล...
+disable_with.wait,Wait…,Подождите…,Зачекайте…,Czekać…,รอ...
+nav.orders,My tickets,Мои билеты,Мої квитки,Moje bilety,ตั๋วของฉัน
+nav.logged_orders,My tickets [%{phone}],Мои билеты [%{phone}],Мої квитки [%{phone}],Moje bilety [%{phone}],ตั๋วของฉัน [%{phone}]
+nav.exit,Log out,Выход,Вихід,Wyjść,ออกจากระบบ
+nav.description,BUSFOR,BUSFOR,BUSFOR,"BUSFOR - Rozkład jazdy PKS autobusów, tanie bilety, przewozy autokarowe online",Tickets - plan your next trip!
+layouts.navbar.mail,help@busfor.com,,,help@busfor.pl,
+layouts.navbar.support,Customer Service,Служба поддержки,Служба підтримки,Obsługa klienta,ฝ่ายบริการลูกค้า
+layouts.navbar.schedule.text_1,We are working:,,,Pracujemy w godzinach:,
+layouts.navbar.schedule.text_2,Monday - Friday,,,Poniedziałek - Piątek,
+layouts.navbar.schedule.text_3,08:00 - 20:00,,,08:00 - 20:00,
+layouts.footer.company,About us,О компании,Про компанію,O nas,เกี่ยวกับเรา
+layouts.footer.users,For customers,Пользователям,Користувачам,Użytkownicy,สำหรับลูกค้า
+layouts.footer.partners,For partners,Партнерам,Партнерам,Partnerzy,สำหรับผู้ประกอบการ
+layouts.footer.sales_points,Ticket booths,Кассы,Каси,Kasy,โต๊ะเก็บเงิน
+layouts.footer.agreement,Terms and conditions,Договор оферты,Договір оферти,Regulamin,ข้อตกลงการบริการ
+layouts.footer.policy,Policy,Политика конфиденциальности,Персональні дані,Polityka,นโยบาย
+layouts.footer.guide,Ticketing and boarding,,,,คู่มือ
+layouts.footer.contacts,Contacts,Контакты,Контакти,Kontakt,ติดต่อเรา
+layouts.footer.about,About us,О нас,Про нас,O nas,เกี่ยวกับเรา
+layouts.footer.faq,FAQ,Вопросы и ответы,Питання і відповіді,Pomoc,
+layouts.footer.blog,Blog,Блог,,,
+layouts.footer.how_to_buy,How to purchase,Как купить,Як придбати,Jak kupić,วิธีซื้อ
+layouts.footer.how_to_book,How to book,Как забронировать,Як забронювати,Jak zarezerwować,วิธีจอง
+layouts.footer.how_to_return,How to return,Как вернуть,Як повернути,Jak zwrócić,วิธีคืนตั๋ว 
+layouts.footer.carriers,For carriers,Перевозчикам,Перевізникам,Przewoźnicy,ผู้ให้บริการเดินรถ
+layouts.footer.agents,For agents,Агентам,Агентам,Agencje,ตัวแทนจำหน่าย
+layouts.footer.types_of_buses,Types of buses,,,,ประเภทรถโดยสาร
+layouts.footer.affiliates,Affiliate program,Партнерская программа,Партнерська програма,Program partnerski,โปรแกรมพันธมิตร
+layouts.footer.copyright,"© 2015-%{current_year}, LLC ""Busfor"". All rights reserved. ""Busfor"" - Online ticketing service.","© 2015-%{current_year}, OOO «Busfor». Все права защищены. «Busfor» — Онлайн сервис продажи билетов",,"© 2015-%{current_year}, «Busfor.pl» sp. z o.o. Wszystkie prawa są zastrzeżone. «Busfor.pl» — Serwis sprzedaży biletów autokarowych on-line.","© 2015-%{current_year}, LLC ""Busfor"". สงวนลิขสิทธิ์ ""Busfor"" - บริการจองตั๋วออนไลน์"
+layouts.footer.copyright_registration,"© 2015-%{current_year}, LLC ""Busfor"". All rights reserved. ""Busfor"" - Online ticketing service. Company is registered in Poland.",,,"© 2015-%{current_year}, «Busfor.pl» sp. z o.o. Wszystkie prawa są zastrzeżone. «Busfor.pl» — Serwis sprzedaży biletów autokarowych on-line. Spółka jest zarejestrowana w Polsce",
+layouts.footer.copyright_company,"© %{current_year}, LLC ""Busfor"".","© %{current_year}, OOO «Busfor».",,"© %{current_year}, «Busfor.pl» sp. z o.o.",
+layouts.footer.copyright_description,"All rights reserved. ""Busfor"" - Online ticketing service",Все права защищены. «Busfor» — Онлайн сервис продажи билетов,,Wszystkie prawa są zastrzeżone. «Busfor.pl» — Serwis sprzedaży biletów autokarowych on-line,
+layouts.footer.coockie.text_html,"Our websites are using cookies. <a href=""#"" data-toggle=""modal"" data-target=""#checkCoockie"">Learn more</a> about the aim of using them and the change of settings in the browser. Using the website, you agree to the use cookie, according to current the current settings of the browser.",,,"Nasze strony używają cookies. <a href=""#"" data-toggle=""modal"" data-target=""#checkCoockie"">Dowiedz się więcej</a> o celu ich używania i zmianie ustawień w przeglądarce. Korzystając ze strony, wyrażasz zgodę na używanie cookie, zgodnie z aktualnymi ustawieniami przeglądarki.",
+layouts.application.generic_title,Online Bus Ticket Booking at Busfor,,,,
+layouts.application.generic_description_html,Search and book bus tickets online to anywhere in Europe and Asia. No extra charges. Cheap Bus Reservation Service – Busfor,,,,
+application.subscription.free_tips,Want to receive free tips about traveling in Europe directly to your email? Want to hear from us about discounts and promotions?,Мы предлагаем бесплатные советы о выгодных путешествиях. Хотите их получать?,Ми пропонуємо безкоштовні поради про вигідні подорожі по Україні і за кордон. Хочете їх отримувати?,Oferujemy bezpłatne porady w zakresie korzystnych podróży zagranicznych i po Polsce. Chcesz je otrzymywać?,คุณกำลังวางแผนการเดินทางอยู่หรือเปล่า? เรามีบริการให้คำปรึกษาเกี่ยวกับการท่องเที่ยวทั้งในประเทศไทยและต่างประเทศฟรี !
+application.subscription.subscribe_to_our_newsletter,"Subscribe to our newsletter and receive interesting news, offers, discounts and promotions directly to your email","Подпишитесь на рассылку, чтобы первым получать интересные предложения, новости и скидки от BUSFOR","Підпишіться на розсилку, щоб першим отримувати цікаві пропозиції, новини та знижки від BUSFOR","Zapisz się do naszego newslettera, żeby jako pierwszy otrzymywać oferty, nowości i rabaty od BUSFOR",สมัครสมาชิกรับข่าวสารจากเรา คุณจะได้รับข้อเสนอสุดพิเศษ ข่าวสาร และส่วนลดจาก BUSFOR เป็นคนแรก
+application.subscription.subscribe,Subscribe,Подписаться,Підписатись,Zapisz się,สมัครสมาชิก
+application.subscription.confirm_your_email,To confirm your email please click the confirmation link sent to your email.,"Для подтверждения подписки перейдите по ссылке, отправленной на email","Для підтвердження вашої електронної адреси перейдіть, будь ласка, за посиланням, відправленим на email","W celu potwierdzenia skrzynki pocztowej kliknij na link, wysłany na email",เพื่อยืนยันอีเมลของคุณ คลิ๊กลิ้งค์ยืนยันที่ส่งไปยังอินบ็อกซ์ของคุณ
+application.subscription.subscribers,subscribers,подписчиков,підписники,subskrybentów,สมาชิก
+application.subscription.you_are_subscribed,You’ve been successfully subscribed to Busfor’s newsletter,Вы успешно подписаны на рассылку Busfor,Ви успішно підписані на розсилку Busfor,Pomyślnie zapisałeś się na newsletter Busfor,การลงทะเบียนเพื่อรับจดหมายข่าวสารจาก BUSFOR สำเร็จแล้วค่ะ
+application.subscription.wrong_token,Wrong token,Неверный токен,Невірний токен,Nieprawidłowy znacznik,เกิดข้อผิดพลาดขึ้น
+application.weather.weather_for_a_week,Weather forecast for a week:,Погода на неделю:,Погода на тиждень:,Pogoda na tydzień:,พยากรณ์อากาศประจำสัปดาห์:
+application.weather.today_is,Today,Сегодня,Сьогодні,Dziś,วันนี้
+application.weather.average_deg,Average temperature:,Средняя температура:,Середня температура:,Średnia temperatura:,อุณหภูมิเฉลี่ย:
+application.weather.clouds,Сhance of precipitation:,Вероятность осадков:,Ймовірність опадів:,Prawdopodobieństwo opadów:,โอกาสเกิดฝน:
+application.weather.humidity,Humidity:,Влажность:,Вологість:,Wilgotność:,ความชื้นสัมพัทธ์:
+application.weather.wind,Wind:,Ветер:,Вітер:,Wiatr:,กระแสลม:
+application.weather.wind_speed,m/s,м/с,м/с,m/s,เมตร/วินาที
+application.search.search_validation_msg.from,Select a city of departure,Выберите город отправления,Виберіть місто відправлення,Wybierz miasto wyjazdu,เลือกเมืองต้นทาง
+application.search.search_validation_msg.to,Select a city of arrival,Выберите город прибытия,Виберіть місто прибуття,Wybierz miasto przyjazdu,เลือกเมืองปลายทาง
+application.search.search_validation_msg.on,Select a date,Выберите дату,Виберіть дату,Wybierz datę,เลือกวันเดินทาง
+blog.index.subtitle,Blog about travel and tourism,Блог о путешествиях и туризме,Блог про подорожі та туризм,Blog o podróżach i turystyce,
+blog.index.title,Blog about travel and tourism,Блог о путешествиях и туризме,Блог про подорожі та туризм,Blog o podróżach i turystyce,
+blog.index.description,Blog about travel and tourism,Блог о путешествиях и туризме,Блог про подорожі та туризм,Blog o podróżach i turystyce,
+blog.index.load_more,Load more,Загрузить ещё,Завантажити ще,Załaduj więcej,
+blog.search.routes,100 000 routes,31 страна,31 країна,100 000 tras,
+blog.search.carriers,20 000 carriers,200 000+ проданных билетов,200 000+ проданих квитків,20 000 przewoźników,
+blog.search.stations,5000 stations,20 000 маршрутов,20 000 маршрутів,5000 przystanków,
+blog.show.do_share,Share,Рассказать друзьям,Розповісти друзям,Udostępnij,
+blog.show.like,Share,поделиться,поділитися,Udostępnij,
+blog.show.share,Share,поделиться,поділитися,Udostępnij,
+blog.show.ok,Share,поделиться,поділитися,Udostępnij,
+blog.show.tweet,Share,твитнуть,твітнути,Udostępnij,
+blog.show.all_posts,All posts,Все статьи,Всі статті,Wszystkie posty,
+home.index.title,Busfor,Басфор,Басфор,Busfor,Busfor
+home.index.description,"",,,,
+home.index.keywords,,,,,
+home.index.choose_your_route,Choose your route,Выберите направление,Вибиріть напрямок,Prosimy wybrać kierunek,เลือกเส้นทางของคุณ
+home.index.page_title,Home,Главная,Головна,Główna,หน้าหลัก
+home.header.subtitle_html,Buy your bus tickets online,Билеты на&nbsp;автобус,Квиток на автобуси,Bilety autobusowe,ซื้อตั๋วรถโดยสารออนไลน์
+home.header.buy_online_for_five_minutes_html,Buy online <br> in 5 minutes,Покупка онлайн <br>за 5 минут,Покупка онлайн <br>за 5 хвилин,Zakup on-line <br>w ciągu 5 minut,ซื้อตั๋วออนไลน์ <br> ใน 5 นาที
+home.header.secure_payment_with_card_html,Safety payment <br>with a credit card,Безопасная <br>оплата картой,Безпечна <br>оплата картою,Bezpieczna <br> płatność kartą,ชำระเงินอย่างปลอดภัย <br> ด้วยบัตรเครดิต
+home.header.many_directions_html,More than 300 <br>directions,Более 300 <br>направлений,Більше 300 <br>напрямків,Ponad 100 000 <br>kierunków,มากกว่า <br> 300 เส้นทาง
+home.header.support_twenty_four_hour_html,24 hour <br>customer service,Круглосуточная <br>служба поддержки,Цілодобова <br>служба підтримки,Całodobowe <br>call center,บริการลูกค้า <br> 24 ชั่วโมง
+home.header.return_without_problems_html,Money back <br>without problems,Возврат <br>без проблем,Повернення <br>без проблем,Bezproblemowy <br>zwrot,คืนเงิน <br> โดยไร้ปัญหา
+home.header.get_ticket_online_html,Get ticket <br> online,Получение билета онлайн,Отримання квитка онлайн,Bilet <br>on-line,รับตั๋ว <br> ออนไลน์
+home.routes.popular_directions,Popular destinations,Популярные направления,Популярні напрямки,Najpopularniejsze kierunki,เส้นทางยอดนิยม
+home.routes.internal,Domestic,Внутренние,Внутрішні,Krajowe,เส้นทางรถโดยสาร
+home.routes.international,International,Международные,Міжнародні,Międzynarodowe,เส้นทางเรือเฟอร์รี่
+home.recommend.busfor_recommend,Busfor recommends,Басфор рекомендует,Басфор рекомендує,Busfor poleca,เส้นทางยอดนิยม โดย Busfor
+home.carriers.carriers_header,Bus tickets - best offers from carriers worldwide,Билеты на автобус — лучшие предложения от перевозчиков по всему миру,Квитки на автобус - кращі пропозиції від перевізників по всьому світу,Bilety autokarowe - najlepsze oferty od przewoźników po całym świecie,ตั๋วรถโดยสาร - ข้อเสนอสุดพิเศษจากผู้ให้บริการเดินรถจากทั่วทุกมุมโลก
+home.search_form.from,From,Откуда,Звідки,Skąd,จาก
+home.search_form.departure_city,Departure city,Город отправления,Місто відправлення,Miasto wyjazdowe,เมืองต้นทาง
+home.search_form.to,To,Куда,Куди,Dokąd,ถึง
+home.search_form.arrival_city,Arrival city,Город прибытия,Місто прибуття,Miasto docelowe,เมืองปลายทาง
+home.search_form.when,When,Дата,Дата,Data,เมื่อ
+home.search_form.departure_date,Departure date,Дата отправления,Дата відправлення,Data wyjazdu,วันออกเดินทาง
+home.search_form.passengers,Passengers,Пассажиры,Пасажири,Pasażerowie,ผู้โดยสาร
+home.search_form.adults_options.1,1 passenger,1 пассажир,1 пасажир,1 pasażer,ผู้โดยสาร 1 ท่าน
+home.search_form.adults_options.2,2 passengers,2 пассажира,2 пасажири,2 pasażerów,ผู้โดยสาร 2 ท่าน
+home.search_form.adults_options.3,3 passengers,3 пассажира,3 пасажири,3 pasażerów,ผู้โดยสาร 3 ท่าน
+home.search_form.adults_options.4,4 passengers,4 пассажира,4 пасажири,4 pasażerów,ผู้โดยสาร 4 ท่าน
+home.search_form.adults_options.5,5 passengers,5 пассажиров,5 пасажирів,5 pasażerów,ผู้โดยสาร 5 ท่าน
+home.search_form.adults_options.6,6 passengers,6 пассажиров,6 пасажирів,6 pasażerów,ผู้โดยสาร 6 ท่าน
+home.search_form.adults_options.7,7 passengers,7 пассажиров,7 пасажирів,7 pasażerów,ผู้โดยสาร 7 ท่าน
+home.search_form.adults_options.8,8 passengers,8 пассажиров,8 пасажирів,8 pasażerów,ผู้โดยสาร 8 ท่าน
+home.search_form.adults_options.9,9 passengers,9 пассажиров,9 пасажирів,9 pasażerów,ผู้โดยสาร 9 ท่าน
+home.search_form.adults_options.10,10 passengers,10 пассажиров,10 пасажирів,10 pasażerów,ผู้โดยสาร 10 ท่าน
+home.search_form.search,Timetable and prices,Расписание и цены,Розклад і ціни,Rozkład i ceny,ตารางเวลาและราคา
+home.search_form.search_preload.btn_text,Searching...,Ищем рейсы…,Шукаємо рейси...,Szukamy....,กำลังค้นหา...
+home.search_form.search_preload.overlay_text,"We are searching for trips for you, it may take a few seconds","Мы ищем рейсы для вас, это может занять несколько секунд","Ми шукаємо рейси для вас, на це знадобиться декілька секунд","Wyszukujemy dla Ciebie połączenia, może to potrwać kilka sekund",กรุณารอซักครู่ ระบบกำลังค้นหาทริปให้แก่คุณ 
+home.top_countries.countries,Countries,Страны,Країни,Kraje,ประเทศ
+home.top_countries.all_countries,All countries,Все страны,Всі країни,Wszystkie kraje,ทุกประเทศ
+home.old_ie.header,You are using an outdated browser version,Вы используете устаревшую версию браузера,Ви використовуєте застарілу версію браузера,Używasz przestarzałej wersji przeglądarki,คุณกำลังใช้เบราเซอร์เวอร์ชั่นเก่า หากคุณต้องการเข้าถึง
+home.old_ie.text,"To use all site features, we recommend you to install an updated version of one of these browsers","Для того, чтобы использовать все возможности сайта, мы рекомендуем вам загрузить обновленную версию одного из следующих браузеров","Для того, щоб використовувати всі можливості сайту, ми рекомендуємо вам встановити оновлену версію одного з наступних браузерів","Aby korzystać ze wszystkich funkcji witryny, zalecamy zainstalować zaktualizowaną wersję jednj z tych przeglądarek",ฟังก์ชั่นทั้งหมดของเว็บไซต์เรา เราแนะนำให้อัพเดตเวอร์ชั่นของเบราเซอร์คุณนะคะ
+pages.faq.page_title,Questions and answers,Вопросы и ответы,Запитання та відповіді,Pomoc,
+pages.faq.not_found_an_answer,Did not find the answer?,Не нашли ответ?,Не знайшли відповіді?,Nie znalazłeś odpowiedź?,
+pages.faq.contact_us,Contact BUSFOR support,Обратитесь в службу поддержки BUSFOR,Зверніться у службу підтримки BUSFOR,Odwołaj się do infolinii BUSFOR,
+pages.faq.thanks,Thank you for your message. Support service BUSFOR will contact you in the near future,Спасибо за ваше обращение. Служба поддержки BUSFOR свяжется с вами в ближайшее время,Дякуємо за ваше звернення. Служба підтримки BUSFOR зв'яжеться з вами найближчим часом,Dziękujemy za twoją wiadomość. Służba infolinii BUSFOR zwiąże się z tobą w najbliższym czasie,
+pages.about.page_title,About us,О нас,Про нас,O nas,เกี่ยวกับเรา
+pages.sales_points.page_title,Ticket booths,Кассы,Каси,Kasy,โต๊ะเก็บเงิน
+pages.sales_points.underground,metro,метро,Метро,metro,รถไฟใต้ดิน
+pages.agreement.page_title,Terms and conditions,Соглашение публичной оферты,Угода,Regulamin,เงื่อนไขและข้อตกลง
+pages.carriers.heading,We welcome motor companies to cooperate on sale of bus tickets at the BUSFOR's website,Приглашаем автотранспортные предприятия к сотрудничеству по продаже автобусных билетов на сайте BUSFOR,Запрошуємо автотранспортні підприємтва до співпраці з продажу автобусних квитків на сайті BUSFOR,Zapraszamy przedsiębiorstwa transportowe do współpracy w zakresie sprzedaży biletów autobusowych na stronie BUSFOR,เรายินดีต้อนรับบริษัทเดินรถเพื่อเป็นหุ้นส่วนร่วมกันในการขายตั๋วรถโดยสารบนเว็บไซต์ของ BUSFOR
+pages.carriers.opportunity_title,You will be able to:,У вас появится возможность:,У вас з’явиться можливість:,Uzyskacie Państwo możliwość:,คุณจะได้รับโอกาสที่จะ:
+pages.carriers.opportunity_text_1,Increase sales,Увеличить объем продаж,Збільшити обсяг продажів,zwiększenia sprzedaży,เพิ่มยอดขาย
+pages.carriers.opportunity_text_2,Reduce marketing and sales costs,Снизить затраты на кассовое обслуживание,Зменшити витрати на касове обслуговування,obniżenia kosztów związanych z obsługą kasową,ลดค่าใช้จ่ายค่าจากค่าบริการที่เกิดขึ้นในขั้นตอนการขาย
+pages.carriers.opportunity_text_3,Conduct remote administration,Вести удаленное администрирование,Вести віддалене адміністрування,zdalnego administrowania,บริหารจัดการได้จากระยะไกล
+pages.carriers.opportunity_text_4,Control passenger flow,Управлять пассажиропотоком,Керувати пасажиропотоком,dostosowania rozkładu jazdy do ilości pasażerów,ควบคุมปริมาณผู้โดยสาร
+pages.carriers.opportunity_text_5,Monitor and analyze sales for improved performance,Анализировать и просматривать отчетность,Аналізувати і переглядати звітність,analizy i wglądu do sprawozdań,ตรวจสอบและวิเคราะห์ข้อมูลเพื่อพัฒนายอดขาย
+pages.carriers.contact_us,Contact us:,Свяжитесь с нами:,Зв’яжіться з нами,Prosimy o kontakt:,ติดต่อเราที่:
+pages.carriers.ending,BUSFOR - your bus ticket!,BUSFOR – ваш билет на автобус!,BUSFOR – ваш квиток на автобус!,BUSFOR to twój bilet autokarowy!,BUSFOR - ตั๋วรถโดยสารของคุณ!
+pages.carriers.thanks,Thank you for your request. We will contact you soon.,Спасибо за ваше обращение. Мы свяжемся с вами в ближайшее время.,Дякуємо за ваше звернення! Ми зв’яжимось з вами найлижчим часом,Dziękujemy za zgłoszenie. Skontaktujemy się z Państwem w najbliższym czasie,ขอบคุณสำหรับติชมของท่าน เราจะติดต่อกลับโดยเร็วที่สุด
+pages.agents.heading,We invite agents for cooperation in bus tickets sale,Приглашаем агентов к сотрудничеству по продаже автобусных билетов,Запрошуємо агентів до співпраці з продажу автобусних білетів,,เราขอเชิญตัวแทนจำหน่ายเพื่อการทำงานร่วมกันในการขายตั๋วรถโดยสาร
+pages.agents.opportunity_title,You will be able to:,У вас появится возможность:,У вас з'явиться можливість:,,คุณจะได้รับโอกาสที่จะ:
+pages.agents.opportunity_text_1,Acquire more customers,Привлечь новых клиентов всех категорий,Залучити нових клієнтів усіх категорій,,ดึงดูดกลุ่มลูกค้าใหม่ ๆ 
+pages.agents.opportunity_text_2,Get more revenue,Получить дополнительный доход,Отримати додатковий прибуток,,รับรายได้หลายช่องทาง
+pages.agents.opportunity_text_3,Use convenient and easy interface or API,Использовать удобный интерфейс для бронирования или API,Використовувати зручний інтерфейс для бронювання або API,,รับซอฟแวร์จองตั๋ว และ API ที่ใช้งานง่าย
+pages.agents.opportunity_text_4,To get access to route network of carriers and bus stations,Получить доступ к маршрутной сети перевозчиков и автовокзалов,Отримати доступ до маршрутної мережі перевізників та автовокзалів,,เข้าถึงเครือข่ายเส้นทางของผู้ให้บริการเดินรถและสถานีรถโดยสาร
+pages.agents.opportunity_text_5,Offer new services to your customers,Предоставить клиентам новую восстребованную услугу,"Надати клієнтам нову послугу, що користується попитом",,นำเสนอการบริการรูปแบบใหม่ที่ตอบโจทย์ลูกค้า
+pages.agents.become_partner,Install bus tickets sales form at your website,Установить форму продажи автобусных билетов к себе на сайт,Встановити форму продажу автобусних квитків на свій сайт,,
+pages.agents.contact_us,Contact us:,Свяжитесь с нами:,Зв’яжіться з нами,,ติดต่อเราที่:
+pages.agents.ending,BUSFOR - your bus ticket!,BUSFOR – ваш билет на автобус!,BUSFOR – ваш квиток на автобус!,,BUSFOR - ตั๋วรถโดยสารสำหรับคุณ!
+pages.agents.thanks,Thank you for your request. We will contact you soon.,Спасибо за ваше обращение. Мы свяжемся с вами в ближайшее время.,Дякуємо за ваше звернення! Ми зв’яжимось з вами найлижчим часом,,ขอบคุณสำหรับคำติชมของท่าน เราจะติดต่อกลับโดยเร็วที่สุด
+pages.popular_directions.title,Popular destinations,Популярные направления,Популярні напрямки,Najpopularniejsze kierunki,เส้นทางยอดนิยม
+pages.contacts.contacts,Contacts,Контакты,Контакти,Kontakt,ติดต่อ
+pages.contacts.support,Customer service:,Служба поддержки:,Служба підтримки:,Obsługa klienta:,บริการลูกค้า:
+pages.contacts.office,Our office:,Наш офис:,Наш офіс:,Nasze biuro:,สำนักงานของเรา:
+pages.contacts.schedule,Work hours:,График работы:,Розклад:,Harmonogram:,ช่วงเวลาทำการ :
+pages.contacts.schedule_value,08:00 - 20:00,08:00 - 20:00,08:00 - 20:00,08:00 - 20:00,""
+pages.special_route.title,Exclusive trip by BUSFOR - European quality!,«Популярное на BUSFOR» — ваше комфортное путешествие!,«Популярне на BUSFOR» — ваша комфортна подорож!,Wyjątkowy przejazd w BUSFOR - doskonała jakość!,
+pages.special_route.header,Exclusive trip by BUSFOR - European quality!,«Популярное на BUSFOR» — ваше комфортное путешествие!,«Популярне на BUSFOR» — ваша комфортна подорож!,Wyjątkowy przejazd w BUSFOR - doskonała jakość!,
+pages.special_route.all_photos,See all photos,Посмотреть все фото,Переглянути всі фото,Zobacz wszystkie zdjęcia,
+pages.special_route.breakfast,The first 10 routes - free meals on board,Первые 10 рейсов — гарантированное питание на борту,Перші 10 рейсів — гарантоване харчування на борту,Pierwsze 10 przejazdów - darmowe posiłki w autobusie,
+pages.special_route.no_ticket,Boarding without a printed ticket,Посадка без распечатанного билета,Посадка без роздрукованого квитка,Przejazd bez wydrukowanego biletu,
+pages.special_route.no_ticket_big,"Boarding without a printed ticket, ID card only needed",Посадка по загран. паспорту,Посадка по закордонному паспорту,Bilet online,
+pages.special_route.scheduled,Departure and arrival on time,Остановки в рамках ПДД,Зупинки за правилами дорожнього руху,Regularne postoje,
+pages.special_route.scheduled_big,Stop scheduled every 2.5 hours,Движение по расписанию,Рух за розкладом,Terminowy odjazd i przyjazd,
+pages.special_route.fixedseat,Guaranty of the selected seat,Гарантия выбранного при покупке места,Гарантія обраного при купівлі місця,Rezerwacja miejsc,
+pages.special_route.bags,3 items of luggage free of charge,3 единицы багажа бесплатно,3 одиниці багажу безкоштовно,Darmowe 2 sztuki bagażu,
+pages.special_route.bags_two,2 items of luggage free of charge,2 единицы багажа бесплатно,2 одиниці багажу безкоштовно,Darmowe 2 sztuki bagażu,
+pages.special_route.sale_bold,20% discount,-20%,Знижка 20%,20% zniżki,
+pages.special_route.sale_text,on a return ticket,на обратный билет,на зворотній квиток,na bilet powrotny,
+pages.special_route.water_and_napkins,Bottled water and wet wipes for free,Бутылированная вода и влажные салфетки бесплатно,Бутильована вода та вологі серветки безкоштовно,Darmowa woda mineralna i chusteczki nawilżające,
+pages.special_route.security,All seats are equipped with seat belts,Ремни безопасности,Ремені безпеки,Pasy bezpieczeństwa,
+pages.special_route.wi_fi,Free Wi-fi,Бесплатный Wi-fi,Безкоштовний Wi-Fi,Darmowe Wi-Fi,
+pages.special_route.wi_fi_ukr,Free Wi-fi in Ukraine,Бесплатный Wi-fi на территории Украины,Безкоштовний Wi-Fi на території України,Darmowe Wi-Fi,
+pages.special_route.conditioning,Climate control,Климат-контроль,Клімат-контроль,Regulacja klimatyzacji,
+pages.special_route.comfort,Seats enhanced comfort,Сидения повышеной комфортности,Сидіння підвищенної комфортності,Wygodne siedzenia,
+pages.special_route.220v,Sockets 220 V,Розетки 220 V,Розетки 220 V,Gniazdka 220V,
+pages.special_route.wc,Toilet,Туалет,Туалет,Toaleta,
+pages.special_route.schedule_and_route,Departure and itinerary,Отправление и маршрут,Відправлення і маршрут,Terminy przejazdów i trasa,
+pages.special_route.Kyev,Kiev,Киев,Київ,Kijów,
+pages.special_route.Zhitomir,Zhitomir,Житомир,Житомир,Żytomierz,
+pages.special_route.Rovno,Rovno,Ровно,Рівне,Rowno,
+pages.special_route.Luzk,Lutsk,Луцк,Луцьк,Łuck,
+pages.special_route.Lublin,Lublin,Люблин,Люблін,Lublin,
+pages.special_route.Warsaw,Warsaw,Варшава,Варшава,Warszawa,
+pages.special_route.buy,Buy,Купить,Купити,Kup,
+pages.special_route.in,at,в,о,"",
+pages.special_route.detailed,More,Подробнее,Детальніше,Więcej,
+pages.special_route.return.title,Return policy,Условия возврата,Умови повернення,Zwrot,
+pages.special_route.return.cond_1,"In case of return of the ticket less than one day before the departure, the passenger get the 50% of the ticket cost","При возврате билета менее, чем за сутки до отправления пассажиру возвращается  50% стоимости билета","При поверненні квитка менше, ніж за добу до відправлення пасажиру повертається 50% вартості квитка","W przypadku zwrotu biletu mniej niż na jeden dzień przed wyjazdem, pasażer otrzymuje zwrot w wysokości 50% ceny biletu",
+pages.special_route.return.cond_2,"In case of return of the ticket more than one day before the departure, the passenger get the 90% of the ticket cost","При возврате билета более, чем за сутки до отправления пассажиру возвращается  90% стоимости билета","При поверненні квитка більше, ніж за добу до відправлення пасажиру повертається 90% вартості квитка","W przypadku zwrotu biletu więcej niż na jeden dzień przed wyjazdem, pasażer otrzymuje zwrot w wysokości 90% ceny biletu",
+pages.special_route.partners,We invite carriers to the partnership.,Приглашаем заинтересованных перевозчиков к взаимовыгодному сотрудничеству!,Запрошуємо перевізників до взаємовигідної співпраці.,Zapraszamy przewoźników do współpracy,
+pages.special_route.email_us,Send us an email:,Напишите нам на email:,Пишіть нам на email:,Wyślij nam wiadomość:,
+pages.special_route.daysTo,"Tu, We, Th, Su","вт, ср, чт, вс","вт, ср, чт, вс","Wt, Śr, Cz, Ni",
+pages.special_route.daysFrom,"Tu, Th, Fr, Sa","вт, чт, пт, сб","вт, чт, пт, сб","Wt, Cz, Pi, So",
+pages.special_route.currency,UAH,грн,грн,UAH,
+pages.special_route.partnership,Partnership,Партнерство,Партнерство,Współpraca,
+pages.special_routes.text_1,Busfor.com is opening a ticket sale from Moscow to Minsk provided by Intercars Europe bus carrier.,Busfor открывает продажу билетов по направлению Москва - Минск перевозчика Intercars Europe.,Busfor відкриває продаж квитків у напрямку Москва – Мінськ перевізника Intercars Europe.,Busfor rozpoczyna sprzedaż biletów między Moskwą a Mińskiem przewoźnika Intercars Europe.,
+pages.special_routes.text_2,"Intercars is a transport company, which has been working for 20 years for the reputation of a reliable carrier at european level of customer service.","Intercars - транспортная компания, которая за 20 лет работы заслужила репутацию надежного перевозчика с европейским уровнем обслуживания пассажиров.","Intercars – транспортна компанія, яка за 20 років роботи завоювала репутацію надійного перевізника з європейським рівнем обслуговування пасажирів.","Intercars to firma, która przez 20 lat pracy wyrobiła sobie reputację godnego zaufania przewoźnika o europejskim poziomie obsługi klientów.",
+pages.special_routes.text_3,"On the line Moscow-Minsk Intercars offers buses at the highest level of comfort. To provide the maximum satisfaction to the passengers, the carrier has equipped all vehicles with electric sockets, Wi-Fi, air-conditioners, drinking water, pillows and blankets. Each passenger may bring two pieces of luggage for free.","На маршруте Москва - Минск курсируют автобусы уровня «экстра-комфорт». Для пассажиров в пути предусмотрены розетки, Wi-Fi, кондиционеры, питьевая вода, а также подушки и пледы для обеспечения максимального комфорта. Каждый пассажир может бесплатно провозить две единицы багажа.","На маршруті Москва – Мінськ курсують автобуси рівня «екстра-комфорт». Для пасажирів у дорозі передбачені розетки, Wi-Fi, кондиціонери, питна вода, а також подушки та пледи для забезпечення максимального комфорту. Кожен пасажир може безкоштовно провозити дві одиниці багажу.","Na trasie Moskwa - Mińsk kursują autobusy o standardzie ‘ekstra-komfort’. Dla zapewnienia maksymalnej wygody pasażerom, zostały one zaopatrzone w siedzenia z gniazdkami elektrycznymi, Wi-Fi, klimatyzację i wodę pitną, a także poduszki i koce. Każdy pasażer może bezpłatnie przewieźć dwie sztuki bagażu.",
+pages.special_routes.text_4,We suggest you evaluating of services during your next trip to Belarus!,Предлагаем оценить сервис перевозчика Intercars во время вашего следующего визита в Беларусь!,Пропонуємо оцінити сервіс перевізника Intercars під час вашого наступного візиту до Білорусі!,Proponujemy ocenić poziom usług przewoźnika Intercars podczas kolejnej podróży na Białoruś!,
+timetables.index.subtitle,Bus schedule in Poland and Europe,"Расписание автобусов по Украине, СНГ и Европе","Розклад автобусів по Україні, СНД та Європі",Rozkład jazdy autobusów w Polsce i Europie,ตารางเวลาเดินรถทั่วไทย
+timetables.index.title,"Bus schedule in Poland and Europe, bus times – busfor.pl","Расписание автобусов по Украине, СНГ и Европе – %{domain}","Розклад автобусів по Україні, СНД та Європі – Busfor.ua","Rozkład jazdy autobusów w Polsce i Europie, terminy odjazdów  na busfor.pl","ตรวจสอบตารางเดินรถทั่วไทย, เวลาเดินรถ – Tickets.co.th"
+timetables.index.title_for_country,"Bus schedule %{country}, bus stations schedule - %{domain}","Расписание автобусов %{country}, расписание автовокзалов и автостанций – %{domain}","Розклад автобусів %{country}, розклад автовокзалів і автостанцій – %{domain}",,
+timetables.index.title_for_domain,"Bus schedule, bus stations schedule - %{domain}","Расписание автобусов, расписание автовокзалов и автостанций – %{domain}","Розклад автобусів, розклад автовокзалів і автостанцій – %{domain}",,
+timetables.index.description,Detailed and accurate bus schedule in Poland and Europe. Bus tickets online booking and payment system – Bus times at busfor.pl.,"Подробное и точное расписание движения автобусов по Украине, СНГ и Европе. Система онлайн бронирования и покупки билетов на автобусы – %{domain}.","Детальний і точний розклад руху автобусів Україною, країнами СНД та Європи. Система онлайн-бронювання та придбання квитків на автобуси – Busfor.ua.",Szczegółowy rozkład jazdy autobusów w Polsce i Europie. Rezerwacja i płatność online za bilety autobusowe – terminy odjazdów na busfor.pl,เช็ครายละเอียดเวลาเดินรถประจำทางในประเทศไทยที่แม่นยำ ระบบจองตั๋วและชำระเงินออนไลน์ – เวลาเดินรถที่ Tickets.co.th
+timetables.index.description_for_country,"Detailed bus schedule %{country} , departure and arrival time, full information about bus lines - %{domain} - online booking and ticket selling system.","Подробное расписание автобусов %{country} – время отправления и прибытия, полная информация о рейсах – %{domain} – система онлайн бронирования и покупки билетов на автобус.","Детальний розклад автобусів %{country} - час відправлення та прибуття, повна інформація про рейси – %{domain} - система онлайн бронювання і купівлі квитків на автобус.",,
+timetables.index.description_for_domain,"Detailed bus schedule, departure and arrival time, full information about bus lines - %{domain} - online booking and ticket selling system.","Подробное расписание автобусов – время отправления и прибытия, полная информация о рейсах – %{domain} – система онлайн бронирования и покупки билетов на автобус.","Детальний розклад автобусів - час відправлення та прибуття, повна інформація про рейси – %{domain} - система онлайн бронювання і купівлі квитків на автобус.",,
+timetables.index.choose_country_and_city,Choose country and the city of departure,Выберите страну и город отправления,Виберіть країну та місто відправлення,Wybierz kraj i miasto wyjazdu,
+timetables.choose_station.choose_station,Choose the dispatch station,Выберите станцию отправления,Виберіть станцію відправлення,Wybierz stacje wyjazdu,
+timetables.city.timetable_of_city_stations,Bus times at %{city} bus stations,Расписание автовокзалов и автостанций города %{city},Розклад автовокзалів і автостанцій міста %{city},Terminy odjazdów autobusów z dworca autobusowego %{city},ตารางเวลาที่สถานีขนส่ง %{city}
+timetables.city.subtitle,Bus schedule %{city},Расписание автобусов города %{city},Розклад автобусів міста %{city},Rozkład jazdy autobusów %{city},ตารางเดินรถ %{city}
+timetables.city.title,"Bus schedule %{city}, bus station schedule %{city}, bus times – busfor.pl","Расписание автобусов %{city}, расписание автовокзалов и автостанций в городе %{city} – busfor.ua","Розклад автобусів %{city}, розклад автовокзалів і автостанцій з міста %{city} – busfor.ua","Rozkład jazdy, Rozkład jazdy stacji %{city}, terminy odjazdów na busfor.pl",ตารางเดินรถ %{city} ตารางสถานีเดินรถ %{city} เวลาเดินรถ – tickets.co.th
+timetables.city.description,"Detailed bus schedule from %{city} – time of departure and arrival, full information about bus routes from %{city} – bus times at busfor.pl – Bus tickets online booking and payment system.","Подробное расписание автобусов города %{city} – время отправления и прибытия, полная информация о рейсах из города %{city} – busfor.ua – система онлайн бронирования и покупки билетов на автобус.","Детальний розклад автобусів міста %{city} – час відправлення і приїзду, повна інформація про рейси з %{city} – busfor.ua – система онлайн-бронювання і придбання квитків на автобус.","Szczegółowy rozkład jazdy autobusów z %{city}  – czas wyjazdu i przyjazdu, pełna informacja na temat trasy z %{city}  – terminy odjazdów – busfor.pl. Rezerwacja i płatność online za bilety autobusowe.",รายละเอียดตารางเดินรถจาก %{city} - เวลาออกเดินทางและเวลาถึงที่หมาย ข้อมูลเกี่ยวกับการเดินรถจาก %{city} – เวลาเดินรถที่ tickets.co.th – ระบบจองตั๋วและชำระเงินออนไลน์
+timetables.city.json_ld_name,%{city} bus tickets,%{city} билеты на автобус,%{city} квитки на автобус,%{city} bilety autobusowe,
+timetables.station.timetable_of_station,"Bus times at %{station}, %{city}","Расписание автовокзала (автостанции) %{station}, %{city}","Розклад автовокзалу (автостанції) %{station}, %{city}","Terminy odjazdów autobusów ze stacji autobusowej %{station}, %{city}","ตารางเวลาที่ %{station}, %{city}"
+timetables.station.subtitle,"%{station}, %{city} Schedule","Расписание %{station}, %{city}","Розклад %{station}, %{city}","%{station}, %{city} Rozkład jazdy","%{station}, %{city} ตารางเวลา"
+timetables.station.title,"%{station}, %{city} – Bus schedule, bus times at busfor.pl",%{station} %{city} – Расписание автобусов – busfor.ua,%{station} %{city} – Розклад автобусів – busfor.ua,"%{station}, %{city} – Rozkład jazdy autobusów, terminy odjazdów na busfor.pl","%{station}, %{city} – ตารางเดินรถ,ตารางเวลาที่ Tickets.co.th"
+timetables.station.description,"Bus schedule by the bus station %{station}, %{city}. Exact time of departure and arrival, full information about bus routes. Bus times at busfor.pl – Bus tickets online booking and payment system.","Расписание движения автобусов по автостанции (автовокзалу) %{station} в городе %{city}. Точное время отправления и прибытия автобусов, полная информация о рейсах. busfor.ua – система онлайн бронирования и покупки билетов на автобус.","Розклад руху автобусів по автостанції (автовокзалу) %{station} в місті %{city}. Точний час відправлення і приїзду автобусів, повна інформація про рейси. busfor.ua – система онлайн бронювання і придбання квитків на автобус.","Rozkład jazdy autobusów z dworca autobusowego %{station}, %{city}. Dokładny czas odjazdu i przyjazdu, pełna informacja na temat trasy. Terminy odjazdów na busfor.pl. Rezerwacja i płatność online za bilety autobusowe.","ตารางเดินรถตามสถานีขนส่ง %{station}, %{city} เวลาขึ้นรถและเวลาถึงที่หมายที่แน่นอน ข้อมูลครบถ้วนเกี่ยวกับตารางเดินรถ ตารางเวลาที่ Tickets.co.th – ระบบจองตั๋วและชำระเงินออนไลน์"
+countries.show.title,"Buses in %{country_to_name}, buy a bus ticket to %{country_to_name}, schedule | Busfor.com","Автобусы в %{country_to_name}, купить автобусный билет в %{country_to_name}, расписание | Busfor Россия","Автобуси в %{country_to_name}, купити автобусний квиток в %{country_to_name}, розклад | Busfor Україна","Autobusy w %{country_to_name}, kup bilet autobusowy do %{country_to_name}, rozkład jazdy autobusów | Busfor Polska",
+countries.show.description,Buy cheap bus tickets to %{country_to_name} from %{min_price}. Schedule of bus routes to %{country_to_name}. Comfortable buses. Free online reservations – Busfor.com.,Купить дешевые билеты на автобус в %{country_to_name} по цене от %{min_price}. Расписание автобусных маршрутов в %{country_to_name} из России. Комфортабельные автобусы. Бесплатное онлайн бронирование мест – Busfor Россия.,Купити дешеві квитки на автобус в %{country_to_name} за ціною від %{min_price}. Розклад автобусних маршрутів в %{country_to_name} із України. Комфортабельні автобуси. Безкоштовне онлайн бронювання місць – Busfor Україна.,Kup tanie bilety autobusowe do %{country_to_name} od %{min_price}. Rozkład jazdy autobusów do %{country_to_name} z Polski. Wygodne autobusy. Darmowa rezerwacja online – Busfor Polska.,
+countries.show.bus_tickets_to,Bus tickets to %{country},"%{country}, билеты на автобусы","%{country}, автобусні квитки","%{country}, bilety autobusowe","%{country}, ตั๋วรถโดยสารปรับอากาศ"
+countries.show.buses_to,Buses to %{country},Автобусы в %{country},Автобуси в %{country},Autobusy do %{country},รถทัวร์ใน%{country}
+countries.show.visa_title,Visa to %{country},"%{country}, виза","%{country}, --","%{country}, --","%{country}, --"
+countries.show.link_to_all,All countries,Все страны,Всі країни,Wszystkie kraje,ทุกประเทศ
+cities.show.title,"Buy bus tickets to %{city}, see bus ticket price from %{city} – %{domain}","Купить билеты на автобус в город %{city} – цены, автобусом из города %{city} – %{domain}","Купити квитки на автобус в місто %{city} – ціни, автобусом із міста %{city} – %{domain}","Kup bilet autokarowy do miasta %{city} – ceny, autokarem z miasta %{city} – %{domain}",ซื้อตั๋วรถทัวร์ไป%{city} ตรวจสอบราคาตั๋วรถทัวร์จาก%{city} - %{domain}
+cities.show.description,You can buy bus ticket to %{city} and check bus ticket price. Bus schedule from %{city}. Book free of charge. %{domain} – your bus tickets online.,Билеты на автобус в город %{city} на %{domain} можно купить по доступным ценам. Расписание автобусных маршрутов из города %{city}. Бесплатное онлайн бронирование мест. %{domain} – ваш билет на автобус.,Квитки на автобус у місто %{city} на BUSFOR.UA можна купити за доступними цінами. Розклад автобусних маршрутів з міста %{city}. Безкоштовне онлайн бронювання місць. BUSFOR.UA - ваш квиток на автобус.,Bilety autokarowe do miasta %{city} na %{domain} można kup w dostępnej cenie. Rozkład jazdy autokarów z miasta %{city}. Bezpłatna rezerwacja miejsc online. %{domain} – Twój bilet autokarowy.,คุณสามารถซื้อตั๋วรถทัวร์เดินทางไป%{city}และตรวจสอบราคาตั๋วรถทัวร์ ตารางเวลาเดินรถไปยัง%{city} จองฟรีไม่เสียค่าธรรมเนียมที่ %{domain} เว็บไซต์จองตั๋วรถทัวร์ออนไลน์
+cities.show.subtitle,Buses to %{city},Автобусы в город %{city},Автобуси в місто %{city},Autobusy do miasta %{city},รถทัวร์เดินทางไป%{city}
+cities.show.buses_to,Bus tickets to %{city},Автобусные билеты в город %{city},Автобусні квитки в місто %{city},Bilety autokarowe do miasta %{city},ตั๋วรถทัวร์ไป%{city}
+cities.show.popular_directions_from,Popular trips from %{city},Популярные направления из города %{city},Популярні напрямки із міста %{city},Najpopularniejsze kierunki z miasta %{city},สถานที่เที่ยวยอดนิยมประจำ%{city}
+cities.show.about_city,%{city}: information,%{city}: информация о городе,%{city}: інформація про місто,%{city}: informacje o mieście,%{city}:ข้อมูล
+cities.city_info.country,Country,Страна,Країна,Kraj,ประเทศ
+cities.city_info.area,Area,Площадь,Площа,Obszar,พื้นที่
+cities.city_info.population,Population,Население,Населення,Populacja,ประชากร
+cities.city_info.time_zone,Time zone,Часовой пояс,Часовий пояс,Strefa czasowa,เขตเวลา
+cities.city_info.currency,Currency,Валюта,Валюта,Waluta,ค่าเงิน
+searches.forward.searching_trip,Searching trip %{from} - %{to} on %{on} in %{in}...,Ищем рейс %{from} - %{to} на %{on} в %{in}...,Шукаємо рейс %{from} - %{to} на %{on} в %{in}...,,
+searches.suspended.suspended_text,Search is temporarily unavailable. Please try again later,"Поиск рейсов временно недоступен. Пожалуйста, повторите позже","Пошук рейсів тимчасово недоступний. Будь ласка, повторіть пізніше",Serwis wyszukiwania połączeń jest czasowo niedostępny. Prosimy spróbować później,ระบบค้นหาไม่สามารถใช้งานได้ชั่วคราว กรุณาลองใหม่อีกครั้งภายหลัง
+searches.suspended.back,Back to the main page,Вернуться на главную,Повернутись на головну,Powrót na główną,กลับหน้าหลัก
+searches.show.seat_class.first,First Class,Первый Класс,,,ชั้นหนึ่ง
+searches.show.seat_class.premium,Premium Business Class,Премиум Бизнес-Класс,,,ชั้นธุรกิจ
+searches.show.seat_class.economy,"Economy Class, Air-Conditioned","Эконом Класс, с кондиционером",,,ชั้นประหยัด ปรับอากาศ
+searches.show.seat_class.second,"Second Class, Air-Conditioned","Второй Класс, с кондиционером",,,ชั้นสอง ปรับอากาศ
+searches.show.schedule,Schedule,График,Графік,,
+searches.show.everyday,Everyday,ежедневно,щодня,,
+searches.show.details,details,подробнее,деталі,szczegóły,รายละเอียด
+searches.show.number,route number,рейс,рейс,połączenie,หมายเลขเส้นทาง
+searches.show.departure,departure,отправление,відправлення,czas wyjazdu,ออกเดินทาง
+searches.show.arrival,arrival,прибытие,прибуття,czas przyjazdu,ถึงจุดหมาย
+searches.show.route,route,маршрут,маршрут,trasa,เส้นทาง
+searches.show.and_time_html,travel&nbsp;time,в&nbsp;пути,у&nbsp;дорозі,czas&nbsp;podróży,การเดินทาง&nbsp;เวลา
+searches.show.cost,price,стоимость,вартість,cena,ราคา 
+searches.show.total_time,time between,всего в пути,всього в дорозі,czas trwania podróży,เวลาทั้งหมดระหว่างเดินทาง
+searches.show.total_sum,total,итого,разом,razem,ทั้งหมด
+searches.show.book,Select,Выбрать,Обрати,Wybierz,เลือก
+searches.show.no_results,no trips found,рейсы не найдены,рейси не знайдено,nie znaleziono żadnych połączeń,ไม่พบเส้นทางโดยสาร
+searches.show.on_prev_day,previous day,на предыдущий день,на попередній день,w dniu poprzednim,สำหรับเมื่อวาน
+searches.show.on_next_day,next day,на следующий день,на наступний день,w dniu następnym,สำหรับพรุ่งนี้
+searches.show.on_other_date,another date,на другую дату,на іншу дату,na inną datę,สำหรับวันอื่น ๆ
+searches.show.trips,trips,рейсы,рейси,połączenia,การเดินทาง
+searches.show.on_way,time to destination,в пути,в дорозі,w drodze,เวลาเดินทาง
+searches.show.carrier,Carrier:,Перевозчик:,Перевізник:,Przewoźnik:,ผู้ให้บริการ:
+searches.show.trip,Trip:,Рейс:,Рейс:,Połączenie:,การเดินทาง:
+searches.show.requires_confirmation,confirmation by phone,подтверждение по телефону,підтвердження по телефону,potwierdzenie przez telefon,การยืนยันทางโทรศัพท์
+searches.show.free_places,free,свободно,вільно,wolny,ฟรี
+searches.show.no_trips,No trips found,Рейсы не найдены,Рейси не знайдено,Nie znaleziono żadnych połączeń,ไม่พบเส้นทาง
+searches.show.no_free_seats,"Probably, there are no seats available or no trips for this day.","Возможно, закончились свободные места, или на этот день рейсов нет.","Можливо, закінчились вільні місця, або на цей день немає рейсів",Być może skończyły się wolne miejsca lub w tym dniu nie ma dostępnych połączeń.,อาจเป็นได้ว่า ที่นั่งไม่มีว่าง หรือไม่มีรอบการเดินทางสำหรับวันนี้
+searches.show.trips_available_soon.header,Route Available Soon,Этот рейс скоро появится на Busfor,Цей рейс скоро з'явиться на Busfor,Trasy dostępne wkrótce,เราจะมีเส้นทางให้บริการเร็วๆนี้ ตอน
+searches.show.trips_available_soon.detail,We don't serve this route yet but we're working on it! We currently have 5000 partners worldwide and are adding new ones every day.,"На данный момент мы не можем предложить вам билеты на выбранный рейс, но ежедневно мы и 5000 наших партнеров подключаем новые направления.","На даний момент ми не можемо запропонувати вам квитки на обраний рейс, але щодня ми і 5000 наших партнерів підключаємо нові напрямки.","Nie udostępniamy jeszcze tras, ale cały czas nad tym pracujemy! Obecnie mamy 5000 partnerów na całym świecie i cały czas dodajemy nowych.",นี้เรายังไม่มีเส้นทางนี้ให้บริการแต่เรากำลังทำงานอย่างหนักเพื่อเพิ่มเส้นทางให้คุณ! ขณะนี้เรามีพาร์ทเนอร์กว่า 5000 รายทั่วโลกและเราเพิ่มจำนวนทุกวันเพื่อคุณ
+searches.show.trips_available_soon.offer_similar,Perhaps these routes will satisfy you,"Возможно, вам подойдут похожие рейсы","Можливо, вам підійдуть схожі рейси",Te trasy na pewno Cię zadowolą.,""
+searches.show.trips_available_soon.subscribe,Leave your email and we will let you know when the route will be available,"Оставьте свой email и мы сообщим вам, когда появится рейс","Залиште свій email і ми повідомимо вам, коли з'явиться рейс","Zostaw swój adres e-mail, a damy Ci znać gdy trasy będą dostępne.",ฝากอีเมลของคุณไว้และทางทีมงานเราจะแจ้งให้ทราบเมื่อเรามีเส้นทางนี้นะคะ
+searches.show.try_to_look_for_trips,Try to search trips for,Попробуйте посмотреть рейсы,Спробуйте переглянути рейси,Spróbój przejrzeć połączenia,ค้นหาเส้นทางเดินรถอื่นในวันเดียวกันนี้ หรือวันอื่น
+searches.show.free_places_can_be_on_trips,There can be seats available on trips,Свободные места могут быть на рейсах,Вільні місця можуть бути на рейсах,Wolne miejsca może być na połączenia,ค้นหาที่นั่งว่างอื่นๆในวันนี้ หรือวันอื่น 
+searches.show.or,or,или,або,lub,หรือ
+searches.show.sort.title,Sorting,Сортировка,Сортування,Sortowanie,กำลังค้นหา
+searches.show.sort.order,1,1,1,1,1
+searches.show.deliver_html,-,Доставка Нова Пошта.<br/>Возможна оплата наличными,Доставка Нова Пошта.<br/>Можлива оплата готівкою,-,ส่งข้อความ .<br/> สามารถชำระได้โดยเงินสด
+searches.show.deliver_html_short,delivery,бесплатная доставка,безкоштовна доставка,-,
+searches.show.with_delivery,buy this ticket and a messenger will deliver ticket to your address,,,,เมื่อคุณซื้อตั๋วนี้เรามีบริการส่งตั๋วไปยังที่อยู่ของคุณ
+searches.show.trip_with_connections,Trip with connections,Рейс с пересадками,Рейс з пересадками,Loty z przesiadką,การเดินทางที่เชื่อมต่อกัน
+searches.show.changes.one,%{count} connection,%{count} пересадка,%{count} пересадка,%{count} przesiadka,%{count} เปลี่ยน
+searches.show.changes.other,%{count} connections,%{count} пересадок,%{count} пересадок,%{count} przesiadki,%{count} เปลี่ยน
+searches.show.change,Connection,Пересадка,Пересадка,Przesiadka,เปลี่ยน
+searches.show.no_changes,direct trip,прямой рейс,прямий рейс,Bezpośredni przejazd,โดยตรง
+searches.show.bus_model_with_direction,Bus %{model}: %{direction},Автобус %{model}: %{direction},Автобус %{model}: %{direction},Autobusem %{model}: %{direction},รถบัส  %{model}: %{direction}
+searches.show.sockets,sockets 220V,розетки 220V,розетки 220V,gniazdo 220V,ช่องเสียบไฟขนาด 220 โวลต์
+searches.show.climate_control,air-condition,климат-контроль,клімат-контроль,climate-control,ระบบปรับอากาศ
+searches.show.folding_seats,reclining seats,раскладные сидения,розкладні сидіння,składane siedzenia,ที่นั่งแบบพับเก็บได้
+searches.show.audio,audio,аудиосистема,аудіосистема,audio,อุปกรณ์ให้ความบันเทิงครบวงจร
+searches.show.large_baggage_compartments,large luggage compartments,увеличенные багажные отсеки,збільшені багажні відсіки,duży bagaż przedziały,ห้องเก็บกระเป๋าเดินทางขนาดใหญ่
+searches.show.hot_drinks,hot drinks,горячие напитки,гарячі напої,napoje gorące,เครื่องดื่ม
+searches.show.lcd_monitors,LCD monitors,мониторы LCD,монітори LCD,monitory LCD,จอภาพ LCD
+searches.show.wc,WC,туалет,туалет,toaleta,ห้องน้ำในตัว
+searches.show.free_wifi,free wi-fi,бесплатный wi-fi,безкоштовний wi-fi,darmowe wi-fi,ฟรี Wi-Fi
+searches.show.only_direct,Only direct trips,Только прямые рейсы,Тільки прямі рейси,Tylko na bezpośrednich połączeniach,เฉพาะเส้นทางโดยตรง
+searches.show.buy_for,Buy for,Купить за,Купити за,Wybierz,
+searches.show.discount,Discount,Скидка,Знижка,,
+searches.show.special_route,Popular from BUSFOR,«Популярное на BUSFOR»,«Популярне на BUSFOR»,,
+searches.show.more_about_discount,more about discount,подробнее о скидке,детальніше про знижку,Więcej o zniżce,
+searches.city.routes_from_city,Routes from the city %{from},Маршруты из города %{from},Маршрути з міста %{from},Połączenia z miasta %{from},เส้นทางเดินรถจากเมือง %{from}
+searches.city.routes_to_city,Buses to %{to},Автобусы в город %{to},Автобуси в місто %{to},Autobusy do miasta %{to},รถทัวร์เดินทางไป%{to}
+searches.direction.page_title,%{from} - %{to},%{from} - %{to},%{from} - %{to},%{from} - %{to},%{from} - %{to}
+searches.direction.title,Bus tickets %{from} - %{to}. Price from %{price_from}.,,,,ตั๋วรถทัวร์ %{from} - %{to}. ราคาเริ่มต้น %{price_from}.
+searches.direction.description,"",,,,
+searches.direction.keywords,"",,,,
+searches.direction.from,from,от,від,od,จาก
+searches.direction.select_date,"To search for all available trips, please select departure date in the form above.","Чтобы просмотреть доступные рейсы, пожалуйста, выберите дату отправления в форме выше.","Щоб переглянути доступны рейсы, будь ласка, оберіть рейси відправлення у формі вище",Aby przejrzeć dostępne połączenia prosimy wybrać datę wyjazdu w powyższym formularzu,ตรวจสอบที่ว่างสำหรับการเดินทาง โปรดเลือกวันที่ที่จะเดินทางในแบบฟอร์มข้างต้น
+searches.direction.popular_from,Popular trips from,Популярные рейсы из города,Популярні рейси з міста,Najpopularniejsze połączenia z miasta,เส้นทางยอดนิยมจากเมือง
+searches.direction.popular_to,Popular trips to,Популярные рейсы в город,Популярні рейси в місто,Najpopularniejsze połączenia do miasta,เส้นทางยอดนิยมถึงเมือง
+searches.direction.bus_tickets,Bus tickets %{direction},Билеты на автобус %{direction},Квитки на автобус %{direction},Bilety autobusowe %{direction},ตั๋วรถโดยสาร %{direction}
+searches.direction.choose_date,Select date,Выберите дату,Оберіть дату,Prosimy wybrać datę,เลือกวันเดินทาง
+searches.direction.route,Route,Маршрут,Маршрут,Kierunek,เส้นทาง
+searches.direction.searched_now,Other popular searches,Сейчас ищут,Зараз шукають,Teraz szuka,ผลการค้นหายอดนิยมอื่นๆ
+searches.direction.strengths.s1.title,Quick purchase,Покупай быстро,Купуй швидко,Kupuj szybko,การสั่งซื้อที่รวดเร็ว
+searches.direction.strengths.s1.text,Choose the route and order your ticket in less than 5 minutes,Выбор рейса и оформление билета займёт не больше 5 минут,Вибір рейсу і оформлення квитка займе не більше 5 хвилин,Wybór trasy i rezerwacja biletu zajmie nie więcej niż 5 minut.,เพียงแค่เลือกการเดินทางของคุณ คุณสามารถจองตั๋วของคุณได้โดยใช้ไม่ถึง 5 นาที
+searches.direction.strengths.s2.title,Convenient payment,Плати удобно,Сплачуй зручно,Zapłać wygodnie,ช่องทางชำระเงินที่แสนสะดวกสบาย
+searches.direction.strengths.s2.text,Pay for the ticket quickly and safely with your bank card,"Оплатить билет можно банковской картой, наличными или при расчёте с курьером","Оплатити квитки можна банківською карткою, готівкою або при розрахунку з кур’єром",Zapłać za bilet kartą płatniczą – szybko i bezpiecznie.,ชำระเงินค่าตั๋วของคุณได้อย่างสะดวกสบาย ด้วยบัตรเครดิต หรือด้วยเงินสด
+searches.direction.strengths.s3.title,Easy refunds,Возвращай легко,Повертай просто,Łatwy zwrot,การยืนยันกลับอย่างรวดเร็ว
+searches.direction.strengths.s3.text,"Should your plans change, BUSFOR will refund the unused ticket",В случае изменения планов BUSFOR вернёт деньги за неиспользованный билет,"Якщо плани змінилися, BUSFOR поверне кошти за невикористаний квиток",W razie zmiany planów BUSFOR zwróci pieniądze za niewykorzystany bilet.,ตั๋วได้รับการยืนยันตามเวลาจริง ทันทีที่ทำการสั่งซื้อ
+searches.direction.search_for_a_ticket,Get tickets,Найти билет,Знайти квиток,Wyszukaj bilety,ได้รับตั๋ว
+searches.suggest_trip_dates.free_dates,Bus trips on,Рейсы на,Рейси на,Bus wycieczki na,รถประจำทางในการเดินทาง
+searches.timetable.show_all,View all trips,Посмотреть все рейсы,Подивитися всі рейси,Pokaż wszystkie loty,ดูการเดินทางทั้งหมด
+searches.timetable.trip,Trip,Рейс,Рейс,Połączenie,การเดินทาง
+searches.timetable.nearest_dates,Nearest dates,Ближайшие даты,Найближчі дати,Najbliższe terminy,วันที่ใกล้ที่สุด
+checkouts.create.no_empty_seats,No seats available for this trip. Please select another trip,"Свободные места на рейс закончились. Пожалуйста, выберите другой рейс","Вільні місця на рейс закінчились. Будь ласка, оберіть інший рейс",Brak wolnych miejsc na dany przejazd. Prosimy wybrać inny przejazd.,ไม่มีที่นั่งว่างสำหรับเส้นเดินทางนี้ กรุณาเลือกเส้นทางอื่น ๆ
+checkouts.show.time_expired.text_1,Your seats were reserved. You have,Места зарезервированы. У вас есть,Місця зарезервовано. У вас є,Miejsca są zarezerwowane. Masz,จองที่นั่งแล้ว คุณจำเป็นต้อง
+checkouts.show.time_expired.text_2,to confirm a ticket,", чтобы оформить билет",", щоб оформити квиток",", aby załatwić bilet.",ยืนยันการจองตั๋ว
+checkouts.show.passengers_data,Passengers details,Данные пассажиров,Дані про пасажирів,Dane pasażerów,ข้อมูลผู้โดยสาร
+checkouts.show.locking_expired,Time available to complete the booking has expired. Please select trip again,"Время резервирования мест истекло. Пожалуйста, выберите рейс повторно","Термін резервації місць вичерпано. Будь ласка, оберіть рейс ще раз",Upłynął czas rezerwacji miejsc. Prosimy o ponowne wybranie połączenia,หมดเวลาสำหรับการจองตั๋วแล้ว โปรดทำการจองใหม่อีกครั้ง
+checkouts.show.return_causes,Return policy of bus operator,Условия возврата перевозчика,Умови повернення перевізника,Warunki zwrotu przewoźnika,
+checkouts.show.no_seat_map_error,There was an error while trying to fetch seat map for this trip. Please select another trip.,"Произошла ошибка при получении списка мест. Пожалуйста, выберите другой рейс.","Сталась помилка при отриманні списку місць. Будь ласка, оберіть інший рейс",Pojawił się błąd przy ładowaniu listy miejsc. Wybierz proszę inny rejs.,
+checkouts.update.cant_book_trip,Failed to book seats. Please try again later,"Не удалось забронировать места. Пожалуйста, повторите попытку позже","Не вдалось забронювати місця. Будь ласка, спробуйте пізніше",Rezerwacja miejsc nie powiodła się. Prosimy spróbować później.,การจองที่นั่งล้มเหลว โปรดลองอีกครั้งภายหลัง
+checkouts.order_form.email_me,"I want to receive information about promotions, discounts, new routes and destinations to my email","Хочу получать информацию о скидках, акциях, новых направлениях на email",,"Wyrażam zgodę na przesyłanie mi informacji o promocjach, akcjach, nowych kierunkach na email",ฉันต้องการรับข่าวสาร ข้อมูลส่วนลด โปรโมชัน เส้นทางใหม่ ๆ ทางอีเมลล์ของฉัน
+checkouts.order_form.to_payment,Proceed to payment,Перейти к оплате,Перейти до оплати,Przejdź do działu płatności,ดำเนินการชำระเงิน
+checkouts.passenger_form.passenger,Passenger,Пассажир,Пасажир,Pasażer,ผู้โดยสาร
+checkouts.passenger_form.latin_symbols_only,Please use only English language to fill in this form,Используйте только латинские символы для ввода данных,Використовуйте лише латинські символи для ввдення даних,Przy wpisywaniu danych należy używać tylko znaków łacińskich,กรุณากรอกข้อมูลด้วยภาษาอังกฤษเท่านั้น
+checkouts.passenger_form.date_placeholder,dd.mm.yy,дд.мм.гггг,дд.мм.рррр,dd.mm.rrrr,วว.ดด.ปป
+checkouts.customer_form.customer,Buyer,Покупатель,Покупець,Kupujący,ผู้ซื้อ
+checkouts.customer_form.phone_help,Required in order to contact you in case your trip has changes or we have problems with your payment and other issues.,"Нужен для связи с вами в случае переноса или отмены рейса, проблем с оплатой и прочих вопросов.","Необхідний для зв’язку з вами у випадку переносу чи відміни рейсу, проблем з оплатою та інших питань.",Niezbędny jest do kontaktu z Państwem w razie przełożenia lub anulowania przejazdu lub problemów z dokonaniem płatności itp.,จำเป็นกรอกข้อมูลให้ครบถ้วน เพื่อที่เราจะสามารถติดต่อคุณได้ ในกรณีที่มีการเลื่อนหรือยกเลิกการเดินทาง หรือมีปัญหาเกี่ยวกับการชำระเงินรวมถึงปัญหาอื่น ๆ
+checkouts.customer_form.email_help,Please fill this field if you want to receive your ticket by email after payment.,"Заполните, если хотите получить билет на email после оплаты.","Заповніть, якщо хочете отримати квиток на email після оплати",po dokonaniu płatności.,โปรดกรอกข้อมูล หากคุณต้องการได้รับตั๋วทางอีเมลภายหลังจากการชำระเงิน
+checkouts.discount_form.discount,Discount,Скидка,Знижка,Zniżka,ส่วนลด
+checkouts.discount_form.promo_code_help,If you have a promo code enter it here,"Если у вас есть промокод, пожалуйста, введите его здесь","Якщо у вас є промокод, будь ласка, введіть його тут","Jeśli posiadasz kod promocyjny, wpisz go tutaj",หากคุณมีรหัสโปรโมชั่น กรุณากรอกที่นี่
+checkouts.discount_form.referral_phone_help,If you have a referral code enter it here,"Если у вас есть реферальный код, пожалуйста, введите его здесь","Якщо у вас є реферальный код, будь ласка, введіть його тут","Jeśli posiadasz kod polecającego, wpisz go tutaj",หากคุณมีรหัสอ้างอิง กรุณากรอกที่นี่่
+checkouts.discount_form.discount_amount,Discount amount:,Скидка составит,,Zniżka od Busfor: ,
+checkouts.discount_form.promo_code_invalid,Promo code is invalid,Промокод не существует или истек,Промо-код не існує або його дія скінчилася,Kod promocyjny jest nieważny,รหัสโปรโมชั่ไม่ถูกต้อง
+checkouts.discount_form.apply,Apply,Проверить промокод,Перевірити промокод,Sprawdzić kod promocyjny,ใช้
+checkouts.agreement.refund,Terms of Refund,возврата,повернення,Zwrotu,
+checkouts.agreement.agree,I accept the,Я принимаю условия,Я приймаю умови,Akceptuję warunki,ฉันยอมรับในเงื่อนไข
+checkouts.agreement.with,Terms and Conditions,публичной оферты,публічної оферти,oferty publicznej,ข้อเสนอโดยรวม
+checkouts.agreement.and,and consent,и даю,і даю,i udzielam,และข้อตกลง
+checkouts.agreement.give_consent,to processing of my personal data,согласие на обработку персональных данных,згоду на обробку персональних даних,zgody na przetwarzanie danych osobowych,ความยินยอมเพื่อดำเนินการกับข้อมูลส่วนบุคคล
+checkouts.agreement.confirm_delivery_html,". I confirm my delivery address in Bangkok entered correctly and I understand, ticket can be delivered in Bangkok only. Delivery cost is non-refundable in any case.",,,,<br/>ฉันยืนยันว่าข้อมูลที่อยู่ในกรุงเทพที่ฉันกรอกนี้ถูกต้องและยอมรับเงื่อนไขว่าตั๋วนี้จะถูกส่งเฉพาะในเขตกรุงเทพเท่านั้น ค่าจัดส่งไม่สามารถถูกเรียกคืนได้ในกรณีใดๆทั้งสิ้น
+checkouts.seats.seats_occupied,"Unfortunately, the place chosen by you were busy. Please select places again.","К сожалению, выбранные вами места были заняты. Пожалуйста, выберите места повторно.",,,
+checkouts.seats.back,Return to search,Вернуться к поиску,Повернутись до пошуку,Wróć do wyszukiwania,กลับไปยังการค้นหา
+checkouts.seats.continue,Continue,Продолжить,Продовжити,Kontynuuj,ดำเนินการต่อ
+checkouts.seats.empty_map,Seats map is not available for selected trip. Seats will be selected randomly.,Карта мест для выбранного рейса недоступна. Места будут назначены автоматически.,На даному рейсі діє довільна посадка. Вибрати місце ви зможете при відправленні.,Na tej linii nie stosuje się rezerwacji miejsc. Wybrać miejsce Państwo możecie z czasie odjazdu.,ไม่มีแผนผังที่นั่งสำหรับการเดินทางที่เลือก ที่นั่งจะถูกเลือกโดยอัตโนมัติ
+checkouts.seats.select_seats.one,Select %{count} seat,Выберите %{count} место,Оберіть %{count} місце,Wybrać %{count} miejsce,เลือก %{count} ที่นั่ง
+checkouts.seats.select_seats.few,Select %{count} seats,Выберите %{count} места,Оберіть %{count} місця,Wybrać %{count} miejsca,เลือก %{count} ที่นั่ง
+checkouts.seats.select_seats.many,Select %{count} of seats,Выберите %{count} мест,Оберіть %{count} місць,Wybrać %{count} miejsc,เลือก %{count} ที่นั่ง
+checkouts.seats.select_seats.other,Select %{count} of seat,Выберите %{count} места,Оберіть %{count} місця,Wybrać %{count} miejsca,เลือก %{count} ที่นั่ง
+checkouts.seats.you_selected_seats.one,You selected seat,Вы выбрали место,Ви обрали місце,Wybrałeś miejsce,คุณได้เลือกที่นั่งแล้ว
+checkouts.seats.you_selected_seats.other,You selected seats,Вы выбрали места,Ви обрали місця,Wybrałeś miejsca,คุณได้เลือกที่นั่งแล้ว
+checkouts.seats.legend.free_seat,– free,– свободное место,– вільне місце,– wolne,
+checkouts.seats.legend.occupied,– occupied,– занятое место,– зайняте місце,– zajęte,
+checkouts.seats.places_remains.one,1 seat left,На рейсе осталось %{count} место,На рейсі залишилося %{count} місце,Pozostało %{count} miejsce,
+checkouts.seats.places_remains.other,%{count} seats left,На рейсе осталось %{count} места,На рейсі залишилося %{count} мiсця,Pozostały %{count} miejsca,
+checkouts.seats.not_available.carrier,This carrier doesn’t provide the option to choose seats in advance!,Этот перевозчик не предоставляет возможность выбрать место заранее!,Цей перевізник не надає можливості обрати місце заздалегідь!,Ten przewoźnik nie oferuje wyboru miejsc z wyprzedzeniem.,
+checkouts.seats.not_available.text_1,You will be able to choose the seat in bus before the departure.,"Это значит, что место в салоне вы сможете выбрать только при отправлении.","Це означає, що місце в салоні ви зможете обрати тільки перед відправленням рейсу.",Będziesz mógł wybrać miejsca w autobusie przed wyjazdem.,
+checkouts.seats.not_available.text_2,We try to arrange with the carrier to ensure you extra comfort.,"Мы стараемся договориться с перевозчиком, чтобы обеспечить вам дополнительный комфорт.","Ми намагаємося домовитися з перевізником, щоб забезпечити вам додатковий комфорт.",Wraz z przewoźnikiem postaramy się zapewnić Ci dodatkowy komfort.,
+checkouts.suspended.suspended_text,Seats selection is temporarily unavailable. Please try again later,"Бронирование мест временно недоступно. Пожалуйста, повторите позже","Бронбвання місць тимчасово недоступно. Будь ласка, спробуйте пізніше",Serwis rezerwowania miejsc jest czasowo niedostępny. Prosimy spróbować później,ไม่สามารถทำการจองที่นั่งได้ชั่วคราว โปรดลองใหม่อีกครั้งภายหลัง
+checkouts.suspended.back,Back to the main page,Вернуться на главную,Повернутись на головну,Wróć na główną,กลับไปยังหน้าหลัก
+checkouts.delivery_form.delivery,Delivery information,,,,ข้อมูลในการจัดส่งตั๋วโดยสาร
+checkouts.delivery_form.description,"This ticket need to be delivered to a physical address. We can deliver to home or office, only in Bangkok. Tickets purchased before 17.00, will be delivered on same day, tickets purchased after 17.00, will be delivered on the next day.",,,,ตั๋วนี้จะถูกส่งไปยังที่อยู่ของท่าน เราจัดส่งไปยังบ้านหรือออฟฟิศในกรุงเทพฯ เท่านั้น ตั๋วที่ชำระเงินก่อน 17:00 จะถูกส่งในวันที่ชำระเงิน ตั๋วที่ชำระเงินหลัง 17:00 จะถูกจัดส่งในวันถัดไป
+orders.index.my_tickets,My tickets,Мои билеты,Мої квитки,Moje bilety,ตั๋วของฉัน
+orders.index.thead.th_num,Order number,Номер заказа,Номер замовлення,Numer zamówienia,หมายเลขคำสั่งซื้อ
+orders.index.thead.th_desc,Description,Описание,Опис,Opisanie,คำอธิบาย
+orders.index.thead.th_date,Creation date,Дата создания,Дата створення,Data wygenerowania,วันที่เริ่มจอง
+orders.index.thead.th_state,Status,Статус,Статус,Stan,เงื่อนไข
+orders.index.created,created,создан,Створений,Stworzony,สร้าง
+orders.index.no_tickets,You have no confirmed tickets yet,У вас пока нет оформленных билетов,У вас поки немає оформлених квитків,Na razie nie masz wygenerowanych biletów,คุณยังไม่มีตั๋วที่ได้รับการยืนยัน
+orders.index.recent,Previous orders,Предыдущие заказы,Попередні замовлення,Poprzednie zamówienia,รายการสั่งซื้อก่อนหน้า
+orders.index.authorize,"To get access to our orders, please register by entering the phone number your provided at the time of booking","Чтобы получить доступ к заказам, сделанным ранее, авторизируйтесь по номеру телефона","Щоб отримати доступ до замовлень, зробленим раніше, авторизуйтесь за номером телефону","Aby uzyskać możliwość wglądu do zamówień, złożonych wcześniej, należy dokonać autoryzacji poprzez wpisanie numeru telefonu",กรอกหมายเลขโทรศัพท์ เพื่อเข้าถึงคำสั่งซื้อที่คุณดำเนินการไว้ก่อนหน้า 
+orders.show.ticket_till_html,Order has been placed. Payment due date <b>%{datetime}</b>,<b>Заказ оформлен.</b><br/>Заказ необходимо оплатить до <b>%{datetime}</b>,<b>Замовлення оформлено.</b><br>Замовлення необхідно сплатити до <b>%{datetime}</b>,"Zamówienie zostało złożone, płatności należy dokonać do <b>%{datetime}</b>",ได้รับคำสั่งซื้อแล้ว วันที่ครบกำหนดการชำระเงิน <b>%{datetime}</b>
+orders.states.waiting_payment,pending payment,ожидает оплаты,очікує сплати,oczekuje zapłaty,ยอดค้างชำระ
+orders.states.ticketed,paid and confirmed,билеты выписаны,квитки виписано,bilety są wypisane,ตั๋วได้รับการยืนยันแล้ว
+orders.states.canceled,is cancelled,отменен,відмінено,skasowany,ถูกยกเลิก
+orders.states.reserved,pending confirmation,ожидайте подтверждение,,,
+orders.state.download,Download,,,,
+orders.state.return,Return,,,,
+orders.state.check_out,Checkout,,,,ดำเนินการจ่ายเงิน
+orders.state.book_again,Book again,,,,
+orders.booking_canceled.revoked_text,There was a problem with your order and it was cancelled. The money paid for your order will be returned to your account as soon as possible. We encourage you to try make another booking.,"Заказ аннулирован. Денежные средства возвращены, и поступят на ваш счет в ближайшее время. Пожалуйста, забронируйте билеты на нужный вам рейс повторно.","Замовлення анульовано. Кошти повернено, і надійдуть на ваш рахунок найближчим часом. Будь ласка, забронюйте квитки на потрібний рейс повторно.",Zamówienie zostało anulowane. Kwota zostanie zwrócona i wpłynie na Twoje konto w najbliższym czasie. Prosimy zarezerwować bilety na odpowiadające Ci połączenie ponownie.,คำสั่งซื้อถูกยกเลิก เงินถูกส่งคืนและจะถูกเครดิตไปยังบัญชีของคุณในไม่ช้า โปรดจองตั๋วสำหรับการเดินทางที่ต้องการอีกครั้ง
+orders.booking_canceled.canceled_text,There was a problem with your order and it was cancelled. Please try to book your tickets once again.,"Заказ отменен. Пожалуйста, забронируйте билеты на нужный вам рейс повторно.","Замовлення відмінено. Будь ласка, забронюйте квитки на потрібний рейс ще раз.",Zamówienie zostało skasowane. Prosimy zarezerwować bilety na odpowiadające Ci połączenie ponownie.,คำสั่งซื้อถูกยกเลิก โปรดจองตั๋วสำหรับการเดินทางที่ต้องการอีกครั้ง
+orders.booking_error.error_text,There was an error while trying to reserve your tickets. Please try to book your tickets once again.,"Возникла ошибка при бронировании билетов. Пожалуйста, забронируйте билеты на нужный вам рейс повторно.","Виникла помилка під час бронювання квитків. Будь ласка, забронюйте квитки на потрібний рейс ще раз.",Wystąpił błąd podczas rezerwacji biletów. Prosimy o ponowną rezerwację biletów na odpowiadające Ci połączenie.,เกิดข้อผิดพลาดในระหว่างการจองตั๋ว โปรดจองตั๋วสำหรับการเดินทางที่ต้องการอีกครั้ง
+orders.trip_details.order_details,Order details,Детали заказа,Деталі замовлення,Szczegóły zamówienia,รายละเอียดคำสั่งซื้อ
+orders.trip_details.from,Departure:,Отправление:,Відправлення:,Wyjazd:,ออก:
+orders.trip_details.to,Arrival:,Прибытие:,Прибуття:,Przyjazd:,ถึง:
+orders.trip_details.passengers,Passengers:,Пассажиры:,Пасажири:,Pasażerowie:,ผู้โดยสาร:
+orders.trip_details.to_payment,Payment due:,К оплате:,До сплати:,Do zapłaty:,ยอดที่ต้องชำระ:
+orders.trip_details.price,Price:,Цена:,Вартість:,Cena:,ทั้งหมด
+orders.trip_details.carrier,Carrier:,Перевозчик:,Перевізник:,Przewoźnik:,ผู้ให้บริการเดินรถ:
+orders.trip_details.trip,Trip:,Рейс:,Рейс:,Trasa,เส้นทาง:
+orders.trip_details.discount,with discount:,включая скидку:,з урахуванням знижки:,ze zniżką:,รวมส่วนลด
+orders.trip_details.customer,Customer,Покупатель,Покупець,Kupujący,ลูกค้า
+orders.trip_details.phone,Phone,Телефон,Номер телефону,Numer telefonu,เบอร์โทรศัพท์มือถือ
+orders.trip_details.tickets_price,Tickets price:,,,,
+orders.trip_details.delivery_service,Delivery price:,,,,
+orders.paid_order.ticket,Ticket for,Билет,Kвиток,Bilet,
+orders.paid_order.successfully_paid,is successfully paid,успешно оплачен,успішно оплачений,Bilet został z powodzeniem opłacony,
+orders.paid_order.thanks_for_choosing_busfor,Thank you for choosing %{domain},"Спасибо, что выбрали %{domain}","Дякуємо, що обрали %{domain}",Dziękujemy %{domain},ขอบคุณที่เลือกใช้บริการกับ %{domain}
+orders.paid_order.success,Your payment was accepted.,Платеж успешно выполнен.,Платіж успішно здійснено.,Płatność została dokonana pomyślnie.,ชำระเงินเรียบร้อยแล้ว
+orders.paid_order.order_number,Your order number is:,Номер вашего заказа:,Номер вашого замовлення:,Numer Twojego zamówienia:,หมายเลขคำสั่งซื้อของคุณคือ:
+orders.paid_order.paid,Paid:,Оплачено:,Сплачено:,Zapłacono:,ชำระแล้ว:
+orders.paid_order.download_ticket,Download ticket,Скачать билет,Завантажити квиток,Pobrać bilet,ดาวน์โหลดตั๋ว
+orders.paid_order.download_and_print,Download and print ticket,"Скачать билет, чтобы распечатать","Завантажити квиток, щоб роздрукувати",Pobierz bilet do druku,
+orders.paid_order.ticket_text_html,Please print your ticket and present to the carrier representative before boarding,<b>Внимание!</b> Распечатайте билет и предъявите его при посадке в автобус.,<b>Увага!</b> Роздрукуйте квиток та пред'явіть його при посадці в автобус.,Wydrukuj bilet i podaj go przed wsiadaniem do autobusu,โปรดพิมพ์ตั๋วและแสดงตั๋วที่ท่ารถก่อนขึ้นบนรถโดยสาร
+orders.paid_order.download_form,Download ticket,Скачать бланк,Скачать бланк,Pobrać bilet,ดาวน์โหลดตั๋ว
+orders.paid_order.form_text_html,The exchange form must be exchanged at the bus station of departure before boarding the bus.,<b>Внимание!</b> Полученный обменный бланк необходимо обменять в кассе автовокзала отправления перед посадкой на автобус.,<b>Увага!</b> Отриманий обмінний бланк необхідно обміняти у касі автовокзала відправленння перед посадкою на автобус.,Otrzymany formularz należy wymienić w kasie dworca autobusowego w miejscu wyjazdu przed wsiadaniem do autobusu.,กรุณาแลกตั๋วเดินทางที่เค้าเตอร์
+orders.paid_order.preparing_tickets,Issuing tickets...,Выписываем билеты...,Підготовка квитки...,Przygotowanie bilety...,กำลังจัดเตรียมตั๋ว...
+orders.paid_order.find_tickets_for,Search for,Искать билеты,Шукати квитки,Wyszukiwanie biletów,ค้นหาตั๋ว
+orders.pay_order.title,"Seats have been booked, please proceed to payment","Билеты забронированы, вы можете их оплатить","Квитки заброньовано, ви можете їх оплатити","Bilety są zarezerwowane, możesz dokonać płatności za nie",ตั๋วถูกจองแล้ว คุณสามารถชำระค่าตั๋วได้ตอนนี้
+orders.pay_order.sum,Total price:,Общая стоимость билетов:,Загальна вартість квитків:,Łączny koszt biletów:,ค่าตั๋วทั้งหมด:
+orders.pay_order.paid,paid,оплачено,сплачено,dokonano zapłaty,ชำระแล้ว
+orders.pay_order.paid_till,Please pay for your booked tickets by,Забронированные билеты необходимо оплатить до,Заброньовані квитки необхідно оплатити до,Należy dokonać płatności za zarezerwowane bilety do dnia,ตั๋วที่จองไว้จะชำระเงินทาง
+orders.pay_order.unavailable,Payment is temporarily unavailable. Please try again later.,"Оплата временно не доступна. Пожалуйста, повторите позже.","Оплата тимчасово не доступна. Будь ласка, спробуйте пізніше.",Opcja dokonania płatności czasowo jest niedostępna.Prosimy spróbować później,การชำระเงินไม่สามารถทำได้ชั่วคราว โปรดลองอีกครั้งภายหลัง
+orders.pay_order.select_pay_method,Select payment method,Выберите способ оплаты,Оберіть спосіб оплати,Prosimy o wybranie formy płatności,เลือกช่องทางการชำระเงิน
+orders.pay_order.select_another_pay_method,Select another payment method,Выберите другой способ оплаты,Оберіть інший спосіб оплати,Prosimy o wybranie inną formy płatności,เลือกช่องทางการชำระเงินอื่น ๆ
+orders.pay_order.card,"Credit card (Visa, MasterCard, Union Card, American Express)",,,,"บัตรเครดิต (Visa, MasterCard, Union Card, American Express)"
+orders.pay_order.qiwi,-,Наличными в терминалах QIWI или с помощью QIWI кошелька,-,-,-
+orders.pay_order.sales_points,With cash via partner cashier desk,Наличными в кассе партнеров,Готівкою в касі партнерів,Gotówką w kasie partnerów,ชำระด้วยเงินสดที่โต๊ะเก็บเงินของหุ้นส่วนธุรกิจ
+orders.pay_order.ua_bank,With cash at the bank or Ukrposhta branch,Наличными в банке или отделении Укрпочты,Готівкою в банку або відділені Укрпошти,Gotówką w banku lub w placówce Ukrpoczty,-
+orders.pay_order.warehouse_delivery,-,Наличными в отделении «Нова Пошта»,Готівкою у відділенні «Нова Пошта»,-,-
+orders.pay_order.courier_delivery,-,Наличными курьеру службы «Нова Пошта»,Готівкою кур'єру служби «Нова Пошта»,-,-
+orders.pay_order.delivery_error,-,"Курьерская доставка вашего билета на выбранную дату невозможна. Пожалуйста, выберите другой способ оплаты.","Доставка кур'єром вашого білета на вибрану дату неможлива. Будь ласка, оберіть інший спосіб плати.",-,เราไม่สามารถส่งคำสั่งในขณะนี้ได้ โปรดเลือกช่องทางชำระเงินทางอื่น
+orders.pay_order.delivery_canceled,-,Доставка билетов отменена. Вы можете повторить доставку или выбрать другой способ оплаты.,Скаусування доставки білетів. Ви можете повторно замовити доставку або обрати інший спосіб оплати.,-,ข้อความที่ส่งถูกยกเลิก ท่านสามารถเลือกส่งคำสั่งอีกสั่งหรือเลือกช่องทางชำระเงินทางอื่น
+orders.pay_order.paysbuy_cash,Pay by cash,Оплатить наличными,,,ชำระด้วยเงินสดที่ศูนย์บริการลูกค้า
+orders.pay_order.paysbuy_counter_service,Pay by cash,Cash at Counter Service,,,ชำระโดยเงินสด
+orders.pay_order.all_payments_methods_are_unavailable,All payments methods are currently unavailable. Please try again later.,Нет доступных способов оплаты.,Немає доступних способів оплати.,Brak dostępnych metod płatności.,ช่องทางชำระเงินไม่สามารถทำรายการได้ในขณะนี้ กรุณาลองใหม่อีกครั้ง
+orders.pay_order.paypal,Pay with PayPal,Оплатить с помощью PayPal,Сплатити за допомогою PayPal,Zapłać z PayPal,จ่ายด้วย PayPal
+orders.pay_order.linepay,Pay with LinePay,,,,
+orders.pay_order.paymaster,Credit card with PayMaster,Оплатить с помощью Webmoney.UA,Сплатити за допомогою Webmoney.UA,Płatność kartą kredytową z PayMaster,
+orders.pay_order.payu,Pay with PayU,Оплатить с помощью PayU,Сплатити за допомогою PayU,Płacę teraz z PayU,
+orders.pay_order.fondy,Pay with Fondy,Оплатить с помощью Fondy,Сплатити за допомогою Fondy,,
+orders.pay_order.liqpay,"Credit card (Visa, MasterCard, Union Card, American Express)",Банковской картой,Банківською картою,Kartą płatniczą,"บัตรเครดิต (Visa, MasterCard, Union Card, American Express)"
+orders.pay_order.payler,"Credit card (Visa, MasterCard, Union Card, American Express)",Банковской картой,Банківською картою,Kartą płatniczą,"บัตรเครดิต (Visa, MasterCard, Union Card, American Express)"
+orders.pay_order.payture,"Credit card (Visa, MasterCard, Union Card, American Express)",Банковской картой,Банківською картою,Kartą płatniczą,"บัตรเครดิต (Visa, MasterCard, Union Card, American Express)"
+orders.send_booking_sheet.booking_sheet_was_sent,We sent you a message with more information to your email,Письмо с реквизитами отправлено на вашу электронную почту,Лист з реквізитами надіслано на вашу електронну пошту,Wiadomość zawierająca niezbędne dane została wysłana na Twój email,อีเมลพร้อมกับรายละเอียดถูกส่งไปยังอีเมลของคุณ
+orders.email.mail_with_ticket_was_sent,Your ticket was sent to your email,Письмо с билетом отправлено на вашу электронную почту,Лист з квитком надіслано на вашу електронну пошту,Bilet elektroniczny został wysłany na Twój email,จดหมายพร้อมตั๋วถูกส่งไปยังอีเมลของคุณ
+orders.send_billing_code.send_sms,Send SMS verification code,Отправить код в SMS,Надіслати код в SMS,Wysłać kod SMS-em,ส่งรหัสทาง SMS
+orders.send_billing_code.sms_with_code_was_sent,SMS verification code was sent to your phone number,SMS с кодом успешно отправлена на ваш телефон,SMS з кодом успішно надіслано на ваш телефон,SMS z kodem został wysłany na Twój telefon,SMS พร้อมรหัสถูกส่งไปยังโทรศัพท์มือถือของคุณ
+orders.time_to_pay_expired.expired_text,"Sorry, the time available to complete purchase has expired. Please try to book your tickets again.","Сожалеем, время на оплату истекло. Пожалуйста, забронируйте билеты на нужный вам рейс повторно.","На жаль, час для оплати вичерпано. Будь ласка, забронюйте квитки на потрібний вам рейс ще раз.","Niestety, czas na dokonanie płatności upłynął. Prosimy o ponowną rezerwację biletu na odpowiadające Ci połączenie",ขออภัย หมดเวลาสำหรับการชำระเงินแล้ว โปรดจองตั๋วสำหรับการเดินทางที่ต้องการใหม่อีกครั้ง
+orders.delivery.details.delivery,-,Доставка билетов,Доставка квитків,-,นำส่งข้อความ
+orders.delivery.details.creating_delivery,-,Оформляем доставку...,Оформлюємо доставку...,-,ข้อความถูกส่งสำเร็จแล้ว
+orders.delivery.details.all_couriers_busy,-,"К сожалению, все курьеры на %{date} заняты.","На жаль, усі кур'єри на %{date} зайняті",-,-
+orders.delivery.details.warehouse_delivery_is_not_available,-,"К сожалению, доставка на %{date} невозможна.","На жаль, доставка на %{date} неможлива.",-,-
+orders.delivery.details.courier_will_delivery_your_tickets,-,Курьер доставит ваши билеты %{date},Кур'єр доставить ваші квитки %{date},-,-
+orders.delivery.details.delivery_to_warehouse,-,"Билет будет доставлен в отделение ""Нова Пошта"" %{date}","Квиток доставлять у відділення ""Нова Пошта"" %{date}",-,-
+orders.delivery.details.delivery_notification,-,"После доставки билета в отделение, вы получите SMS-сообщение с уведомлением об этом.","Після доставки квитка у відділення, вам надійде SMS-повідомлення з інформацією про це.",-,-
+orders.delivery.details.how_to_get_ticket,-,Получить билет вы сможете после оплаты в выбранном отделении.,Отримати квиток ви зможете після оплати у вибраному відділенні.,-,-
+orders.delivery.details.pay_with_cash,-,Оплата билетов совершается наличными.,Оплата квитків готівкою.,-,-
+orders.delivery.details.delivery_price,-,Стоимость доставки,Вартість доставки,-,-
+orders.delivery.details.address,-,Адрес,Адреса,-,-
+orders.delivery.details.recipient,-,Получатель,Отримувач,-,-
+orders.delivery.details.phone,-,Телефон,Телефон,-,-
+orders.delivery.details.delivery_cancelation,-,"Если вы решили отменить бронирование, пожалуйста, напишите нам об этом по адресу","Якщо ви вирішили відмінити бронювання, будь ласка, напишіть нам про це за адресою",-,-
+orders.delivery.details.total,-,Всего к оплате (включая доставку),До сплати (із врахуванням доставки),-,-
+orders.delivery.details.city,-,г. %{city},м. %{city},-,-
+orders.delivery.details.address_full,-,"%{city}, %{street}, д. %{building}, кв. %{flat}","%{city}, %{street}, д. %{building}, кв. %{flat}",-,-
+orders.delivery.details.address_short,-,"%{city}, %{street}, д. %{building}","%{city}, %{street}, д. %{building}",-,-
+orders.payment_options.omise.pay,Pay,,,,ชำระเงิน
+orders.payment_options.omise.your_credit_card,Credit card details,,,,รายละเอียดบัตรเครดิต
+orders.payment_options.omise.number,Number,,,,หมายเลข
+orders.payment_options.omise.valid_thru,Valid thru,,,,ใช้ได้ถึง
+orders.payment_options.omise.cvc,CVC,,,,CVC
+orders.payment_options.omise.holder,Cardholder full name,,,,ชื่อผู้ถือบัตร
+orders.payment_options.omise.cardholder,Full Name,,,,ชื่อ-สกุล
+orders.payment_options.omise.help_html,"Your payment will be securely processed by Omise, our credit card payment gateway. All transactions are secured with 128-bit encryption, to ensure maximum protection.",,,,การชำระเงินด้วยบัตรเครดิตจะถูกดำเนินการผ่านระบบ Omise ซึ่งเป็น<br/>ผู้ให้บริการการชำระเงินในรูปแบบบัตรเครดิต ซึ่งถูกป้องกันการเข้าถึง<br/>อย่างสูงสุดด้วยการเข้ารหัสแบบ 128 บิต
+orders.payment_options.emoney.qiwi.pay_with_qiwi,-,Оплатить,,,-
+orders.payment_options.emoney.qiwi.pay_with_wallet,-,Оплатить онлайн QIWI кошельком,,,-
+orders.payment_options.emoney.qiwi.pay_with_terminal,-,Оплатить наличными в терминале,,,-
+orders.payment_options.emoney.qiwi.terminal_map,-,Карта терминалов QIWI,,,-
+orders.payment_options.emoney.qiwi.bill_was_successfully_created,-,,,,-
+orders.payment_options.paypal.pay_with_paypal,Pay with PayPal,Оплатить с помощью PayPal,,,จ่ายด้วย PayPal
+orders.payment_options.paypal.before_pay,After clicking the button you will be redirected to a secure payment page.,После нажатия на кнопку вы будете перенаправлены на защищённую страницу оплаты.,,,หลังจากคลิกที่ปุ่มแล้ว เราจะนำคุณไปยังหน้าชำระเงิน
+orders.payment_options.paypal.after_pay,After completing payment you can download your ticket on the website or receive it in your e-mail,После успешной оплаты вы можете скачать билет на сайте или получить его по вашему адресу электронной почты.,,,หลังจากชำระเงินสำเร็จแล้ว คุณสามารถดาวน์โหลดตั๋วบนเว็บไซต์ หรือรับตั๋วได้จากอีเมลของคุณ
+orders.payment_options.cash.paysbuy.pay,Create invoice,Оплатить,,,ทำรายการใบแจ้งหนี้
+orders.payment_options.cash.paysbuy.invoice_created,Invoice successfully created.,Счет успешно выставлен. Теперь вы можете оплатить его.,,,ทำรายการใบแจ้งหนี้สำเร็จ กรุณาชำระเงินก่อน 23.30 นาฬิกา(เวลาท้องถิ่นกรุงเทพ)
+orders.payment_options.cash.paysbuy.validation_failed,You should fill you email and name to create Invoice for cash payment.,"Необходимо указать ваш E-mail и имя, чтобы мы могли выставить счет.",,,กรุณากรอกอีเมลล์และชื่อเพื่อทำรายการใบแจ้งหนี้
+orders.payment_options.cash.paysbuy.invoice_sent_to_email,The invoice was successfully sent to your email,,,,ใบแจ้งหนี้ถูกส่งไปยังอีเมลล์สำเร็จแล้ว
+orders.payment_options.cash.paysbuy.after_pay,Press the button to create invoice. After completing payment you can download your ticket on the website or receive it in your e-mail.,,,,กดปุ่มเพื่อทำรายการใบแจ้งหนี้ หลังจากชำระเงินแล้ว คุณสามารถดาวน์โหลดตั๋วของคุณบนเว็บไซต์หรือรับตั๋วทางอีเมลล์
+orders.payment_options.warehouse_delivery.address,-,Адрес,Адреса,-,-
+orders.payment_options.warehouse_delivery.customer,-,Получатель,Одержувач,-,-
+orders.payment_options.warehouse_delivery.delivery,-,Доставка,Доставка,-,-
+orders.payment_options.warehouse_delivery.chose_name,-,Выберите название,Виберіть назву,-,-
+orders.payment_options.warehouse_delivery.chose_street,-,Выберите улицу,Виберіть вулицю,-,-
+orders.payment_options.warehouse_delivery.chose_warehouse,-,Выберите отделение,Виберіть відділення,-,-
+orders.payment_options.warehouse_delivery.chose_date,-,Выберите дату,Виберіть дату,-,-
+orders.payment_options.warehouse_delivery.chose_time,-,Выберите время,Виберіть час,-,-
+orders.payment_options.warehouse_delivery.delivery_not_available,-,"Сожалеем, доставка в выбранный город для этого заказа не доступна","Шкодуємо, доставка в обраний місто для цього замовлення не доступна",-,-
+orders.payment_options.courier_delivery.address,-,Адрес,Адреса,-,-
+orders.payment_options.courier_delivery.customer,-,Получатель,Одержувач,-,-
+orders.payment_options.courier_delivery.delivery,-,Доставка,Доставка,-,-
+orders.payment_options.courier_delivery.chose_name,-,Выберите название,Виберіть назву,-,-
+orders.payment_options.courier_delivery.chose_street,-,Выберите улицу,Виберіть вулицю,-,-
+orders.payment_options.courier_delivery.chose_warehouse,-,Выберите отделение,Виберіть відділення,-,-
+orders.payment_options.courier_delivery.chose_date,-,Выберите дату,Виберіть дату,-,-
+orders.payment_options.courier_delivery.chose_time,-,Выберите время,Виберіть час,-,-
+orders.payment_options.courier_delivery.delivery_not_available,-,"Сожалеем, доставка в выбранный город для этого заказа не доступна","Шкодуємо, доставка в обраний місто для цього замовлення не доступна",-,-
+orders.payment_options.sales_points.u_can,You can pay for your tickets at one of,Вы можете оплатить билеты в одной из,Ви можете сплатити квитки в одній з,Możesz dokonać płatności za bilety w jednej z,คุณสามารถชำระเงินค่าตั๋วได้ที่
+orders.payment_options.sales_points.sales_points,available cash channel partners,касс наших партнеров,кас наших партнерів,kas naszych partnerów,ช่องทางจำหน่ายตั๋วของหุ้นส่วนธุรกิจของเรา
+orders.payment_options.sales_points.agents_fee,-,Внимание! Партнеры могут взимать дополнительный агентский сбор.,Увага! Партнери можуть стягувати додатковий агентський збір.,-,-
+orders.payment_options.sales_points.u_need,Your payment code:,Вам понадобится код для оплаты:,Вам знадобиться код для сплати:,Kod do dokonania płatności:,กรอกรหัสสำหรับการชำระเงิน
+orders.payment_options.sales_points.need_help,"If you have any questions, please contact our customer support:","Если у вас есть вопросы, пожалуйста, позвоните в нашу службу поддержки:","Якщо у вас є питання, будь ласка, зателефонуйте в нашу службу підтримки:",W razie jakichkolwiek pytań prosimy o kontakt z naszą służbą wsparcia,หากคุณมีข้อสงสัยใด ๆ โปรดโทรติดต่อได้ที่ทีมงานบริการลูกค้าของเรา:
+orders.payment_options.linepay.pay_with_linepay,Pay with LinePay,,,,
+orders.payment_options.linepay.before_pay,After tapping the button you will be redirected to LinePay application.,,,,
+orders.payment_options.linepay.after_pay,After completing payment you can download your ticket on the website or receive it in your e-mail,,,,
+orders.payment_options.paymaster.pay,Pay,Оплатить,Сплатити,Zapłać,
+orders.payment_options.paymaster.before_pay,After clicking the button you will be redirected to a secure payment page.,После нажатия на кнопку вы будете перенаправлены на защищённую страницу оплаты.,"Після натискання на кнопку, вас буде перенаправлено на захищену сторінку оплати.",Po kliknięciu na przycisk zostaniesz przekierowany na bezpieczną stronę płatności.,
+orders.payment_options.paymaster.after_pay,After completing payment you can download your ticket on the website or receive it in your e-mail.,После успешной оплаты вы можете скачать билет на сайте или получить его по вашему адресу электронной почты.,"Після успішної оплати, ви можете завантажити квиток на сайті або отримати його за адресою вашої електронної скриньки.",Po dokonaniu płatności możesz pobrać swój bilet ze strony lub otrzymać bilet na adres e-mail.,
+orders.payment_options.payu.pay,Pay,Оплатить,Сплатити,Zapłać,
+orders.payment_options.payu.before_pay,After clicking the button you will be redirected to a secure payment page.,После нажатия на кнопку вы будете перенаправлены на защищённую страницу оплаты.,"Після натискання на кнопку, вас буде перенаправлено на захищену сторінку оплати.",Po kliknięciu na przycisk zostaniesz przekierowany na bezpieczną stronę płatności.,
+orders.payment_options.payu.after_pay,After completing payment you can download your ticket on the website or receive it in your e-mail.,После успешной оплаты вы можете скачать билет на сайте или получить его по вашему адресу электронной почты.,"Після успішної оплати, ви можете завантажити квиток на сайті або отримати його за адресою вашої електронної скриньки.",Po dokonaniu płatności możesz pobrać swój bilet ze strony lub otrzymać bilet na adres e-mail.,
+orders.payment_options.fondy.pay,Pay,Оплатить,Сплатити,,
+orders.payment_options.fondy.before_pay,After clicking the button you will be redirected to a secure payment page.,После нажатия на кнопку вы будете перенаправлены на защищённую страницу оплаты.,"Після натискання на кнопку, вас буде перенаправлено на захищену сторінку оплати.",,
+orders.payment_options.fondy.after_pay,After completing payment you can download your ticket on the website or receive it in your e-mail.,После успешной оплаты вы можете скачать билет на сайте или получить его по вашему адресу электронной почты.,"Після успішної оплати, ви можете завантажити квиток на сайті або отримати його за адресою вашої електронної скриньки.",,
+orders.payment_options.liqpay.pay,Pay,Оплатить,Сплатити,Zapłać,ชำระเงิน
+orders.payment_options.liqpay.before_pay,After clicking the button you will be redirected to a secure payment page.,После нажатия на кнопку вы будете перенаправлены на защищённую страницу оплаты.,"Після натискання на кнопку, вас буде перенаправлено на захищену сторінку оплати.",Po nacisnięciu na przycisk zostaniesz przekierowany na bezpieczną stronę serwisu dokonania płatności,หลังจากที่คลิกปุ่มนี้แล้ว คุณจะถูกนำไปยังหน้าการชำระเงินอันปลอดภัย
+orders.payment_options.liqpay.after_pay,After completing payment you can download your ticket on the website or receive it in your e-mail,После успешной оплаты вы можете скачать билет на сайте или получить его по вашему адресу электронной почты.,"Після успішної оплати, ви можете завантажити квиток на сайті або отримати його за адресою вашої електронної скриньки.",Po pomyślnym dokonaniu płatności możesz pobrać bilet na stronie www lub dostać go na swój email.,หลังจากชำระเงินสำเร็จแล้ว คุณสามารถดาวน์โหลดตั๋วบนเว็บไซต์ หรือรับตั๋วได้จากอีเมลของคุณ
+orders.payment_options.payler.pay,Pay,Оплатить,Сплатити,Zapłać,ชำระเงิน
+orders.payment_options.payler.before_pay,After clicking the button you will be redirected to a secure payment page.,После нажатия на кнопку вы будете перенаправлены на защищённую страницу оплаты.,"Після натискання на кнопку, вас буде перенаправлено на захищену сторінку оплати.",Po nacisnięciu na przycisk zostaniesz przekierowany na bezpieczną stronę serwisu dokonania płatności,หลังจากที่คลิกปุ่มนี้แล้ว คุณจะถูกนำไปยังหน้าการชำระเงินอันปลอดภัย
+orders.payment_options.payler.after_pay,After completing payment you can download your ticket on the website or receive it in your e-mail,После успешной оплаты вы можете скачать билет на сайте или получить его по вашему адресу электронной почты.,"Після успішної оплати, ви можете завантажити квиток на сайті або отримати його за адресою вашої електронної скриньки.",Po pomyślnym dokonaniu płatności możesz pobrać bilet na stronie www lub dostać go na swój email.,หลังจากชำระเงินสำเร็จแล้ว คุณสามารถดาวน์โหลดตั๋วบนเว็บไซต์ หรือรับตั๋วได้จากอีเมลของคุณ
+orders.payment_options.payture.pay,Pay,Оплатить,Сплатити,Zapłać,ชำระเงิน
+orders.payment_options.payture.before_pay,After clicking the button you will be redirected to a secure payment page.,После нажатия на кнопку вы будете перенаправлены на защищённую страницу оплаты.,"Після натискання на кнопку, вас буде перенаправлено на захищену сторінку оплати.",Po nacisnięciu na przycisk zostaniesz przekierowany na bezpieczną stronę serwisu dokonania płatności,หลังจากที่คลิกปุ่มนี้แล้ว คุณจะถูกนำไปยังหน้าการชำระเงินอันปลอดภัย
+orders.payment_options.payture.after_pay,After completing payment you can download your ticket on the website or receive it in your e-mail,После успешной оплаты вы можете скачать билет на сайте или получить его по вашему адресу электронной почты.,"Після успішної оплати, ви можете завантажити квиток на сайті або отримати його за адресою вашої електронної скриньки.",Po pomyślnym dokonaniu płatności możesz pobrać bilet na stronie www lub dostać go na swój email.,หลังจากชำระเงินสำเร็จแล้ว คุณสามารถดาวน์โหลดตั๋วบนเว็บไซต์ หรือรับตั๋วได้จากอีเมลของคุณ
+orders.waiting_confirmation.booking_waiting_for_confirmation,"We have received your order. Payment could be completed after receive of seats confirmation from bus transportation company. Please, wait for the call from our operator.",Ваш заказ принят. Оплату можно будет произвести после подтверждения наличия мест – ожидайте звонка нашего оператора.,Ваше замовлення прийнято. Оплату можна здійснити після підтвердження наявності місць – очікуйте на дзвінок нашого оператора.,Twoje zamówienie zostało zrealizowane. Opłata zostanie pobrana po akceptacji dostępności miejsc – oczekuj telefonu od naszego operatora.,ขณะนี้คุณได้ทำการจองแล้ว คุณสามารถชำระเงินได้หลังได้รับการยืนยันที่ว่างจากผู้ให้บริการ – รอรับการติดต่อจากเราได้เลยค่ะ
+orders.pending_payments.invoices,Invoices,Выставленные счета,Виставлені рахунки,Faktury,ใบแจ้งหนี้
+orders.pending_payments.paysbuy_cash.title,"PAYSBUY Co., Ltd.",,,,บริษัท เพย์สบาย จำกัด
+orders.pending_payments.paysbuy_cash.address,"319 Chamchuri Square Building, 36 Floors, Phayathai Road, Pathumwan, Bangkok 10330 Thailand.",,,,319 อาคารจัตุรัสจามจุรี ชั้น 36 ถนนพญาไท แขวงปทุมวัน เขตปทุมวัน กทม. 10330
+orders.pending_payments.paysbuy_cash.table_header.date,Date of transaction,,,,วันที่ทํารายการ
+orders.pending_payments.paysbuy_cash.table_header.pay_to,Pay To,,,,ชําระให้แก่
+orders.pending_payments.paysbuy_cash.table_header.phone,Contact No.,,,,เบอร์ติดต่อ
+orders.pending_payments.paysbuy_cash.table_header.invoice,Invoice No.,,,,หมายเลขใบแจ้งหนี้
+orders.pending_payments.paysbuy_cash.table_header.amount,Total Amount,,,,ยอดรวม
+orders.pending_payments.paysbuy_cash.invoice_number,Invoice number:,,,,หมายเลขใบแจ้งหนี้
+orders.pending_payments.paysbuy_cash.instructions.title,Payment instructions,,,,ขั้นตอนการชําระเงิน
+orders.pending_payments.paysbuy_cash.instructions.notice_html,"For cash payment, please pay before 23.30pm on the day of your booking.<br/>If your departure is on the same day of booking, please pay for your booking within 3 (three) hours after booking and at least 4 (four) hours before your departure time. Failure to pay within the deadline will lead to automatic ticket cancellation. Please note that same-day bookings are non-refundable.<br/>After payment, please find for your e-ticket in your email. It is required that you bring your e-Ticket to the bus station. Payment slip or invoice do not represent your ticket and cannot be used for boarding.",,,,สำหรับการเดินทางภายในวันเดียวกับวันที่ทำการจองตั๋ว กรุณาชำระเงินภายในเวลา 3 ชั่วโมง หลังจากการจองตั๋วและอย่างน้อย 4 ชั่วโมงก่อนเวลาออกเดินทาง หากท่านไม่สามารถชำระเงินภายในเวลาที่กำหนด ตั๋วจะถูกยกเลิกโดยอัตโนมัติ หมายเหตุ หากท่านทำการชำระเงินหลังจากตั๋วถูกยกเลิกแล้ว ทางบริษัทขอสงวนสิทธิ์ในการขอคืนเงินในกรณีใดๆ<br/>ท่านจะได้รับ ตั๋วออนไลน์ ในอีเมลที่ท่านได้กรอกในระบบ หลังจากชำระเงิน กรุณานำตั๋วออนไลน์ไปติดต่อที่สถานีขนส่งก่อนออกเดินทาง ใบเสร็จการชำระเงินไม่สามารถใช้แทนตั๋วออนไลน์ได้ ต้องเป็นตั๋วออนไลน์ เท่านั้น
+orders.pending_payments.paysbuy_cash.instructions.should_print,"Print out this document by clicking ""Print"" button above. (If button does not work, click File > Print in your web browser menu)",,,,กรุณาพิมพ์เอกสารใบสงซื้อ-โดยคลิก Print ดานล่าง (ถาไม่ได้คลิก File > Print)
+orders.pending_payments.paysbuy_cash.instructions.scan,Ask cashier to scan the BARCODE or inform PAYCODE,,,,ให้แคชเชยีร์สแกน BARCODE หรือแจ้ง PAYCODE
+orders.pending_payments.paysbuy_cash.instructions.digits,(12 digits),,,,(12 หลัก)
+orders.pending_payments.paysbuy_cash.instructions.pay_within,Please pay today before 23.30 ICT (Bangkok) time,,,,กรุณาชำระเงินภายในวันที่
+orders.pending_payments.paysbuy_cash.krungsri_atm,Click here to see how to pay at Krungsri ATM,,,,ดูวิธีการชาระเงินทีตู้ ATM ธนาคารกรุงศรี
+orders.pending_payments.paysbuy_cash.pay_once,Pay at cashier of your choice only once and discard it.,,,,เลอืกชำระเงินที่แคชเชียร์ที่ท่านสะดวกเพียงแห่งเดยีวเทานั้น
+orders.pending_payments.paysbuy_cash.pay_at_cenpay,Pay by cash at CenPay,,,,สำหรับการชำระเงินสดที่ CenPay
+orders.pending_payments.paysbuy_cash.pay_at_7_eleven,Pay by Cash at 7-Eleven,,,,สำหรับการชำระเงินสดที่ 7-Eleven
+orders.pending_payments.paysbuy_cash.rotate,Please rotate your device for better scanning,,,,Please rotate your device for better scanning
+engine.popular_directions.title,Popular destinations from %{city_name},Популярные направления из города %{city_name},Популярні напрямки з міста %{city_name},Najpopularniejsze kierunki z miasta %{city_name},เส้นทางยอดนิยม
+engine.popular_directions.internal,Domestic,Внутренние,Внутрішні,Krajowe,เส้นทางรถโดยสาร
+engine.popular_directions.international,International,Международные,Міжнародні,Międzynarodowe,เส้นทางเรือเฟอร์รี่
+auths.new.auth,Log-in,Авторизация,Авторизація,Autoryzacja,คำขออนุญาต
+auths.new.auth_text,"To get access to our orders, please register by entering the phone number your provided at the time of booking","Чтобы получить доступ к заказам, сделанным ранее, авторизуйтесь по номеру телефона","Щоб отримати доступ до замовлень, зробленим раніше, авторизуйтесь за номером телефону","Aby uzyskać możliwość wglądu do zamówień złożonych wcześniej, należy dokonać autoryzacji poprzez wpisanie numeru telefonu.",เพื่อเข้าถึงคำสั่งซื้อที่คุณดำเนินการไว้ก่อนหน้า โปรดเข้าสู่ระบบด้วยหมายเลขโทรศัพท์
+auths.new.your_phone_number,Your phone number,Ваш номер телефона,Ваш номер телефону,Twój numer telefonu,เบอร์โทรศัพท์มือถือ
+auths.new.send_sms_with_code,Send SMS verification code,Отправить SMS с кодом,Надіслати SMS з кодом,Wyślij SMS z kodem,ส่ง SMS พร้อมรหัส
+auths.edit.sms_sended_text_1,To the phone,На телефон,На телефон,Pod nr telefonu,ไปยังโทรศัพท์มือถือ
+auths.edit.sms_sended_text_2,SMS verification code was sent to your phone number,отправлена SMS с кодом,надіслано SMS з кодом,został wysłany SMS z kodem,SMS พร้อมรหัส ถูกส่งแล้ว
+auths.auth_form.your_phone_number,Your phone number,Ваш номер телефона,Ваш номер телефону,Twój numer telefonu,เบอร์โทรศัพท์มือถือ
+auths.auth_form.send_sms_with_code,Send SMS verification code,Отправить SMS с кодом,Надіслати SMS з кодом,Wyślij SMS z kodem,ส่ง SMS พร้อมรหัส
+auths.confirmation_form.sign_in,Log in,Войти,Увійти,Wejdź,เข้าสู่ระบบ
+auths.confirmation_form.input_code,Enter code,Введите код,Введіть код,Wpisz kod,ป้อนรหัส
+order_mailer.send_ticket.subject,Tickets %{direction} for %{date} (#%{order_ref}),Билеты %{direction} на %{date} (#%{order_ref}),Квитки %{direction} на %{date} (#%{order_ref}),Bilety%{direction} na %{date} (#%{order_ref}),ตั๋ว %{direction} สำหรับ %{date} (#%{order_ref})
+order_mailer.send_booking_sheet.subject,Payment details,Реквизиты для оплаты билета,Реквізити для оплати квитків,Dane do dokonania płatności za bilet,ข้อมูลที่จำเป็นสำหรับการชำระค่าตั๋ว
+carrier_mailer.contact_us.carrier_subject,Carrier would like to contact us,Перевозчик хочет связаться с нами,Перевізник хоче зв’язатися з нами,,ผู้ให้บริการเดินรถที่ต้องการติดต่อเรา
+carrier_mailer.contact_us.agent_subject,Agent would like to contact us,Агент хочет связаться с нами,Агент хоче зв’язатися з нами,,ผู้ให้บริการเดินรถที่ต้องการติดต่อเรา
+subscription_mailer.confirm.subject,Subscription confirmation,Подтверждение подписки на рассылку,Підтвердження підписки на розсилку,Potwierdzenie newslettera,ยืนยันการสมัครสมาชิก
+helpers.submit.booking.update,Book,Забронировать,Забронювати,Zarezerwować,จอง
+helpers.submit.carrier.create,Become our partner,Стать партнером,Стати партнером,Zostań partnerem,เป็นหุ้นส่วนทางธุรกิจของเรา
+helpers.submit.delivery.create,-,Заказать доставку,Замовити доставку,-,-
+helpers.submit.email_order.create,Send ticket,Отправить билет,Надіслати квиток,Wysłać bilet,ส่งตั๋ว
+helpers.label.booking.phone,Phone number,Номер телефона,Номер телефону,Numer telefonu,เบอร์โทรศัพท์มือถือ
+helpers.label.ddauth.phone,Phone number,Номер телефона,Номер телефону,Numer telefonu,เบอร์โทรศัพท์มือถือ
+activerecord.attributes.auth.phone,Phone number,Номер телефона,Номер телефону,Numer telefonu,เบอร์โทรศัพท์มือถือ
+activerecord.attributes.auth_confirmation.code,Code,Код,Код,Kod,รหัส
+activerecord.attributes.booking.phone,Phone number,Номер телефона,Номер телефону,Numer telefonu,เบอร์โทรศัพท์มือถือ
+activerecord.attributes.booking.ref,ID,Идентификатор,Ідентифікатор,Identyfikator,รหัสยืนยัน
+activerecord.attributes.booking.order,Order,Заказ,Замовлення,Zamówienie,คำสั่งซื้อ
+activerecord.attributes.booking.from,From,Откуда,Звідки,Skąd,จาก
+activerecord.attributes.booking.to,To,Куда,Куди,Dokąd,ถึง
+activerecord.attributes.booking.total,Amount,Сумма,Сума,Kwota,จำนวน
+activerecord.attributes.booking.created_at,Created,Создан,Створено,Wygenerowany,สร้างเมื่อ
+activerecord.attributes.booking.state,Status,Состояние,Стан,Stan,เงื่อนไข
+activerecord.attributes.booking.ticket_till,Pay before,Оплата до,Оплата до,Płatność do dnia,ชำระเงินภายใน
+activerecord.attributes.booking.true,When,Когда,,,
+activerecord.attributes.booking.start_at,Departure,Отправление,,,
+activerecord.attributes.booking/passengers.first_name,First name,Имя,Ім’я,Imię,ชื่อ
+activerecord.attributes.booking/passengers.last_name,Last name,Фамилия,Прізвище,Nazwisko,นามสกุล
+activerecord.attributes.booking/passengers.second_name,Patronymic,Отчество,Побатькові,Imię ojca,ชื่อสกุลบิดาหรือบรรพบุรุษ
+activerecord.attributes.booking/passengers.document_type,ID,Удостоверение личности,Посвідчення особи,Dowód tożsamości,การระบุตัวตน
+activerecord.attributes.booking/passengers.passport,Series and number,Серия и номер документа,Серія і номер документа,Seria i numer dokumentu,รุ่นและหมายเลข
+activerecord.attributes.booking/passengers.passport_expire_date,Valid until,Действителен до,Дійсний до,Ważny do dnia,มีผลถึงวันที่
+activerecord.attributes.booking/passengers.birthday,Date of birth,Дата рождения,Дата народження,Data urodzenia,วันเดือนปีเกิด
+activerecord.attributes.booking/passengers.gender,Sex,Пол,Стать,Płeć,เพศ
+activerecord.attributes.booking/passengers.citizenship,Nationality,Гражданство,Громадянство,Obywatelstwo,สัญชาติ
+activerecord.attributes.passenger.ref,ID,Идентификатор,Ідентифікатор,Identyfikator,รหัสบัตรประชาชน
+activerecord.attributes.passenger.order,Order,Заказ,Замовлення,Zamówienie,คำสั่งซื้อ
+activerecord.attributes.passenger.birthday,Date of birth,Дата рождения,Дата народження,Data urodzenia,วันเดือนปีเกิด
+activerecord.attributes.passenger.passport,Series and number,Серия и номер документа,Серія і номер документа,Seria i numer dokumentu,รุ่นและหมายเลข
+activerecord.attributes.passenger.first_name,First name,Имя,Ім’я,Imię,ชื่อ
+activerecord.attributes.passenger.last_name,Last name,Фамилия,Прізвище,Nazwisko,นามสกุล
+activerecord.attributes.passenger.second_name,Patronymic,Отчество,Побатькові,Imię ojca,ชื่อสกุล
+activerecord.attributes.passenger.document_type,ID,Удостоверение личности,Посвідчення особи,Dowód tożsamości,การระบุตัวตน
+activerecord.attributes.passenger.passport_expire_date,Valid until,Действителен до,Дійсний до,Ważny do dnia,มีผลถึงวันที่
+activerecord.attributes.passenger.gender,Sex,Пол,Стать,Płeć,เพศ
+activerecord.attributes.passenger.citizenship,Nationality,Гражданство,Громадянство,Obywatelstwo,สัญชาติ
+activerecord.attributes.carrier.company,Company name,Название компании,Назва компанії,Nazwa firmy,ชื่อบริษัท
+activerecord.attributes.carrier.contact_person,Contact person,Контактное лицо,Контактна особа,Osoba kontaktowa,บุคคลที่ติดต่อได้
+activerecord.attributes.carrier.phone,Phone,Телефон,Телефон,Numer telefonu,เบอร์โทรศัพท์มือถือ
+activerecord.attributes.carrier.seating_messages.unassigned_seats,There is free seating on this route. You can choose a seat at departure.,На данном рейсе действует свободная посадка. Выбрать место вы сможете при отправлении.,На даному рейсі діє вільна посадка. Вибрати місце ви зможете при відправленні.,Nie ma przydziału miejsc na tej trasie. Możesz wybrac miejsce przy wejściu do autobusu.,ลูกค้าไม่สามารถเลือกที่นั่งล่วงหน้าได้สำหรับเที่ยวเดินทางนี้ ท่านที่ไปถึงก่อนจะมีสิทธิ์เลือกก่อน
+activerecord.attributes.carrier.seating_messages.guaranteed_seats,Selected seat guaranteed to be yours!,Выбранное место гарантированно будет ваше!,Вибране місце гарантовано буде ваше!,Gwarantujemy wybrane przez Ciebie miejsce siedzące!,รับรองได้ที่นั่งที่คุณเลือกแน่/นอน !
+activerecord.attributes.delivery.last_name,-,Фамилия,Прізвище,-,-
+activerecord.attributes.delivery.first_name,-,Имя,Ім’я,-,-
+activerecord.attributes.delivery.middle_name,-,Отчество,Побатькові,-,-
+activerecord.attributes.delivery.city,-,Город доставки,Місто доставки,-,-
+activerecord.attributes.delivery.street,-,Улица,Вулиця,-,-
+activerecord.attributes.delivery.warehouse,-,Отделение,Отеделенія,-,-
+activerecord.attributes.delivery.building_number,-,Дом,Будинок,-,-
+activerecord.attributes.delivery.flat,-,Квартира,Квартира,-,-
+activerecord.attributes.delivery.comment,-,Комментарий,Коментарі,-,-
+activerecord.attributes.delivery.date,-,Дата доставки,Дата доставки,-,-
+activerecord.attributes.delivery.preffered_date,Preferred delivery date,Желаемая дата доставки,Бажана дата доставки,-,-
+activerecord.attributes.delivery.phone,Phone,Телефон,Телефон,-,-
+activerecord.attributes.order.phone,Phone number,Телефон,Номер телефону,Numer telefonu,เบอร์โทรศัพท์มือถือ
+activerecord.attributes.order.name,Full name,,,,ชื่อเต็ม
+activerecord.attributes.order.ref,Number,Номер,,,
+activerecord.attributes.order.customer,Customer,Покупатель,,,
+activerecord.attributes.order.state,State,Состояние,,,
+activerecord.attributes.order.domain,Domain,Домен,,,
+activerecord.attributes.order.billing_code,Billing code,Код оплаты,,,
+activerecord.attributes.order.from,From,Откуда,,,
+activerecord.attributes.order.to,To,Куда,,,
+activerecord.attributes.order.created_at,Created at,Создан,,,
+activerecord.attributes.order.promo_code,Promo code,Промо код,Промо код,Kod promocyjny,รหัสส่วนลด
+activerecord.attributes.order.referral_phone,Referral code,Телефон пригласившего,"Телефон того, хто вас запросив","Numer telefonu osoby, która cię zaprosiła",รหัสอ้างอิง
+activerecord.attributes.order.delivery_contact_person,Contact person,,,,ชื่อผู้รับ
+activerecord.attributes.order.delivery_contact_phone,Contact phone,,,,เบอร์โทรศัพท์ติดต่อ
+activerecord.attributes.order.delivery_date,Preferred date,,,,วันที่สะดวกรับของ
+activerecord.attributes.order.delivery_time,Preferred time,,,,เวลาที่สะดวกรับของ
+activerecord.attributes.affiliate.company_name,Company name,Название компании,Назва компанії,Nazwa firmy,ชื่อบริษัท
+activerecord.attributes.affiliate.website,Company website,Сайт компании,Сайт компанії,Strona internetowa firmy,ชื่อเว็บไซต์
+activerecord.attributes.affiliate.full_name,Company's representative,ФИО представителя,ПІБ представника,Nazwisko i imię przedstawiciela,บุคคลที่ติดต่อได้
+activerecord.attributes.affiliate.phone,Phone,Телефон,Телефон,Telefon,เบอร์โทรศัพท์มือถือ
+activerecord.attributes.affiliate.domain_id_equals,Domain,Домен,,,
+activerecord.attributes.feedback.name,Your name,Ваше имя,Ваше ім'я,Imię,
+activerecord.attributes.feedback.message,Your message,Ваше сообщение,Ваше повідомлення,Wpisz swoją wiadomość,
+payment_mailer.paysbuy_invoice.subject,Paysbuy invoice: #%{ref},,,,ใบเสร็จ Paysbuy
+border_crossing_rules.ru_ua,Russian Federation citizens crossing the Ukrainian border must have a passport valid for the duration of the trip and a notarized invitation from host party.,"Гражданам РФ при пересечении границы Украины необходимо иметь при себе заграничный паспорт, действующий на все время поездки, и нотариально заверенное приглашение принимающей стороны.","Громадянам РФ при перетині кордону України необхідно мати при собі закордонний паспорт, що діє на весь час поїздки, і нотаріально завірене запрошення приймаючої сторони.",,
+affiliates.from,From,Откуда,Звідки,Miejsce odjazdu,จาก
+affiliates.to,To,Куда,Куди,Miejsce docelowe,ถึง
+affiliates.date,When,Дата,Дата,Data,เมื่อ
+affiliates.search,Search,Найти билеты,Знайти квитки,Szukaj biletu,ตารางเวลาและราคา
+affiliates.passengers_options.1,1 passenger,1 пассажир,1 пасажир,1 pasażer,ผู้โดยสาร 1 ท่าน
+affiliates.passengers_options.2,2 passengers,2 пассажира,2 пасажири,2 pasażerów,ผู้โดยสาร 2 ท่าน
+affiliates.passengers_options.3,3 passengers,3 пассажира,3 пасажири,3 pasażerów,ผู้โดยสาร 3 ท่าน
+affiliates.passengers_options.4,4 passengers,4 пассажира,4 пасажири,4 pasażerów,ผู้โดยสาร 4 ท่าน
+affiliates.passengers_options.5,5 passengers,5 пассажиров,5 пасажирів,5 pasażerów,ผู้โดยสาร 5 ท่าน
+affiliates.passengers_options.6,6 passengers,6 пассажиров,6 пасажирів,6 pasażerów,ผู้โดยสาร 6 ท่าน
+affiliates.passengers_options.7,7 passengers,7 пассажиров,7 пасажирів,7 pasażerów,ผู้โดยสาร 7 ท่าน
+affiliates.passengers_options.8,8 passengers,8 пассажиров,8 пасажирів,8 pasażerów,ผู้โดยสาร 8 ท่าน
+affiliates.passengers_options.9,9 passengers,9 пассажиров,9 пасажирів,9 pasażerów,ผู้โดยสาร 9 ท่าน
+affiliates.passengers_options.10,10 passengers,10 пассажиров,10 пасажирів,10 pasażerów,ผู้โดยสาร 10 ท่าน
+affiliates.months,"[""January"", ""February"", ""March"", ""April"", ""May"", ""June"", ""July"", ""August"", ""September"", ""October"", ""November"", ""December""]","[""Январь"", ""Февраль"", ""Март"", ""Апрель"", ""Май"", ""Июнь"", ""Июль"", ""Август"", ""Сентябрь"", ""Октябрь"", ""Ноябрь"", ""Декабрь""]","[""Январь"", ""Февраль"", ""Март"", ""Апрель"", ""Май"", ""Июнь"", ""Июль"", ""Август"", ""Сентябрь"", ""Октябрь"", ""Ноябрь"", ""Декабрь""]","[""Styczeń"", ""Luty"", ""Marzec"", ""Kwiecień"", ""Maj"", ""Czerwiec"", ""Lipiec"", ""Sierpień"", ""Wrzesień"", ""Październik"", ""Listopad"", ""Grudzień""]","[""มกราคม"", ""กุมภาพันธ์"", ""มีนาคม"", ""เมษายน"", ""พฤษภาคม"", ""มิถุนายน"", ""กรกฎาคม"", ""สิงหาคม"", ""กันยายน"", ""ตุลาคม"", ""พฤศจิกายน"", ""ธันวาคม""]"
+affiliates.abbr_day_names,"[""Mon"", ""Tue"", ""Wed"", ""Thu"", ""Fri"", ""Sat"", ""Sun""]","[""Пн"", ""Вт"", ""Ср"", ""Чт"", ""Пт"", ""Сб"", ""Вс""]","[""пн."", ""вт."", ""ср."", ""чт."", ""пт."", ""сб."", ""нд.""]","[""Pon"", ""Wto"", ""Śro"", ""Czw"", ""Pią"", ""Sob"", ""Nie""]","[""อา"", ""จ"", ""อ"", ""พ"", ""พฤ"", ""ศ"", ""ส""]"
+affiliates.index.title,Join the affiliate program and start making money today!,Присоединяйтесь к партнёрской программе и начните зарабатывать уже сегодня!,Приєднуйтесь до партнерської програми і почніть заробляти вже сьогодні!,Dołącz do programu partnerskiego i zacznij zarabiać już dziś!,ร่วมเป็นพาร์ทเนอร์กับเรา และเริ่มสร้างรายได้กันเลยตั้งแต่วันนี้!
+affiliates.index.begin,Begin,Начать,Розпочати,Rozpocznij,เริ่มเลย
+affiliates.index.strengths.1.title,High profitability,Высокий доход,Високий прибуток,Wysoki dochód,รายได้ดี
+affiliates.index.strengths.1.text_html,"Our affiliate widget perform at highest conversion, earning you maximum revenue",Благодаря высокой конверсии виджета<br/>вы получаете максимальную прибыль,Завдяки високій конверсії віджета ви отримуєте максимальний прибуток,Dzięki wysokiej konwersji widżetu uzyskasz maksymalny dochód,เนื่องจากเว็บไซต์ของเราถูกทำให้ง่ายต่อการขาย คุณจึงมั่นใจได้ว่าจะได้ยอดขายที่สูงสุด
+affiliates.index.strengths.2.title,Huge selection of trips and destinations,Огромный выбор рейсов,Широкий вибір рейсів,Ogromny wybór rejsów,มีเที่ยวให้เลือกหลากหลาย
+affiliates.index.strengths.2.text_html,"More than 1,500 routes",Более 20&nbsp;000 направлений<br/>по&nbsp;Восточной Европе,Понад 20 000 напрямів по Східній Європі,Przewozy autokarowe do ponad 200000 miast  w Europie Wschodniej,มากกว่า 1500 เส้นทางทั่วประเทศไทย
+affiliates.index.strengths.3.title,Easy to use,Простота использования,Простота використання,Łatwość korzystania,ใช้ง่ายๆ
+affiliates.index.strengths.3.text_html,"Doesn't require any technical skills to install, easily customizable to your website feel and look",Навыки программирования не&nbsp;нужны - виджет легко подстраивается под&nbsp;ваш сайт,Навички програмування не потрібні - віджет легко налаштувати під ваш сайт,Nie wymaga umiejętności programowania - możesz łatwo dostosować widżet do Twojej strony internetowej,ไม่ต้องเป็นโปรแกรมเมอร์ก็ทำได้ แค่นำวิตเจ็ตส์ของเราไปวาง
+affiliates.index.tune_in,Choose search box for your website,Настройте форму поиска для своего сайта,Налаштуйте форму пошуку для вашого сайта,Dostosuj formularz wyszukiwania do Twojej strony internetowej,ปรับขนาดกล่องค้นหาให้เข้ากับเว็บไซต์ของคุณ
+affiliates.affiliate_form.choose_color_scheme,Choose theme,Выберите тему,Оберіть тему,Wybierz temat,เลือกธีม
+affiliates.affiliate_form.specify_max_width,Specify maximum width,Укажите максимальную ширину,Вкажіть максимальну ширину,Podaj maksymalną szerokość,กรุณาระบุความกว้าง (พิกเซล)
+affiliates.affiliate_form.select_language,Select language,Выберите язык,Оберіть мову,Wybierz język,เลือกภาษา
+affiliates.affiliate_form.contact_details,Please fill in your details,Укажите свои данные,Вкажіть свої дані,Podaj swoje dane,กรุณากรอกข้อมูล
+affiliates.affiliate_form.register,Submit,Зарегистрироваться,Зареєструватись,Zarejestruj się,ยื่นข้อมูล
+affiliates.thank_you.header,Thank you for the request!,Спасибо за обращение,Дякуємо за звернення,Dziękujemy za skontaktowanie się z nami,ขอบคุณที่ติดต่อกลับมาค่ะ
+affiliates.thank_you.text,Our representative will contact you soon.,Менеджер по работе с партнерами свяжется с вами.,Менеджер по роботі за партнерами зв'яжеться з вами.,Kierownik do pracy z partnerami skontaktuje się z tobą.,ทางเจ้าหน้าที่จะติดต่อกลับไปโดยเร็วที่สุดค่ะ
+notifications.hipchat.booking_create,"%{customer} booked %{booking_type} %{tickets} tickets %{from} - %{to} (%{resource}, %{carriers}) on %{date}, total %{total}, valid %{till}. Order %{order}. Ticket %{ticket_number}","%{customer} забронировал %{booking_type} %{tickets} билет(а) %{from} - %{to} (%{resource}, %{carriers}) на %{date} на сумму %{total} на %{till}. Заказ %{order}",,,
+notifications.hipchat.booking_error,"%{customer} got booking error on destination %{from} - %{to}"" on %{date}. Resource: %{resource}. Error: %{error}. Gillbus session ID: %{session_id}.","%{customer} получил ошибку бронирования по направлению %{from} - %{to}"" на %{date}. Ресурс: %{resource}. Ошибка: %{error}. Gillbus session ID: %{session_id}.",,,
+notifications.hipchat.payment_confirm,"%{customer} paid order  %{order} %{tickets} tickets %{from} - %{to} (%{resource}, %{carriers}) total %{total} with %{payment_system}. Payment in %{booking_diff} after booking. IP: %{ip}","%{customer} оплатил заказ %{order} %{tickets} билет(а) %{from} - %{to} (%{resource}, %{carriers}) на сумму %{total} через %{payment_system}. Оплата через %{booking_diff} после бронирования. IP: %{ip}",,,
+notifications.hipchat.drive_comment,Operator %{operator} commented on resource %{resource}: %{comment},Оператор %{operator} добавил комментарий к ресурсу %{resource}: %{comment},,,
+notifications.hipchat.daily_stats,"Report for %{date} Total orders - %{orders_count}, paid - %{paid_orders}","Отчет за %{date} всего заказов - %{orders_count}, из них оплачено - %{paid_orders}",,,
+notifications.hipchat.emarsys_halted,"Flow %{flow_id} for %{email} halted on transition from %{from}. Order %{order_id}, %{order_state}.","Flow %{flow_id} для %{email} остановлен при переходе из %{from}. Заказ %{order_id}, %{order_state}.",,,
+notifications.hipchat.send_subscription_welcome_halted,Emarsys failed to send email %{letter_name} for %{email}. %{error},,,,
+notifications.hipchat.double_payment,"Double payment. Payment <a href=""%{payment_url}"">%{payment_ref}</a> should be refunded","Двойное списание. Необходимо оформить возврат для платежа <a href=""%{payment_url}"">%{payment_ref}</a>",,,
+notifications.hipchat.buy_tickets_error,"Buy tickets error. Payment <a href=""%{payment_url}"">%{payment_ref}</a> should be refunded","Ошибка покупки билетов. Необходимо оформить возврат для платежа <a href=""%{payment_url}"">%{payment_ref}</a>",,,
+notifications.hipchat.rebooking_error,"Rebooking error. Payment <a href=""%{payment_url}"">%{payment_ref}</a> should be refunded","Ошибка перебронирования. Необходимо оформить возврат для платежа <a href=""%{payment_url}"">%{payment_ref}</a>",,,
+notifications.hipchat.old_processing_payment,Payment %{payment_url} more than %{days} days in the status %{payment_state},Платеж %{payment_url} находится более %{days} дней в статусе %{payment_state},,,
+actionpay.product.name,Bus ticket,Билет на автобус,,,
+service_worker.title,Service notification.,Ваша подписка обновилась.,Ваша подписка обновилась.,Service notification.,Service notification.
+service_worker.msg,Your subscription has been updated. Thank you for staying with us!,Теперь вы вновь сможете получать новости об акциях и скидках на Busfor.,Теперь вы вновь сможете получать новости об акциях и скидках на Busfor.,Your subscription has been updated. Thank you for staying with us!,Your subscription has been updated. Thank you for staying with us!

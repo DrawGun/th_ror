@@ -1,5 +1,6 @@
 en:
   answers:
+    attachments: Attachments
     confirmations:
       created: "Your answer successfully created."
       updated: "Your answer successfully updated."
