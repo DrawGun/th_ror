@@ -32,6 +32,17 @@
 
 
   .card-footer.text-muted
+    .float-left
+      ul.list-inline
+        li.list-inline-item
+          | Raiting:
+
+        li#vote_count.list-inline-item
+          = @question.evaluation
+
+        li.list-inline-item
+          = render('votes/vote', question: @question, answer: nil, show_votes: current_user && !current_user.author_of?(@question))
+
     - if current_user && current_user.author_of?(@question)
       .float-right
         = link_to I18n.t('.questions.edit.button'), '', class: 'btn btn-primary edit-question-link mr-2', data: { question_id: @question.id }

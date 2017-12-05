@@ -3,6 +3,8 @@ class AnswersController < ApplicationController
   before_action :set_question, only: [:create, :destroy, :update, :mark_as_best]
   before_action :set_answer, only: [:destroy, :update]
 
+  include Voted
+
   def create
     @answer = @question.answers.new(answer_params.merge(user: current_user))
 
