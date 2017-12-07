@@ -60,4 +60,5 @@ RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
   config.include Devise::TestHelpers, type: :controller
   config.extend ControllerHelper, type: :controller
+  config.include ResponseHelper, type: :controller
 end

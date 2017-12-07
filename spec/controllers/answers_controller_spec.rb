@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 describe AnswersController do
+  it_behaves_like 'voted'
+
   let(:user) { create(:user) }
   let(:question) { create(:question, user: user) }
 

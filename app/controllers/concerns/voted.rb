@@ -3,6 +3,7 @@ module Voted
 
   included do
     before_action :set_votable, only: [:vote_up, :vote_down]
+    before_action :author_of?, only: [:vote_up, :vote_down]
   end
 
   def vote_up
@@ -23,5 +24,9 @@ module Voted
     else
       Answer.find(params[:id])
     end
+  end
+
+  def author_of?
+    head :forbidden if current_user.author_of?(@votable)
   end
 end
