@@ -8,10 +8,10 @@ module ApplicationHelper
     klazz = ['voting', 'btn']
 
     type = if title == '+'
-      klazz << 'btn-success'
+      klazz << 'btn-success vote-up'
       :vote_up
     else
-      klazz << 'btn-danger'
+      klazz << 'btn-danger vote-down'
       :vote_down
     end
 

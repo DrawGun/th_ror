@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.configure do |config|
   config.include AcceptanceHelper, type: :feature
+  config.include WaitEventually, type: :feature
 
   config.use_transactional_fixtures = false
 
