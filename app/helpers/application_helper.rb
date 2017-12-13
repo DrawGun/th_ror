@@ -4,7 +4,7 @@ module ApplicationHelper
     link_to(title, href, class: link_classes, method: method)
   end
 
-  def vote_link(title, question, answer = nil)
+  def vote_link(title, votable)
     klazz = ['voting', 'btn']
 
     type = if title == '+'
@@ -15,7 +15,7 @@ module ApplicationHelper
       :vote_down
     end
 
-    url = polymorphic_path([type, question, answer])
+    url = polymorphic_path([type, votable])
 
     link_to(title, url, remote: true, method: :patch, class: klazz.join(' '))
   end

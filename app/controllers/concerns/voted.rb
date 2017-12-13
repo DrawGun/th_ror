@@ -8,23 +8,24 @@ module Voted
 
   def vote_up
     @votable.vote_up(current_user)
-    # binding.pry
-    render json: { rating: @votable.evaluation, message: "Set vote_up", type: @votable.class.to_s, id: @votable.id }
+    puts "@votable.evaluation -> #{@votable.evaluation}"
+    render json: { rating: @votable.evaluation, message: "Set vote_up", selector: selector }
   end
 
   def vote_down
     @votable.vote_down(current_user)
-    render json: { rating: @votable.evaluation, message: "Set vote_down", type: @votable.class.to_s, id: @votable.id }
+    render json: { rating: @votable.evaluation, message: "Set vote_down", selector: selector }
   end
 
   private
 
+  def selector
+    "##{params[:controller].singularize}#{params[:id]}"
+  end
+
   def set_votable
-    @votable = if params[:controller] == 'questions'
-      Question.find(params[:id])
-    else
-      Answer.find(params[:id])
-    end
+    resource = params[:controller].capitalize.singularize.constantize
+    @votable = resource.find_by(id: params[:id])
   end
 
   def author_of?

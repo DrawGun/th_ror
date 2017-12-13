@@ -41,7 +41,7 @@
           = @question.evaluation
 
         li.list-inline-item
-          = render('votes/vote', question: @question, answer: nil, show_votes: current_user && !current_user.author_of?(@question))
+          = render('votes/vote', votable: @question, show_votes: current_user && !current_user.author_of?(@question))
 
     - if current_user && current_user.author_of?(@question)
       .float-right

@@ -1,6 +1,6 @@
 class AnswersController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
-  before_action :set_question, only: [:create, :destroy, :update, :mark_as_best]
+  before_action :set_question, only: :create
   before_action :set_answer, only: [:destroy, :update]
 
   include Voted
@@ -17,6 +17,7 @@ class AnswersController < ApplicationController
 
   def update
     if current_user.author_of?(@answer) && @answer.update(answer_params)
+      @question = @answer.question
       flash[:notice] = I18n.t('.answers.confirmations.updated')
     else
       flash[:alert] = I18n.t('.answers.failure.updated')
@@ -35,6 +36,7 @@ class AnswersController < ApplicationController
   def mark_as_best
     @answer = Answer.find(params[:answer_id])
     if current_user.author_of?(@answer) && @answer.set_best
+      @question = @answer.question
       flash[:notice] = I18n.t('.answers.confirmations.mark_as_best')
     else
       flash[:alert] = I18n.t('.answers.failure.mark_as_best')
