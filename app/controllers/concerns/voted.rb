@@ -8,19 +8,18 @@ module Voted
 
   def vote_up
     @votable.vote_up(current_user)
-    puts "@votable.evaluation -> #{@votable.evaluation}"
-    render json: { rating: @votable.evaluation, message: "Set vote_up", selector: selector }
+    render json: { rating: @votable.evaluation, message: "Set vote_up", resource: resource, id: params[:id] }
   end
 
   def vote_down
     @votable.vote_down(current_user)
-    render json: { rating: @votable.evaluation, message: "Set vote_down", selector: selector }
+    render json: { rating: @votable.evaluation, message: "Set vote_down", resource: resource, id: params[:id] }
   end
 
   private
 
-  def selector
-    "##{params[:controller].singularize}#{params[:id]}"
+  def resource
+    params[:controller].singularize
   end
 
   def set_votable
