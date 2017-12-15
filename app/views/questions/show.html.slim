@@ -1,6 +1,7 @@
 #question.question.mt-1
-  #question-info
-    = render @question
+  div id="question#{@question.id}"
+    #question-info
+      = render @question
 
   - if @question.answers.present?
     .answers.card.mt-1

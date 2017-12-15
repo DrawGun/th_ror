@@ -3,9 +3,11 @@ require 'rails_helper'
 describe Answer do
   it { should have_many(:attachments).dependent(:destroy) }
   it { should belong_to(:question).inverse_of(:answers) }
-  it { should belong_to(:user).inverse_of(:answers) }
+  it { should belong_to(:user) }
   it { should validate_presence_of(:body) }
   it { should accept_nested_attributes_for :attachments }
+
+  it_behaves_like 'votable'
 
   context 'set_best' do
     let(:user) { create(:user) }

@@ -20,7 +20,7 @@
 
       - if current_user && current_user.author_of?(answer)
         li.list-inline-item.edit-answer-form
-          = form_for [@question, answer], remote: true, html: { id: "edit-answer-#{answer.id}", class: 'edit_answer d-none' } do |f|
+          = form_for answer, remote: true, html: { id: "edit-answer-#{answer.id}", class: 'edit_answer d-none' } do |f|
             .form-group
               = f.text_area :body, class: 'form-control'
             h5
@@ -33,11 +33,22 @@
 
             = f.submit I18n.t('.answers.edit.submit'), class: 'ml-3'
         li.list-inline-item.float-right.mr-2
-          = link_to I18n.t('.answers.delete.button'), question_answer_path(@question, answer), method: :delete, remote: true, class: 'btn btn-danger btn-sm'
+          = link_to I18n.t('.answers.delete.button'), answer_path(answer), method: :delete, remote: true, class: 'btn btn-danger btn-sm'
 
         li.list-inline-item.float-right.mr-2
           =<> link_to I18n.t('.answers.edit.button'), '', class: 'btn btn-primary btn-sm edit-answer-link', data: { answer_id: answer.id }
 
+      ul.list-inline
+        li.list-inline-item
+          | Raiting:
+
+        li.vote-count.list-inline-item
+          = answer.evaluation
+
+        li.list-inline-item
+          = render('votes/vote', votable: answer, show_votes: current_user && !current_user.author_of?(answer))
+
+
       - if current_user && current_user.author_of?(@question) && !answer.best
         li.list-inline-item.float-right.mr-2
-          =<> link_to I18n.t('.answers.set_best_button'), question_answer_mark_as_best_path(@question, answer), method: :post, remote: true, class: 'btn btn-success btn-sm set-best-answer-link', data: { answer_id: answer.id }
+          =<> link_to I18n.t('.answers.set_best_button'), answer_mark_as_best_path(answer), method: :post, remote: true, class: 'btn btn-success btn-sm set-best-answer-link', data: { answer_id: answer.id }
